@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { Shell } from '@/components/Shell'
+import { Projektarchiv } from '@/components/Projektarchiv'
 import { useProjekte } from '@/state/ProjekteContext'
 
 export function LandingPage() {
@@ -17,7 +18,7 @@ export function LandingPage() {
   }
 
   return (
-    <Shell minimal>
+    <Shell minimal headerRight={<Projektarchiv />}>
       <div className="mx-auto max-w-3xl px-6 md:px-10 py-24 md:py-36 flex flex-col items-center text-center">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
