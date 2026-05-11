@@ -1,0 +1,124 @@
+{
+  "widmung": {
+    "typ": "auswahl",
+    "werte": ["wohngebiet", "gemischtes_baugebiet", "betriebsbaugebiet", "industriegebiet", "gartensiedlungsgebiet", "erholungsgebiet", "sondergebiet"],
+    "status": "aktiv"
+  },
+  "bauklasse": {
+    "typ": "auswahl",
+    "werte": ["BK_I", "BK_II", "BK_III", "BK_IV", "BK_V", "BK_VI", "keine"],
+    "status": "aktiv"
+  },
+  "bauweise": {
+    "typ": "auswahl",
+    "werte": ["offen", "gekuppelt", "offen_oder_gekuppelt", "geschlossen", "gruppe"],
+    "status": "aktiv"
+  },
+  "in_schutzzone": {
+    "typ": "ja_nein",
+    "werte": ["ja", "nein"],
+    "status": "aktiv"
+  },
+  "bauplatz_an_fluchtlinie": {
+    "typ": "ja_nein",
+    "werte": ["ja", "nein"],
+    "status": "aktiv"
+  },
+  "bebauungsplan_abweichend": {
+    "typ": "ja_nein",
+    "werte": ["ja", "nein"],
+    "status": "aktiv"
+  },
+  "bebauungsplan_dachneigung": {
+    "typ": "ja_nein",
+    "werte": ["ja", "nein"],
+    "status": "aktiv"
+  },
+  "gebaeudeklasse": {
+    "typ": "auswahl",
+    "werte": ["GK_1", "GK_2", "GK_3", "GK_4", "GK_5"],
+    "status": "aktiv"
+  },
+  "hauptnutzung": {
+    "typ": "auswahl",
+    "werte": ["wohnen", "buero", "verkaufsstaette", "versammlungsstaette", "beherbergung", "gaststaette", "bildung", "gesundheit", "industrie_gewerbe", "lager", "garage", "sonstige"],
+    "status": "aktiv"
+  },
+  "oberirdische_geschosse": {
+    "typ": "zahl",
+    "status": "aktiv"
+  },
+  "unterirdische_geschosse": {
+    "typ": "zahl",
+    "status": "aktiv"
+  },
+  "fluchtniveau": {
+    "typ": "zahl",
+    "einheit": "m",
+    "status": "aktiv"
+  },
+  "neubau_oder_bestand": {
+    "typ": "auswahl",
+    "werte": ["neubau", "zubau", "umbau", "bestand"],
+    "status": "aktiv"
+  },
+  "bauteil": {
+    "typ": "auswahl",
+    "werte": [
+      "aussenwand_wdvs",
+      "fassade_vorgehaengt_hinterlueftet",
+      "fassade_vorgehaengt_aussenschicht",
+      "fassade_vorgehaengt_unterkonstruktion",
+      "fassade_vorgehaengt_daemmschicht",
+      "vorhangfassade_profil",
+      "vorhangfassade_verglasung",
+      "vorhangfassade_paneel",
+      "vorhangfassade_abdichtung",
+      "vorhangfassade_beschichtung",
+      "fassade_sonstige",
+      "gebaedetrennfuge",
+      "gelaenderfuellung",
+      "wandbekleidung_gang",
+      "wandbekleidung_gang_aussenschicht",
+      "wandbekleidung_gang_unterkonstruktion",
+      "wandbekleidung_gang_daemmschicht",
+      "decke_abgehaengt_gang",
+      "wandbelag_gang",
+      "bodenbelag_gang",
+      "kabel_freiliegend",
+      "wandbekleidung_treppenhaus",
+      "wandbekleidung_treppenhaus_aussenschicht",
+      "wandbekleidung_treppenhaus_unterkonstruktion",
+      "wandbekleidung_treppenhaus_daemmschicht",
+      "decke_abgehaengt_treppenhaus",
+      "wandbelag_treppenhaus",
+      "bodenbelag_treppenhaus",
+      "bodenbelag_treppenhaus_tab3",
+      "daemmung_leitung",
+      "dacheindeckung",
+      "daemmung_dach"
+    ],
+    "wizard": false,
+    "status": "aktiv"
+  },
+  "brandabschnitt_flaeche": {
+    "typ": "zahl",
+    "einheit": "m2",
+    "status": "geplant"
+  },
+  "hat_loeschanlage": {
+    "typ": "ja_nein",
+    "werte": ["ja", "nein"],
+    "status": "geplant"
+  },
+  "hat_brandmeldeanlage": {
+    "typ": "ja_nein",
+    "werte": ["ja", "nein"],
+    "status": "geplant"
+  },
+  "sicherheitskategorie": {
+    "typ": "auswahl",
+    "werte": ["K1", "K2", "K3", "K3a", "K4"],
+    "status": "geplant"
+  }
+}

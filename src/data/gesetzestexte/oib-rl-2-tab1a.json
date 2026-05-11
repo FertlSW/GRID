@@ -1,0 +1,2053 @@
+{
+  "meta": {
+    "schema_version": "0.3",
+    "quelle_id": "oib-rl-2-tab1a",
+    "quelle_titel": "OIB-Richtlinie 2 — Tabelle 1a: Allgemeine Anforderungen an das Brandverhalten",
+    "quelle_kurz": "OIB-RL 2",
+    "quelle_typ": "oib_richtlinie",
+    "fassung": "Mai 2023",
+    "stand_aufbereitung": "2026-04-16",
+    "anmerkungen": "32 Rechtssätze aus Tabelle 1a (Seite 22 von 32). Fußnoten der Tabelle werden als fussnoten-Objekte an die jeweiligen Varianten gehängt. Der Parameter 'bauteil' hat in der Parameter-Registry den Status 'geplant' — er wird hier in Bedingungen verwendet, da er für die Tabellen-Logik zwingend erforderlich ist und die Finalisierung der Werte hiermit vorgeschlagen wird."
+  },
+  "rechtssaetze": [
+    {
+      "id": "oib-rl-2-tab1a-1.1",
+      "fundstelle": "Tabelle 1a, Zeile 1.1",
+      "originaltext": "Außenwand-Wärmedämmverbundsysteme — GK 1: E, GK 2: D, GK 3: D, GK 4: C-d1, GK 5 ≤6 Geschoße: C-d1, GK 5 >6 Geschoße: C-d1",
+      "punkt": "Tabelle 1a, Zeile 1.1",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "WDVS: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Außenwand-Wärmedämmverbundsysteme müssen je nach Gebäudeklasse unterschiedliche Euroklassen des Brandverhaltens erreichen. In GK 1 genügt Klasse E, in GK 2 und 3 Klasse D. Ab GK 4 ist durchgehend C-d1 gefordert, unabhängig von der Geschossanzahl.",
+      "hinweise": [
+        "C-d1 ab GK 4 bedeutet: begrenzt brennbar, kein Abtropfen/Abfallen. Typische WDVS-Systeme mit EPS-Dämmung erreichen dies nur mit zugelassenen Brandschutzmaßnahmen (z. B. Sturzschutz).",
+        "Bei GK 5 wird hier nicht nach ≤6/>6 Geschoßen unterschieden — die Anforderung ist einheitlich C-d1."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-fassade-wdvs",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "aussenwand_wdvs" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: E",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "E"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: D",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "D"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_4", "GK_5"] },
+          "headline": "GK 4–5: C-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "C-d1"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-1.2.1",
+      "fundstelle": "Tabelle 1a, Zeile 1.2.1",
+      "originaltext": "Fassadensysteme, vorgehängte hinterlüftete, belüftete oder nicht hinterlüftete — Gesamtsystem oder — GK 1: E, GK 2: D-d1, GK 3: D-d1, GK 4: B-d1 (1), GK 5 ≤6 Geschoße: B-d1 (1), GK 5 >6 Geschoße: B-d1",
+      "punkt": "Tabelle 1a, Zeile 1.2.1",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Vorgehängte Fassade (Gesamtsystem): Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Vorgehängte hinterlüftete, belüftete oder nicht hinterlüftete Fassadensysteme werden entweder als Gesamtsystem oder über ihre Einzelkomponenten bewertet. Diese Zeile betrifft die Gesamtsystembewertung. Ab GK 4 ist B-d1 gefordert, wobei in GK 4 und GK 5 ≤6 Geschoße gemäß Fußnote (1) unter bestimmten Voraussetzungen Erleichterungen gelten können.",
+      "hinweise": [
+        "Alternativ zur Gesamtsystembewertung können die Einzelkomponenten (Außenschicht, Unterkonstruktion, Dämmschicht) separat nachgewiesen werden — siehe Zeile 1.2.2.",
+        "Fußnote (1) erlaubt bei GK 4 und GK 5 ≤6 Geschoßen unter bestimmten Voraussetzungen Erleichterungen für die Brandverhaltensklasse."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-fassade-vorgehaengt-gesamt",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "fassade_vorgehaengt_hinterlueftet" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: E",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "E"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: D-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "D-d1"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: B-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B-d1"
+          },
+          "fussnoten": [
+            {
+              "nummer": 1,
+              "text": "Unter bestimmten Voraussetzungen können Erleichterungen bei der Brandverhaltensklasse gelten."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "kleiner_gleich", "wert": 6 }
+          ],
+          "headline": "GK 5 (≤6 Geschoße): B-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B-d1"
+          },
+          "fussnoten": [
+            {
+              "nummer": 1,
+              "text": "Unter bestimmten Voraussetzungen können Erleichterungen bei der Brandverhaltensklasse gelten."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "groesser_als", "wert": 6 }
+          ],
+          "headline": "GK 5 (>6 Geschoße): B-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B-d1"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-1.2.2-aussenschicht",
+      "fundstelle": "Tabelle 1a, Zeile 1.2.2 — Außenschicht",
+      "originaltext": "Fassadensysteme, vorgehängte hinterlüftete, belüftete oder nicht hinterlüftete — Einzelkomponenten — Außenschicht — GK 1: E, GK 2: D, GK 3: D, GK 4: A2-d1 (2), GK 5 ≤6 Geschoße: A2-d1 (2), GK 5 >6 Geschoße: A2-d1 (3)",
+      "punkt": "Tabelle 1a, Zeile 1.2.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Vorgehängte Fassade — Außenschicht: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Bei Einzelkomponentenbewertung vorgehängter Fassadensysteme muss die Außenschicht ab GK 4 die Klasse A2-d1 erreichen. In GK 4 und GK 5 ≤6 Geschoße gelten Erleichterungen gemäß Fußnote (2), bei GK 5 >6 Geschoßen greift der strengere Maßstab nach Fußnote (3).",
+      "hinweise": [
+        "A2-d1 bedeutet nahezu nichtbrennbar — typische Außenschichten aus Faserzement, Naturstein oder Metallkassetten erfüllen dies in der Regel.",
+        "Fußnote (2) vs. (3): Die Erleichterungsmöglichkeit entfällt bei GK 5 >6 Geschoßen."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-fassade-vorgehaengt-einzelkomponenten",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "fassade_vorgehaengt_aussenschicht" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: E",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "E"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: D",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "D"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: A2-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "A2-d1"
+          },
+          "fussnoten": [
+            {
+              "nummer": 2,
+              "text": "Erleichterung möglich: abweichende Brandverhaltensklasse unter bestimmten Voraussetzungen zulässig."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "kleiner_gleich", "wert": 6 }
+          ],
+          "headline": "GK 5 (≤6 Geschoße): A2-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "A2-d1"
+          },
+          "fussnoten": [
+            {
+              "nummer": 2,
+              "text": "Erleichterung möglich: abweichende Brandverhaltensklasse unter bestimmten Voraussetzungen zulässig."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "groesser_als", "wert": 6 }
+          ],
+          "headline": "GK 5 (>6 Geschoße): A2-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "A2-d1"
+          },
+          "fussnoten": [
+            {
+              "nummer": 3,
+              "text": "Keine Erleichterung: Die volle Anforderung A2-d1 gilt ohne Ausnahme."
+            }
+          ]
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-1.2.2-unterkonstruktion",
+      "fundstelle": "Tabelle 1a, Zeile 1.2.2 — Unterkonstruktion",
+      "originaltext": "Fassadensysteme, vorgehängte hinterlüftete, belüftete oder nicht hinterlüftete — Einzelkomponenten — Unterkonstruktion stabförmig / punktförmig — GK 1: E/E, GK 2: D/D, GK 3: D/A2, GK 4: D/A2, GK 5 ≤6 Geschoße: D/A2, GK 5 >6 Geschoße: C/A2",
+      "punkt": "Tabelle 1a, Zeile 1.2.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Vorgehängte Fassade — Unterkonstruktion (stabförmig/punktförmig): Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Die Unterkonstruktion vorgehängter Fassaden wird nach stabförmigen und punktförmigen Befestigungselementen differenziert. Punktförmige Elemente haben ab GK 3 die strengere Anforderung A2 (nichtbrennbar). Stabförmige Elemente werden erst bei GK 5 >6 Geschoßen auf C verschärft.",
+      "hinweise": [
+        "Die Notation 'D/A2' bedeutet: stabförmig D, punktförmig A2.",
+        "Punktförmige Befestigungselemente (z. B. Konsolen, Winkel) müssen ab GK 3 nichtbrennbar sein, da sie bei Versagen einzelne Fassadenteile freigeben können."
+      ],
+      "pruefhinweise": [
+        "PRÜFEN: Unterkonstruktion stabförmig/punktförmig als zwei separate Bauteil-Werte abbilden oder kombiniert belassen? Aktuell als kombinierter Rechtssatz mit Erläuterung in der headline gelöst."
+      ],
+      "thema": "brandverhalten-fassade-vorgehaengt-einzelkomponenten",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "fassade_vorgehaengt_unterkonstruktion" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: stabförmig E / punktförmig E",
+          "anforderung": {
+            "typ": "prosa",
+            "text": "Stabförmige Unterkonstruktion: E. Punktförmige Unterkonstruktion: E."
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_2" },
+          "headline": "GK 2: stabförmig D / punktförmig D",
+          "anforderung": {
+            "typ": "prosa",
+            "text": "Stabförmige Unterkonstruktion: D. Punktförmige Unterkonstruktion: D."
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_3", "GK_4"] },
+          "headline": "GK 3–4: stabförmig D / punktförmig A2",
+          "anforderung": {
+            "typ": "prosa",
+            "text": "Stabförmige Unterkonstruktion: D. Punktförmige Unterkonstruktion: A2 (nichtbrennbar)."
+          }
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "kleiner_gleich", "wert": 6 }
+          ],
+          "headline": "GK 5 (≤6 Geschoße): stabförmig D / punktförmig A2",
+          "anforderung": {
+            "typ": "prosa",
+            "text": "Stabförmige Unterkonstruktion: D. Punktförmige Unterkonstruktion: A2 (nichtbrennbar)."
+          }
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "groesser_als", "wert": 6 }
+          ],
+          "headline": "GK 5 (>6 Geschoße): stabförmig C / punktförmig A2",
+          "anforderung": {
+            "typ": "prosa",
+            "text": "Stabförmige Unterkonstruktion: C. Punktförmige Unterkonstruktion: A2 (nichtbrennbar)."
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-1.2.2-daemmschicht",
+      "fundstelle": "Tabelle 1a, Zeile 1.2.2 — Dämmschicht",
+      "originaltext": "Fassadensysteme, vorgehängte hinterlüftete, belüftete oder nicht hinterlüftete — Einzelkomponenten — Dämmschicht bzw. Wärmedämmung — GK 1: E, GK 2: D, GK 3: D, GK 4: B (2), GK 5 ≤6 Geschoße: B (2), GK 5 >6 Geschoße: B (3)",
+      "punkt": "Tabelle 1a, Zeile 1.2.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Vorgehängte Fassade — Dämmschicht: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Die Wärmedämmung in vorgehängten Fassadensystemen muss ab GK 4 mindestens Euroklasse B erreichen (schwer entflammbar). In GK 4 und GK 5 ≤6 Geschoßen sind gemäß Fußnote (2) Erleichterungen möglich, bei GK 5 >6 Geschoßen gilt Fußnote (3) ohne Erleichterung.",
+      "hinweise": [
+        "Euroklasse B schließt z. B. Steinwolle-Dämmplatten ein. EPS- und XPS-Dämmstoffe erreichen B nur mit speziellen Flammschutzmitteln — Prüfzeugnisse beachten."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-fassade-vorgehaengt-einzelkomponenten",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "fassade_vorgehaengt_daemmschicht" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: E",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "E"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: D",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "D"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: B",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B"
+          },
+          "fussnoten": [
+            {
+              "nummer": 2,
+              "text": "Erleichterung möglich: abweichende Brandverhaltensklasse unter bestimmten Voraussetzungen zulässig."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "kleiner_gleich", "wert": 6 }
+          ],
+          "headline": "GK 5 (≤6 Geschoße): B",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B"
+          },
+          "fussnoten": [
+            {
+              "nummer": 2,
+              "text": "Erleichterung möglich: abweichende Brandverhaltensklasse unter bestimmten Voraussetzungen zulässig."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "groesser_als", "wert": 6 }
+          ],
+          "headline": "GK 5 (>6 Geschoße): B",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B"
+          },
+          "fussnoten": [
+            {
+              "nummer": 3,
+              "text": "Keine Erleichterung: Die volle Anforderung gilt ohne Ausnahme."
+            }
+          ]
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-1.3-profil",
+      "fundstelle": "Tabelle 1a, Zeile 1.3 — Profil",
+      "originaltext": "Vorhangfassaden — Einzelkomponenten — Profil (Rahmen, Pfosten oder Riegel) — GK 1: E, GK 2: D, GK 3: D, GK 4: D, GK 5 ≤6 Geschoße: D (12), GK 5 >6 Geschoße: A2",
+      "punkt": "Tabelle 1a, Zeile 1.3",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Vorhangfassade — Profil (Rahmen/Pfosten/Riegel): Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Profile von Vorhangfassaden (Rahmen, Pfosten, Riegel) dürfen bis GK 4 die Klasse D aufweisen. Bei GK 5 ≤6 Geschoßen ist ebenfalls D zulässig, jedoch mit Einschränkung gemäß Fußnote (12). Ab GK 5 >6 Geschoßen müssen Profile nichtbrennbar (A2) sein.",
+      "hinweise": [
+        "A2 bei GK 5 >6 Geschoßen bedeutet in der Praxis: Aluminium- oder Stahlprofile. Holz-Aluminium-Systeme scheiden hier aus."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-vorhangfassade",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "vorhangfassade_profil" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: E",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "E"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3", "GK_4"] },
+          "headline": "GK 2–4: D",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "D"
+          }
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "kleiner_gleich", "wert": 6 }
+          ],
+          "headline": "GK 5 (≤6 Geschoße): D",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "D"
+          },
+          "fussnoten": [
+            {
+              "nummer": 12,
+              "text": "Einschränkung bei GK 5 ≤6 Geschoßen gemäß Fußnote der Tabelle."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "groesser_als", "wert": 6 }
+          ],
+          "headline": "GK 5 (>6 Geschoße): A2",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "A2"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-1.3-verglasung",
+      "fundstelle": "Tabelle 1a, Zeile 1.3 — Ausfachung als Verglasung",
+      "originaltext": "Vorhangfassaden — Einzelkomponenten — Ausfachung als Verglasung — GK 1: E, GK 2: D, GK 3: D, GK 4: C-d2, GK 5 ≤6 Geschoße: B-d1, GK 5 >6 Geschoße: B-d1",
+      "punkt": "Tabelle 1a, Zeile 1.3",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Vorhangfassade — Verglasung: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Verglasungen in Vorhangfassaden müssen ab GK 4 mindestens C-d2 erreichen. Bei GK 5 verschärft sich die Anforderung auf B-d1, unabhängig von der Geschossanzahl.",
+      "hinweise": [
+        "Brandschutzverglasungen (z. B. G30, F30) sind gesondert zu betrachten — hier geht es um das Brandverhalten der Verglasung als Baustoff, nicht um den Feuerwiderstand."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-vorhangfassade",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "vorhangfassade_verglasung" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: E",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "E"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: D",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "D"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: C-d2",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "C-d2"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: B-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B-d1"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-1.3-paneel",
+      "fundstelle": "Tabelle 1a, Zeile 1.3 — Ausfachung als Paneel",
+      "originaltext": "Vorhangfassaden — Einzelkomponenten — Ausfachung als Paneel — GK 1: E, GK 2: D, GK 3: D, GK 4: A2-d1 (12,13), GK 5 ≤6 Geschoße: A2-d1 (12,13), GK 5 >6 Geschoße: A2-d1",
+      "punkt": "Tabelle 1a, Zeile 1.3",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Vorhangfassade — Paneel: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Paneelausfachungen in Vorhangfassaden müssen ab GK 4 die Klasse A2-d1 erreichen (nahezu nichtbrennbar). Bei GK 4 und GK 5 ≤6 Geschoßen gelten Einschränkungen gemäß Fußnoten (12) und (13).",
+      "hinweise": [
+        "Sandwich-Paneele mit Polyurethan- oder Polystyrolkern erreichen A2-d1 in der Regel nicht — Alternativen mit Mineralwollkern verwenden."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-vorhangfassade",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "vorhangfassade_paneel" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: E",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "E"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: D",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "D"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: A2-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "A2-d1"
+          },
+          "fussnoten": [
+            {
+              "nummer": 12,
+              "text": "Einschränkung gemäß Fußnote der Tabelle."
+            },
+            {
+              "nummer": 13,
+              "text": "Zusätzliche Einschränkung gemäß Fußnote der Tabelle."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "kleiner_gleich", "wert": 6 }
+          ],
+          "headline": "GK 5 (≤6 Geschoße): A2-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "A2-d1"
+          },
+          "fussnoten": [
+            {
+              "nummer": 12,
+              "text": "Einschränkung gemäß Fußnote der Tabelle."
+            },
+            {
+              "nummer": 13,
+              "text": "Zusätzliche Einschränkung gemäß Fußnote der Tabelle."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "groesser_als", "wert": 6 }
+          ],
+          "headline": "GK 5 (>6 Geschoße): A2-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "A2-d1"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-1.3-abdichtung",
+      "fundstelle": "Tabelle 1a, Zeile 1.3 — Abdichtung",
+      "originaltext": "Vorhangfassaden — Einzelkomponenten — Abdichtung zwischen Ausfachung und Profil — GK 1: E, GK 2: E, GK 3: E, GK 4: E, GK 5 ≤6 Geschoße: E, GK 5 >6 Geschoße: E",
+      "punkt": "Tabelle 1a, Zeile 1.3",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Vorhangfassade — Abdichtung: einheitlich Klasse E",
+      "erklaerung": "Für die Abdichtung zwischen Ausfachung und Profil bei Vorhangfassaden gilt in allen Gebäudeklassen einheitlich die Euroklasse E. Es gibt keine Verschärfung mit steigender Gebäudeklasse.",
+      "hinweise": [
+        "Klasse E ist die geringste Anforderung — übliche Dichtungsbänder und Silikone erfüllen dies in der Regel."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-vorhangfassade",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "vorhangfassade_abdichtung" }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "klassifizierung",
+        "system": "brandverhalten_euroklasse",
+        "klasse": "E"
+      },
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-1.3-beschichtung",
+      "fundstelle": "Tabelle 1a, Zeile 1.3 — Beschichtung",
+      "originaltext": "Vorhangfassaden — Einzelkomponenten — Beschichtung (sofern nicht mit Profil oder Ausfachung mitgeprüft) — GK 1: E, GK 2: D, GK 3: D, GK 4: D, GK 5 ≤6 Geschoße: B, GK 5 >6 Geschoße: B",
+      "punkt": "Tabelle 1a, Zeile 1.3",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Vorhangfassade — Beschichtung: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Beschichtungen von Vorhangfassaden, die nicht bereits mit dem Profil oder der Ausfachung zusammen geprüft wurden, müssen ab GK 5 die Klasse B (schwer entflammbar) erreichen. Bis GK 4 genügt Klasse D.",
+      "hinweise": [
+        "Wenn die Beschichtung im Rahmen der Prüfung des Profils oder der Ausfachung mitbewertet wurde, entfällt die separate Anforderung nach dieser Zeile."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-vorhangfassade",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "vorhangfassade_beschichtung" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: E",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "E"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3", "GK_4"] },
+          "headline": "GK 2–4: D",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "D"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: B",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-1.4",
+      "fundstelle": "Tabelle 1a, Zeile 1.4",
+      "originaltext": "Sonstige Außenwandbekleidungen oder -beläge sowie nichttragende Außenbauteile — GK 1: E, GK 2: D-d1, GK 3: D-d1, GK 4: B-d1 (4), GK 5 ≤6 Geschoße: B-d1 (4), GK 5 >6 Geschoße: B-d1",
+      "punkt": "Tabelle 1a, Zeile 1.4",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Sonstige Außenwandbekleidungen/nichttragende Außenbauteile: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Außenwandbekleidungen und -beläge sowie nichttragende Außenbauteile, die nicht unter die Kategorien WDVS, vorgehängte Fassade oder Vorhangfassade fallen, müssen ab GK 4 mindestens B-d1 erreichen. In GK 4 und GK 5 ≤6 Geschoßen gilt Fußnote (4) mit einer Erleichterungsmöglichkeit.",
+      "hinweise": [
+        "Diese Auffangkategorie umfasst z. B. Holzverkleidungen, Putzträgerplatten, Markisen-Führungsschienen und ähnliche Elemente."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-fassade-sonstige",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "fassade_sonstige" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: E",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "E"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: D-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "D-d1"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: B-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B-d1"
+          },
+          "fussnoten": [
+            {
+              "nummer": 4,
+              "text": "Gilt nicht, wenn die Verwendung nichtbrennbarer Baustoffe aus bautechnischen Gründen nicht möglich ist und die Anforderungen durch geeignete Maßnahmen kompensiert werden."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "kleiner_gleich", "wert": 6 }
+          ],
+          "headline": "GK 5 (≤6 Geschoße): B-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B-d1"
+          },
+          "fussnoten": [
+            {
+              "nummer": 4,
+              "text": "Gilt nicht, wenn die Verwendung nichtbrennbarer Baustoffe aus bautechnischen Gründen nicht möglich ist und die Anforderungen durch geeignete Maßnahmen kompensiert werden."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "groesser_als", "wert": 6 }
+          ],
+          "headline": "GK 5 (>6 Geschoße): B-d1",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B-d1"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-1.5",
+      "fundstelle": "Tabelle 1a, Zeile 1.5",
+      "originaltext": "Gebäudetrennfugenmaterial — GK 1: E, GK 2: E, GK 3: E, GK 4: A2, GK 5 ≤6 Geschoße: A2, GK 5 >6 Geschoße: A2",
+      "punkt": "Tabelle 1a, Zeile 1.5",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Gebäudetrennfugenmaterial: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Material in Gebäudetrennfugen muss ab GK 4 nichtbrennbar (A2) sein. In den unteren Gebäudeklassen 1–3 genügt die Klasse E.",
+      "hinweise": [
+        "A2 wird in der Regel mit Mineralwolle-Fugenstreifen oder nichtbrennbaren Schaumstreifen erreicht."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-fassade-sonstige",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "gebaedetrennfuge" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_1", "GK_2", "GK_3"] },
+          "headline": "GK 1–3: E",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "E"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_4", "GK_5"] },
+          "headline": "GK 4–5: A2",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "A2"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-1.6",
+      "fundstelle": "Tabelle 1a, Zeile 1.6",
+      "originaltext": "Geländerfüllungen bei Balkonen, Loggien u. dgl. — GK 1: -, GK 2: -, GK 3: -, GK 4: B (4), GK 5 ≤6 Geschoße: B (4), GK 5 >6 Geschoße: B",
+      "punkt": "Tabelle 1a, Zeile 1.6",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Geländerfüllungen (Balkone/Loggien): Brandverhalten ab Gebäudeklasse 4",
+      "erklaerung": "Geländerfüllungen bei Balkonen und Loggien unterliegen erst ab GK 4 einer Brandverhaltensanforderung (Klasse B). In GK 1–3 bestehen keine Anforderungen. Bei GK 4 und GK 5 ≤6 Geschoßen gilt Fußnote (4) mit einer Erleichterungsmöglichkeit.",
+      "hinweise": [
+        "Glasfüllungen (ESG, VSG) erreichen in der Regel A1 und sind somit unproblematisch. HPL-Platten und Holz müssen ab GK 4 auf Klasse B geprüft werden."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-fassade-sonstige",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "gelaenderfuellung" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_1", "GK_2", "GK_3"] },
+          "headline": "GK 1–3: keine Anforderung",
+          "anforderung": {
+            "typ": "prosa",
+            "text": "Keine Anforderung an das Brandverhalten."
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: B",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B"
+          },
+          "fussnoten": [
+            {
+              "nummer": 4,
+              "text": "Gilt nicht, wenn die Verwendung nichtbrennbarer Baustoffe aus bautechnischen Gründen nicht möglich ist und die Anforderungen durch geeignete Maßnahmen kompensiert werden."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "kleiner_gleich", "wert": 6 }
+          ],
+          "headline": "GK 5 (≤6 Geschoße): B",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B"
+          },
+          "fussnoten": [
+            {
+              "nummer": 4,
+              "text": "Gilt nicht, wenn die Verwendung nichtbrennbarer Baustoffe aus bautechnischen Gründen nicht möglich ist und die Anforderungen durch geeignete Maßnahmen kompensiert werden."
+            }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "groesser_als", "wert": 6 }
+          ],
+          "headline": "GK 5 (>6 Geschoße): B",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-2.1.1",
+      "fundstelle": "Tabelle 1a, Zeile 2.1.1",
+      "originaltext": "Gänge und Treppen, ausgenommen innerhalb von Wohnungen — Wandbekleidungen — Gesamtsystem oder — GK 1: -, GK 2: D, GK 3: D, GK 4: C, GK 5 ≤6 Geschoße: B, GK 5 >6 Geschoße: B",
+      "punkt": "Tabelle 1a, Zeile 2.1.1",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Gänge/Treppen — Wandbekleidung (Gesamtsystem): Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Wandbekleidungen in Gängen und Treppen (außerhalb von Wohnungen) unterliegen ab GK 2 Anforderungen an das Brandverhalten. Ab GK 4 ist Klasse C, ab GK 5 Klasse B erforderlich. In GK 1 besteht keine Anforderung.",
+      "hinweise": [
+        "Innere Erschließungsflächen sind brandschutzkritisch, weil sie als Fluchtweg dienen.",
+        "Alternativ zum Gesamtsystem können die Einzelkomponenten separat nachgewiesen werden — siehe Zeile 2.1.2."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-gang-treppe",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "wandbekleidung_gang" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": {
+            "typ": "prosa",
+            "text": "Keine Anforderung an das Brandverhalten."
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: D",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "D"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: C",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "C"
+          }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: B",
+          "anforderung": {
+            "typ": "klassifizierung",
+            "system": "brandverhalten_euroklasse",
+            "klasse": "B"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-2.1.2-aussenschicht",
+      "fundstelle": "Tabelle 1a, Zeile 2.1.2 — Außenschicht",
+      "originaltext": "Gänge und Treppen, ausgenommen innerhalb von Wohnungen — Wandbekleidungen — Einzelkomponenten — Außenschicht — GK 1: -, GK 2: D, GK 3: D, GK 4: C (4), GK 5 ≤6 Geschoße: B, GK 5 >6 Geschoße: B",
+      "punkt": "Tabelle 1a, Zeile 2.1.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Gänge/Treppen — Wandbekleidung, Außenschicht: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Die Außenschicht von Wandbekleidungen in Gängen und Treppen muss ab GK 4 mindestens Klasse C erreichen, mit Erleichterung nach Fußnote (4). Ab GK 5 ist Klasse B erforderlich.",
+      "hinweise": [],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-gang-treppe",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "wandbekleidung_gang_aussenschicht" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: D",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "D" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: C",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "C" },
+          "fussnoten": [
+            { "nummer": 4, "text": "Gilt nicht, wenn die Verwendung nichtbrennbarer Baustoffe aus bautechnischen Gründen nicht möglich ist und die Anforderungen durch geeignete Maßnahmen kompensiert werden." }
+          ]
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: B",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "B" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-2.1.2-unterkonstruktion",
+      "fundstelle": "Tabelle 1a, Zeile 2.1.2 — Unterkonstruktion",
+      "originaltext": "Gänge und Treppen, ausgenommen innerhalb von Wohnungen — Wandbekleidungen — Einzelkomponenten — Unterkonstruktion — GK 1: -, GK 2: D, GK 3: D, GK 4: A2 (4), GK 5 ≤6 Geschoße: A2 (4), GK 5 >6 Geschoße: A2 (4)",
+      "punkt": "Tabelle 1a, Zeile 2.1.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Gänge/Treppen — Wandbekleidung, Unterkonstruktion: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Unterkonstruktionen von Wandbekleidungen in Gängen und Treppen müssen ab GK 4 nichtbrennbar (A2) sein. In GK 4 und GK 5 gilt Fußnote (4) mit einer Erleichterungsmöglichkeit.",
+      "hinweise": [],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-gang-treppe",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "wandbekleidung_gang_unterkonstruktion" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: D",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "D" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_4", "GK_5"] },
+          "headline": "GK 4–5: A2",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "A2" },
+          "fussnoten": [
+            { "nummer": 4, "text": "Gilt nicht, wenn die Verwendung nichtbrennbarer Baustoffe aus bautechnischen Gründen nicht möglich ist und die Anforderungen durch geeignete Maßnahmen kompensiert werden." }
+          ]
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-2.1.2-daemmschicht",
+      "fundstelle": "Tabelle 1a, Zeile 2.1.2 — Dämmschicht",
+      "originaltext": "Gänge und Treppen, ausgenommen innerhalb von Wohnungen — Wandbekleidungen — Einzelkomponenten — Dämmschicht bzw. Wärmedämmung — GK 1: -, GK 2: C, GK 3: C, GK 4: C, GK 5 ≤6 Geschoße: A2, GK 5 >6 Geschoße: A2",
+      "punkt": "Tabelle 1a, Zeile 2.1.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Gänge/Treppen — Wandbekleidung, Dämmschicht: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Die Wärmedämmung von Wandbekleidungen in Gängen und Treppen muss ab GK 2 mindestens Klasse C, ab GK 5 Klasse A2 (nichtbrennbar) erreichen.",
+      "hinweise": [],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-gang-treppe",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "wandbekleidung_gang_daemmschicht" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3", "GK_4"] },
+          "headline": "GK 2–4: C",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "C" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: A2",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "A2" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-2.2",
+      "fundstelle": "Tabelle 1a, Zeile 2.2",
+      "originaltext": "Gänge und Treppen, ausgenommen innerhalb von Wohnungen — abgehängte Decken — GK 1: -, GK 2: D-d0, GK 3: D-d0, GK 4: C-s1, d0 (4), GK 5 ≤6 Geschoße: B-s1, d0 (4), GK 5 >6 Geschoße: B-s1, d0",
+      "punkt": "Tabelle 1a, Zeile 2.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Gänge/Treppen — abgehängte Decken: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Abgehängte Decken in Gängen und Treppen (außerhalb von Wohnungen) müssen ab GK 2 Brandverhaltensanforderungen erfüllen. Neben der Euroklasse werden Zusatzanforderungen an Rauchentwicklung (s1) und Abtropfen (d0) gestellt. Ab GK 5 ist B-s1,d0 erforderlich.",
+      "hinweise": [
+        "d0 (kein Abtropfen/Abfallen) ist in Fluchtwegen besonders wichtig, weil herabfallende brennende Teile Personen gefährden.",
+        "s1 (geringe Rauchentwicklung) verbessert die Sichtbedingungen im Fluchtfall."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-gang-treppe",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "decke_abgehaengt_gang" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: D-d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "D-d0" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: C-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "C-s1,d0" },
+          "fussnoten": [
+            { "nummer": 4, "text": "Gilt nicht, wenn die Verwendung nichtbrennbarer Baustoffe aus bautechnischen Gründen nicht möglich ist und die Anforderungen durch geeignete Maßnahmen kompensiert werden." }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "kleiner_gleich", "wert": 6 }
+          ],
+          "headline": "GK 5 (≤6 Geschoße): B-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "B-s1,d0" },
+          "fussnoten": [
+            { "nummer": 4, "text": "Gilt nicht, wenn die Verwendung nichtbrennbarer Baustoffe aus bautechnischen Gründen nicht möglich ist und die Anforderungen durch geeignete Maßnahmen kompensiert werden." }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "groesser_als", "wert": 6 }
+          ],
+          "headline": "GK 5 (>6 Geschoße): B-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "B-s1,d0" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-2.3",
+      "fundstelle": "Tabelle 1a, Zeile 2.3",
+      "originaltext": "Gänge und Treppen, ausgenommen innerhalb von Wohnungen — Wand- und Deckenbeläge — GK 1: -, GK 2: D-d0, GK 3: D-d0, GK 4: C-s1, d0 (4), GK 5 ≤6 Geschoße: B-s1, d0 (4), GK 5 >6 Geschoße: B-s1, d0",
+      "punkt": "Tabelle 1a, Zeile 2.3",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Gänge/Treppen — Wand- und Deckenbeläge: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Wand- und Deckenbeläge in Gängen und Treppen (außerhalb von Wohnungen) unterliegen denselben Anforderungen wie abgehängte Decken in dieser Zone. Ab GK 4 ist C-s1,d0, ab GK 5 B-s1,d0 erforderlich.",
+      "hinweise": [
+        "Beläge umfassen Tapeten, Anstriche, Putz und Verkleidungen, sofern sie nicht als Bekleidung (Zeile 2.1) einzustufen sind."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-gang-treppe",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "wandbelag_gang" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: D-d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "D-d0" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: C-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "C-s1,d0" },
+          "fussnoten": [
+            { "nummer": 4, "text": "Gilt nicht, wenn die Verwendung nichtbrennbarer Baustoffe aus bautechnischen Gründen nicht möglich ist und die Anforderungen durch geeignete Maßnahmen kompensiert werden." }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "kleiner_gleich", "wert": 6 }
+          ],
+          "headline": "GK 5 (≤6 Geschoße): B-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "B-s1,d0" },
+          "fussnoten": [
+            { "nummer": 4, "text": "Gilt nicht, wenn die Verwendung nichtbrennbarer Baustoffe aus bautechnischen Gründen nicht möglich ist und die Anforderungen durch geeignete Maßnahmen kompensiert werden." }
+          ]
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "groesser_als", "wert": 6 }
+          ],
+          "headline": "GK 5 (>6 Geschoße): B-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "B-s1,d0" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-2.4",
+      "fundstelle": "Tabelle 1a, Zeile 2.4",
+      "originaltext": "Gänge und Treppen, ausgenommen innerhalb von Wohnungen — Bodenbeläge — GK 1: -, GK 2: Dfl, GK 3: Dfl, GK 4: Cfl-s1 (6), GK 5 ≤6 Geschoße: Cfl-s1, GK 5 >6 Geschoße: Cfl-s1",
+      "punkt": "Tabelle 1a, Zeile 2.4",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Gänge/Treppen — Bodenbeläge: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Bodenbeläge in Gängen und Treppen (außerhalb von Wohnungen) werden nach dem Bodenbelag-Klassifizierungssystem (fl-Klassen) bewertet. Ab GK 4 ist Cfl-s1 gefordert. In GK 4 gilt Fußnote (6).",
+      "hinweise": [
+        "fl-Klassen (flooring) sind speziell für Bodenbeläge — nicht verwechseln mit den Euroklassen für Wand-/Deckenbaustoffe."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-gang-treppe",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "bodenbelag_gang" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: Dfl",
+          "anforderung": { "typ": "klassifizierung", "system": "bodenbelag_euroklasse", "klasse": "Dfl" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: Cfl-s1",
+          "anforderung": { "typ": "klassifizierung", "system": "bodenbelag_euroklasse", "klasse": "Cfl-s1" },
+          "fussnoten": [
+            { "nummer": 6, "text": "Zusätzliche Bedingung gemäß Fußnote der Tabelle." }
+          ]
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: Cfl-s1",
+          "anforderung": { "typ": "klassifizierung", "system": "bodenbelag_euroklasse", "klasse": "Cfl-s1" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-2.5",
+      "fundstelle": "Tabelle 1a, Zeile 2.5",
+      "originaltext": "Gänge und Treppen, ausgenommen innerhalb von Wohnungen — Elektrische Kabel/Leitungen, freiliegend — GK 1: -, GK 2: Eca, GK 3: Eca, GK 4: Eca, GK 5 ≤6 Geschoße: Eca, GK 5 >6 Geschoße: Eca",
+      "punkt": "Tabelle 1a, Zeile 2.5",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Gänge/Treppen — freiliegende Kabel: einheitlich Eca ab Gebäudeklasse 2",
+      "erklaerung": "Freiliegende elektrische Kabel und Leitungen in Gängen und Treppen müssen ab GK 2 mindestens die Kabel-Euroklasse Eca erreichen. Die Anforderung ist in allen Gebäudeklassen ab GK 2 identisch. In GK 1 besteht keine Anforderung.",
+      "hinweise": [
+        "Eca ist die niedrigste Kabel-Euroklasse — sie fordert lediglich, dass der Kabel keine besonders leicht entzündlich ist. Höhere Klassen (Dca, Cca, B2ca) können in Sonderbauten gefordert sein."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-gang-treppe-kabel",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "kabel_freiliegend" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3", "GK_4", "GK_5"] },
+          "headline": "GK 2–5: Eca",
+          "anforderung": { "typ": "klassifizierung", "system": "kabel_euroklasse", "klasse": "Eca" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-3.1.1",
+      "fundstelle": "Tabelle 1a, Zeile 3.1.1",
+      "originaltext": "Treppenhäuser — Wandbekleidungen — Gesamtsystem oder — GK 1: -, GK 2: D, GK 3: C, GK 4: B, GK 5 ≤6 Geschoße: A2, GK 5 >6 Geschoße: A2",
+      "punkt": "Tabelle 1a, Zeile 3.1.1",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Treppenhaus — Wandbekleidung (Gesamtsystem): Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Wandbekleidungen in Treppenhäusern unterliegen strengeren Anforderungen als in allgemeinen Gängen. Ab GK 5 müssen sie nichtbrennbar (A2) sein. Die Abstufung erfolgt von D (GK 2) über C (GK 3) und B (GK 4) bis A2 (GK 5).",
+      "hinweise": [
+        "Treppenhäuser sind der primäre Flucht- und Rettungsweg — daher gelten hier die strengsten Anforderungen an Oberflächenbaustoffe.",
+        "Vergleich zu Gängen (Zeile 2.1.1): In Treppenhäusern ist die Anforderung durchgehend eine Stufe strenger."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-treppenhaus",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "wandbekleidung_treppenhaus" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_2" },
+          "headline": "GK 2: D",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "D" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_3" },
+          "headline": "GK 3: C",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "C" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: B",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "B" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: A2",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "A2" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-3.1.2-aussenschicht",
+      "fundstelle": "Tabelle 1a, Zeile 3.1.2 — Außenschicht",
+      "originaltext": "Treppenhäuser — Wandbekleidungen — Einzelkomponenten — Außenschicht — GK 1: -, GK 2: D, GK 3: C (4), GK 4: B, GK 5 ≤6 Geschoße: A2, GK 5 >6 Geschoße: A2",
+      "punkt": "Tabelle 1a, Zeile 3.1.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Treppenhaus — Wandbekleidung, Außenschicht: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Die Außenschicht von Wandbekleidungen in Treppenhäusern muss ab GK 3 mindestens C erreichen (mit Erleichterung nach Fußnote 4), ab GK 4 Klasse B und ab GK 5 Klasse A2.",
+      "hinweise": [],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-treppenhaus",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "wandbekleidung_treppenhaus_aussenschicht" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_2" },
+          "headline": "GK 2: D",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "D" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_3" },
+          "headline": "GK 3: C",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "C" },
+          "fussnoten": [
+            { "nummer": 4, "text": "Gilt nicht, wenn die Verwendung nichtbrennbarer Baustoffe aus bautechnischen Gründen nicht möglich ist und die Anforderungen durch geeignete Maßnahmen kompensiert werden." }
+          ]
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: B",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "B" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: A2",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "A2" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-3.1.2-unterkonstruktion",
+      "fundstelle": "Tabelle 1a, Zeile 3.1.2 — Unterkonstruktion",
+      "originaltext": "Treppenhäuser — Wandbekleidungen — Einzelkomponenten — Unterkonstruktion — GK 1: -, GK 2: D, GK 3: A2 (4), GK 4: A2 (4), GK 5 ≤6 Geschoße: A2 (4), GK 5 >6 Geschoße: A2 (4)",
+      "punkt": "Tabelle 1a, Zeile 3.1.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Treppenhaus — Wandbekleidung, Unterkonstruktion: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Die Unterkonstruktion von Wandbekleidungen in Treppenhäusern muss ab GK 3 nichtbrennbar (A2) sein. In allen Fällen ab GK 3 gilt Fußnote (4) mit Erleichterungsmöglichkeit. In GK 2 genügt D.",
+      "hinweise": [],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-treppenhaus",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "wandbekleidung_treppenhaus_unterkonstruktion" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_2" },
+          "headline": "GK 2: D",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "D" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_3", "GK_4", "GK_5"] },
+          "headline": "GK 3–5: A2",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "A2" },
+          "fussnoten": [
+            { "nummer": 4, "text": "Gilt nicht, wenn die Verwendung nichtbrennbarer Baustoffe aus bautechnischen Gründen nicht möglich ist und die Anforderungen durch geeignete Maßnahmen kompensiert werden." }
+          ]
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-3.1.2-daemmschicht",
+      "fundstelle": "Tabelle 1a, Zeile 3.1.2 — Dämmschicht",
+      "originaltext": "Treppenhäuser — Wandbekleidungen — Einzelkomponenten — Dämmschicht bzw. Wärmedämmung — GK 1: -, GK 2: C, GK 3: C, GK 4: A2, GK 5 ≤6 Geschoße: A2, GK 5 >6 Geschoße: A2",
+      "punkt": "Tabelle 1a, Zeile 3.1.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Treppenhaus — Wandbekleidung, Dämmschicht: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Die Wärmedämmung von Wandbekleidungen in Treppenhäusern muss ab GK 2 mindestens Klasse C, ab GK 4 Klasse A2 (nichtbrennbar) erreichen.",
+      "hinweise": [
+        "Im Vergleich zu Gängen (Zeile 2.1.2): Im Treppenhaus wird A2 bereits ab GK 4 gefordert (in Gängen erst ab GK 5)."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-treppenhaus",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "wandbekleidung_treppenhaus_daemmschicht" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_2", "GK_3"] },
+          "headline": "GK 2–3: C",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "C" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_4", "GK_5"] },
+          "headline": "GK 4–5: A2",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "A2" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-3.2",
+      "fundstelle": "Tabelle 1a, Zeile 3.2",
+      "originaltext": "Treppenhäuser — abgehängte Decken — GK 1: -, GK 2: D-s1, d0, GK 3: C-s1, d0, GK 4: B-s1, d0, GK 5 ≤6 Geschoße: A2-s1, d0, GK 5 >6 Geschoße: A2-s1, d0",
+      "punkt": "Tabelle 1a, Zeile 3.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Treppenhaus — abgehängte Decken: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Abgehängte Decken in Treppenhäusern müssen neben der Euroklasse auch geringe Rauchentwicklung (s1) und kein Abtropfen (d0) aufweisen. Ab GK 5 ist A2-s1,d0 (nahezu nichtbrennbar) gefordert.",
+      "hinweise": [
+        "Vergleich zu Gängen (Zeile 2.2): Im Treppenhaus ist die Anforderung durchgehend eine Stufe strenger."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-treppenhaus",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "decke_abgehaengt_treppenhaus" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_2" },
+          "headline": "GK 2: D-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "D-s1,d0" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_3" },
+          "headline": "GK 3: C-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "C-s1,d0" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: B-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "B-s1,d0" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: A2-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "A2-s1,d0" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-3.3",
+      "fundstelle": "Tabelle 1a, Zeile 3.3",
+      "originaltext": "Treppenhäuser — Wand- und Deckenbeläge — GK 1: -, GK 2: D-s1, d0, GK 3: C-s1, d0, GK 4: B-s1, d0, GK 5 ≤6 Geschoße: A2-s1, d0, GK 5 >6 Geschoße: A2-s1, d0",
+      "punkt": "Tabelle 1a, Zeile 3.3",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Treppenhaus — Wand- und Deckenbeläge: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Wand- und Deckenbeläge in Treppenhäusern unterliegen denselben strengen Anforderungen wie abgehängte Decken im Treppenhaus (Zeile 3.2). Die vollständige Abstufung reicht von D-s1,d0 (GK 2) bis A2-s1,d0 (GK 5).",
+      "hinweise": [],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-treppenhaus",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "wandbelag_treppenhaus" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_2" },
+          "headline": "GK 2: D-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "D-s1,d0" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_3" },
+          "headline": "GK 3: C-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "C-s1,d0" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: B-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "B-s1,d0" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: A2-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "A2-s1,d0" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-3.4.1",
+      "fundstelle": "Tabelle 1a, Zeile 3.4.1",
+      "originaltext": "Treppenhäuser — Bodenbeläge — in Treppenhäusern gemäß Tabelle 2a, 2b — GK 1: -, GK 2: Dfl-s1, GK 3: Cfl-s1, GK 4: Bfl-s1, GK 5 ≤6 Geschoße: A2fl-s1, GK 5 >6 Geschoße: A2fl-s1",
+      "punkt": "Tabelle 1a, Zeile 3.4.1",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Treppenhaus (Tab. 2a/2b) — Bodenbeläge: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Bodenbeläge in Treppenhäusern gemäß Tabelle 2a/2b werden nach dem Bodenbelag-Klassifizierungssystem bewertet und müssen die Zusatzanforderung s1 (geringe Rauchentwicklung) erfüllen. Ab GK 5 ist A2fl-s1 gefordert.",
+      "hinweise": [
+        "Tabelle 2a/2b regelt Treppenhäuser bestimmter Sicherheitskategorien — die Zuordnung ergibt sich aus dem Fluchtwegekonzept."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-treppenhaus-bodenbelag",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "bodenbelag_treppenhaus" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_2" },
+          "headline": "GK 2: Dfl-s1",
+          "anforderung": { "typ": "klassifizierung", "system": "bodenbelag_euroklasse", "klasse": "Dfl-s1" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_3" },
+          "headline": "GK 3: Cfl-s1",
+          "anforderung": { "typ": "klassifizierung", "system": "bodenbelag_euroklasse", "klasse": "Cfl-s1" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: Bfl-s1",
+          "anforderung": { "typ": "klassifizierung", "system": "bodenbelag_euroklasse", "klasse": "Bfl-s1" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: A2fl-s1",
+          "anforderung": { "typ": "klassifizierung", "system": "bodenbelag_euroklasse", "klasse": "A2fl-s1" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [
+        {
+          "ref_id": "_pending:oib-rl-2-tab2a",
+          "ref_fundstelle": "Tabelle 2a",
+          "beschreibung": "Zuordnung Treppenhaus-Typen und Sicherheitskategorien"
+        },
+        {
+          "ref_id": "_pending:oib-rl-2-tab2b",
+          "ref_fundstelle": "Tabelle 2b",
+          "beschreibung": "Zuordnung Treppenhaus-Typen und Sicherheitskategorien"
+        }
+      ],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-3.4.2",
+      "fundstelle": "Tabelle 1a, Zeile 3.4.2",
+      "originaltext": "Treppenhäuser — Bodenbeläge — in Treppenhäusern gemäß Tabelle 3 — GK 1: -, GK 2: Dfl-s1, GK 3: Cfl-s1 (6), GK 4: Cfl-s1, GK 5 ≤6 Geschoße: Bfl-s1, GK 5 >6 Geschoße: A2fl-s1",
+      "punkt": "Tabelle 1a, Zeile 3.4.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Treppenhaus (Tab. 3) — Bodenbeläge: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Bodenbeläge in Treppenhäusern gemäß Tabelle 3 haben abgestufte Anforderungen. Im Gegensatz zu Tabelle 2a/2b-Treppenhäusern sind die Anforderungen hier etwas geringer: GK 5 ≤6 Geschoße erfordert nur Bfl-s1 statt A2fl-s1.",
+      "hinweise": [
+        "Bei GK 3 gilt Fußnote (6) — eine Einschränkung, die im konkreten Fußnotentext der OIB-RL 2 nachgelesen werden muss."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-treppenhaus-bodenbelag",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "bodenbelag_treppenhaus_tab3" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_2" },
+          "headline": "GK 2: Dfl-s1",
+          "anforderung": { "typ": "klassifizierung", "system": "bodenbelag_euroklasse", "klasse": "Dfl-s1" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_3" },
+          "headline": "GK 3: Cfl-s1",
+          "anforderung": { "typ": "klassifizierung", "system": "bodenbelag_euroklasse", "klasse": "Cfl-s1" },
+          "fussnoten": [
+            { "nummer": 6, "text": "Zusätzliche Bedingung gemäß Fußnote der Tabelle." }
+          ]
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: Cfl-s1",
+          "anforderung": { "typ": "klassifizierung", "system": "bodenbelag_euroklasse", "klasse": "Cfl-s1" }
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "kleiner_gleich", "wert": 6 }
+          ],
+          "headline": "GK 5 (≤6 Geschoße): Bfl-s1",
+          "anforderung": { "typ": "klassifizierung", "system": "bodenbelag_euroklasse", "klasse": "Bfl-s1" }
+        },
+        {
+          "wenn_alle": [
+            { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+            { "parameter": "oberirdische_geschosse", "operator": "groesser_als", "wert": 6 }
+          ],
+          "headline": "GK 5 (>6 Geschoße): A2fl-s1",
+          "anforderung": { "typ": "klassifizierung", "system": "bodenbelag_euroklasse", "klasse": "A2fl-s1" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [
+        {
+          "ref_id": "_pending:oib-rl-2-tab3",
+          "ref_fundstelle": "Tabelle 3",
+          "beschreibung": "Zuordnung Treppenhaus-Typen mit Sicherheitsschleuse"
+        }
+      ],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-3.5",
+      "fundstelle": "Tabelle 1a, Zeile 3.5",
+      "originaltext": "Treppenhäuser — Dämmstoffe von Leitungen — GK 1: -, GK 2: D-s1, d0, GK 3: C-s1, d0, GK 4: B-s1, d0, GK 5 ≤6 Geschoße: A2-s1, d0, GK 5 >6 Geschoße: A2-s1, d0",
+      "punkt": "Tabelle 1a, Zeile 3.5",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Treppenhaus — Dämmstoffe von Leitungen: Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Dämmstoffe von Leitungen in Treppenhäusern unterliegen denselben strengen Anforderungen wie Wand-/Deckenbeläge und abgehängte Decken im Treppenhaus. Ab GK 5 ist A2-s1,d0 erforderlich.",
+      "hinweise": [
+        "Betrifft z. B. Rohrisolierungen, die im Treppenhaus sichtbar verlaufen. Kaschierungen und Ummantelungen zählen zum Dämmstoff."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-treppenhaus",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "erschliessung_vertikal",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "daemmung_leitung" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_1" },
+          "headline": "GK 1: keine Anforderung",
+          "anforderung": { "typ": "prosa", "text": "Keine Anforderung an das Brandverhalten." }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_2" },
+          "headline": "GK 2: D-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "D-s1,d0" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_3" },
+          "headline": "GK 3: C-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "C-s1,d0" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: B-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "B-s1,d0" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: A2-s1,d0",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "A2-s1,d0" }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-4.1",
+      "fundstelle": "Tabelle 1a, Zeile 4.1",
+      "originaltext": "Dächer mit einer Neigung ≤ 60° — Dacheindeckung bzw. Bedachung (7) — GK 1: BROOF(t1), GK 2: BROOF(t1), GK 3: BROOF(t1), GK 4: BROOF(t1), GK 5 ≤6 Geschoße: BROOF(t1) (8), GK 5 >6 Geschoße: BROOF(t1) (8)",
+      "punkt": "Tabelle 1a, Zeile 4.1",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Dacheindeckung (≤60° Neigung): BROOF(t1) in allen Gebäudeklassen",
+      "erklaerung": "Dacheindeckungen und Bedachungen bei Dächern mit einer Neigung ≤60° müssen in allen Gebäudeklassen die Dachklasse BROOF(t1) erreichen. Bei GK 5 gelten zusätzlich die Bedingungen gemäß Fußnoten (7) und (8).",
+      "hinweise": [
+        "BROOF(t1) = widerstandsfähig gegen Flugfeuer und strahlende Wärme. Die meisten marktüblichen Dacheindeckungen (Ziegel, Metall, Bitumenbahnen) erfüllen dies.",
+        "Fußnote (7) enthält eine Definition/Eingrenzung der Bedachung. Fußnote (8) definiert zusätzliche Bedingungen bei GK 5."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-dach",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "dacheindeckung" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_1", "GK_2", "GK_3", "GK_4"] },
+          "headline": "GK 1–4: BROOF(t1)",
+          "anforderung": { "typ": "klassifizierung", "system": "dachverhalten", "klasse": "BROOF(t1)" },
+          "fussnoten": [
+            { "nummer": 7, "text": "Definition der Dacheindeckung bzw. Bedachung gemäß Fußnote der Tabelle." }
+          ]
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: BROOF(t1)",
+          "anforderung": { "typ": "klassifizierung", "system": "dachverhalten", "klasse": "BROOF(t1)" },
+          "fussnoten": [
+            { "nummer": 7, "text": "Definition der Dacheindeckung bzw. Bedachung gemäß Fußnote der Tabelle." },
+            { "nummer": 8, "text": "Zusätzliche Bedingung bei GK 5 gemäß Fußnote der Tabelle." }
+          ]
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    },
+    {
+      "id": "oib-rl-2-tab1a-4.2",
+      "fundstelle": "Tabelle 1a, Zeile 4.2",
+      "originaltext": "Dächer mit einer Neigung ≤ 60° — Dämmschicht bzw. Wärmedämmung in der Dachkonstruktion — GK 1: E, GK 2: E, GK 3: E, GK 4: B (9), GK 5 ≤6 Geschoße: B (10), GK 5 >6 Geschoße: B (10)",
+      "punkt": "Tabelle 1a, Zeile 4.2",
+      "abschnitt": "Tabelle 1a",
+      "abschnitt_titel": "Allgemeine Anforderungen an das Brandverhalten",
+      "headline": "Dachdämmung (≤60° Neigung): Brandverhalten je Gebäudeklasse",
+      "erklaerung": "Die Wärmedämmung in Dachkonstruktionen mit ≤60° Neigung darf in GK 1–3 die Klasse E aufweisen. Ab GK 4 ist Klasse B gefordert, wobei in GK 4 gemäß Fußnote (9) und in GK 5 gemäß Fußnote (10) Erleichterungen bzw. Einschränkungen gelten.",
+      "hinweise": [
+        "E in GK 1–3 erlaubt z. B. EPS- und XPS-Dämmstoffe ohne besondere Brandschutzmaßnahmen im Dachbereich.",
+        "B ab GK 4 schränkt die Dämmstoffwahl ein — Steinwolle oder PUR mit entsprechender Klassifizierung."
+      ],
+      "pruefhinweise": [],
+      "thema": "brandverhalten-dach",
+      "hauptkategorie": "B",
+      "unterkategorie": "B.01",
+      "unterkategorie_label": "Brandverhalten von Baustoffen",
+      "planungsphase": "entwurf",
+      "raeumliche_kategorie": "gebaeudehuelle_energie",
+      "bedingungen": [
+        { "parameter": "bauteil", "operator": "ist", "wert": "daemmung_dach" }
+      ],
+      "varianten": [
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist_eines_von", "werte": ["GK_1", "GK_2", "GK_3"] },
+          "headline": "GK 1–3: E",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "E" }
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_4" },
+          "headline": "GK 4: B",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "B" },
+          "fussnoten": [
+            { "nummer": 9, "text": "Erleichterung/Einschränkung bei GK 4 gemäß Fußnote der Tabelle." }
+          ]
+        },
+        {
+          "wenn": { "parameter": "gebaeudeklasse", "operator": "ist", "wert": "GK_5" },
+          "headline": "GK 5: B",
+          "anforderung": { "typ": "klassifizierung", "system": "brandverhalten_euroklasse", "klasse": "B" },
+          "fussnoten": [
+            { "nummer": 10, "text": "Erleichterung/Einschränkung bei GK 5 gemäß Fußnote der Tabelle." }
+          ]
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "status": "llm_bearbeitet",
+      "is_entfallen": false
+    }
+  ],
+  "_neue_parameter_vorschlaege": [
+    {
+      "name": "bauteil",
+      "grund": "Der Parameter 'bauteil' ist in der Registry als 'geplant' mit '_wird_finalisiert_' markiert. Für die Aufbereitung von Tabelle 1a werden folgende konkreten Werte benötigt. Vorschlag zur Finalisierung der Werteliste:",
+      "moegliche_werte": [
+        "aussenwand_wdvs",
+        "fassade_vorgehaengt_hinterlueftet",
+        "fassade_vorgehaengt_aussenschicht",
+        "fassade_vorgehaengt_unterkonstruktion",
+        "fassade_vorgehaengt_daemmschicht",
+        "vorhangfassade_profil",
+        "vorhangfassade_verglasung",
+        "vorhangfassade_paneel",
+        "vorhangfassade_abdichtung",
+        "vorhangfassade_beschichtung",
+        "fassade_sonstige",
+        "gebaedetrennfuge",
+        "gelaenderfuellung",
+        "wandbekleidung_gang",
+        "wandbekleidung_gang_aussenschicht",
+        "wandbekleidung_gang_unterkonstruktion",
+        "wandbekleidung_gang_daemmschicht",
+        "decke_abgehaengt_gang",
+        "wandbelag_gang",
+        "bodenbelag_gang",
+        "kabel_freiliegend",
+        "wandbekleidung_treppenhaus",
+        "wandbekleidung_treppenhaus_aussenschicht",
+        "wandbekleidung_treppenhaus_unterkonstruktion",
+        "wandbekleidung_treppenhaus_daemmschicht",
+        "decke_abgehaengt_treppenhaus",
+        "wandbelag_treppenhaus",
+        "bodenbelag_treppenhaus",
+        "bodenbelag_treppenhaus_tab3",
+        "daemmung_leitung",
+        "dacheindeckung",
+        "daemmung_dach"
+      ]
+    }
+  ],
+  "_neue_unterkategorien": []
+}

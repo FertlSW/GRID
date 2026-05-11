@@ -1,0 +1,2952 @@
+{
+  "meta": {
+    "schema_version": "0.2",
+    "quelle": "Bauordnung für Wien",
+    "quelle_kurz": "BO Wien",
+    "fassung": "11.03.2026",
+    "teil_nummer": 8,
+    "teil_titel": "Bauliche Ausnützbarkeit der Bauplätze",
+    "paragraphen_range": "§§ 75–86",
+    "anzahl_rechtssaetze": 80,
+    "generiert_von": "Grid.legal Parser v0.2",
+    "statistik_anreicherung": {
+      "manuelle_headlines": 80,
+      "mit_spezifischen_bedingungen": 42,
+      "mit_varianten": 3,
+      "mit_quantitativer_anforderung": 18,
+      "mit_pruefhinweisen": 19
+    },
+    "hinweis": "Bedingungen, Varianten und Anforderungen sind manuell interpretiert und müssen von einer Fachperson (Architekt/Jurist) vor Produktivsetzung geprüft werden. Siehe Feld 'pruefhinweise' pro Rechtssatz."
+  },
+  "paragraphen_uebersicht": [
+    {
+      "nummer": "75",
+      "ueberschrift": "Bauklasseneinteilung, zulässige Gebäudehöhe",
+      "anzahl_absaetze": 11
+    },
+    {
+      "nummer": "76",
+      "ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "anzahl_absaetze": 16
+    },
+    {
+      "nummer": "77",
+      "ueberschrift": "Strukturen (§ 77 - städtebauliche Sonderregelungen)",
+      "anzahl_absaetze": 7
+    },
+    {
+      "nummer": "78",
+      "ueberschrift": "(entfallen)",
+      "anzahl_absaetze": 1
+    },
+    {
+      "nummer": "79",
+      "ueberschrift": "Vorgärten, Abstandsflächen und gärtnerisch auszugestaltende Flächen",
+      "anzahl_absaetze": 9
+    },
+    {
+      "nummer": "80",
+      "ueberschrift": "Bebaute Fläche",
+      "anzahl_absaetze": 2
+    },
+    {
+      "nummer": "81",
+      "ueberschrift": "Gebäudehöhe und Gebäudeumrisse; Bemessung",
+      "anzahl_absaetze": 8
+    },
+    {
+      "nummer": "82",
+      "ueberschrift": "Nebengebäude",
+      "anzahl_absaetze": 6
+    },
+    {
+      "nummer": "82a",
+      "ueberschrift": "Nebengebäude für technische Infrastruktur",
+      "anzahl_absaetze": 1
+    },
+    {
+      "nummer": "83",
+      "ueberschrift": "Bauteile vor der Baulinie oder Straßenfluchtlinie",
+      "anzahl_absaetze": 5
+    },
+    {
+      "nummer": "84",
+      "ueberschrift": "Bauteile in Abstandsflächen, Vorgärten, Abständen",
+      "anzahl_absaetze": 4
+    },
+    {
+      "nummer": "85",
+      "ueberschrift": "Äußere Gestaltung von Bauwerken",
+      "anzahl_absaetze": 7
+    },
+    {
+      "nummer": "86",
+      "ueberschrift": "Einfriedungen",
+      "anzahl_absaetze": 3
+    }
+  ],
+  "rechtssaetze": [
+    {
+      "id": "bo-wien-para-75-abs1",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "75",
+      "absatz": "1",
+      "ziffer": null,
+      "fundstelle": "§ 75 Abs. 1",
+      "paragraph_ueberschrift": "Bauklasseneinteilung, zulässige Gebäudehöhe",
+      "headline": "Bauklassen bestimmen die Gebäudehöhe in Wohn- und Mischgebieten",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 93 Zeichen.",
+      "originaltext": "Die Bauklasseneinteilung setzt die Gebäudehöhe für Wohngebiete und gemischte Baugebiete fest.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "widmung",
+          "operator": "ist_eines_von",
+          "werte": [
+            "wohngebiet",
+            "gemischtes_baugebiet"
+          ]
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "prosa",
+        "text": "Die Bauklasseneinteilung (I–VI) legt die zulässige Gebäudehöhe fest."
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-75-abs2",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "75",
+      "absatz": "2",
+      "ziffer": null,
+      "fundstelle": "§ 75 Abs. 2",
+      "paragraph_ueberschrift": "Bauklasseneinteilung, zulässige Gebäudehöhe",
+      "headline": "Mindest- und Höchsthöhen je Bauklasse (I bis V)",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 405 Zeichen.",
+      "originaltext": "Die Gebäudehöhe hat, soweit sich nicht nach den Bestimmungen der Abs. 4 bis 6 und des § 81 sowie des Bebauungsplanes eine andere Gebäudehöhe ergibt, zu betragen: in Bauklasse I mindestens 2,5 m, höchstens 9 m, in Bauklasse II mindestens 2,5 m, höchstens 12 m, in Bauklasse III mindestens 9 m, höchstens 16 m, in Bauklasse IV mindestens 12 m, höchstens 21 m, in Bauklasse V mindestens 16 m, höchstens 26 m.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "widmung",
+          "operator": "ist_eines_von",
+          "werte": [
+            "wohngebiet",
+            "gemischtes_baugebiet"
+          ]
+        }
+      ],
+      "varianten": [
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist",
+            "wert": "BK_I"
+          },
+          "headline": "Bauklasse I: Gebäudehöhe 2,5 – 9 m",
+          "anforderung": {
+            "typ": "gebaeudehoehe",
+            "min": 2.5,
+            "max": 9,
+            "einheit": "m"
+          }
+        },
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist",
+            "wert": "BK_II"
+          },
+          "headline": "Bauklasse II: Gebäudehöhe 2,5 – 12 m",
+          "anforderung": {
+            "typ": "gebaeudehoehe",
+            "min": 2.5,
+            "max": 12,
+            "einheit": "m"
+          }
+        },
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist",
+            "wert": "BK_III"
+          },
+          "headline": "Bauklasse III: Gebäudehöhe 9 – 16 m",
+          "anforderung": {
+            "typ": "gebaeudehoehe",
+            "min": 9,
+            "max": 16,
+            "einheit": "m"
+          }
+        },
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist",
+            "wert": "BK_IV"
+          },
+          "headline": "Bauklasse IV: Gebäudehöhe 12 – 21 m",
+          "anforderung": {
+            "typ": "gebaeudehoehe",
+            "min": 12,
+            "max": 21,
+            "einheit": "m"
+          }
+        },
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist",
+            "wert": "BK_V"
+          },
+          "headline": "Bauklasse V: Gebäudehöhe 16 – 26 m",
+          "anforderung": {
+            "typ": "gebaeudehoehe",
+            "min": 16,
+            "max": 26,
+            "einheit": "m"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [
+        {
+          "ref_id": "bo-wien-para-81",
+          "ref_text": "§ 81",
+          "beschreibung": "Bemessung der Gebäudehöhe"
+        }
+      ],
+      "hinweise": [
+        "Abweichende Gebäudehöhen sind nach Abs. 4–6, § 81 und Bebauungsplan möglich."
+      ],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-75-abs3",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "75",
+      "absatz": "3",
+      "ziffer": null,
+      "fundstelle": "§ 75 Abs. 3",
+      "paragraph_ueberschrift": "Bauklasseneinteilung, zulässige Gebäudehöhe",
+      "headline": "Bauklasse VI: Mindesthöhe 21 m, Höchstwert laut Bebauungsplan",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 155 Zeichen.",
+      "originaltext": "In der Bauklasse VI beträgt die Gebäudehöhe mindestens 21 m; der Bebauungsplan hat die einzuhaltenden Gebäudehöhen innerhalb zweier Grenzmaße festzusetzen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauklasse",
+          "operator": "ist",
+          "wert": "BK_VI"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "gebaeudehoehe",
+        "min": 21,
+        "einheit": "m",
+        "zusatz": "Höchstwert ist dem Bebauungsplan zu entnehmen."
+      },
+      "querverweise": [],
+      "hinweise": [
+        "Bei Bauklasse VI muss der Bebauungsplan die einzuhaltenden Gebäudehöhen innerhalb zweier Grenzmaße festsetzen."
+      ],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-75-abs4",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "75",
+      "absatz": "4",
+      "ziffer": null,
+      "fundstelle": "§ 75 Abs. 4",
+      "paragraph_ueberschrift": "Bauklasseneinteilung, zulässige Gebäudehöhe",
+      "headline": "Gebäudehöhe an Fluchtlinien: Abhängigkeit vom Fluchtlinien-Abstand",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 1339 Zeichen.",
+      "originaltext": "Bei Gebäuden an der Baulinie, Straßenfluchtlinie, Verkehrsfluchtlinie oder der diesen Fluchtlinien zunächstgelegenen Baufluchtlinie darf, auch wenn sich nach den Bebauungsbestimmungen eine größere Gebäudehöhe ergäbe, an diesen Linien die Gebäudehöhe nicht mehr betragen als: a) in der Bauklasse I und II das um 2 m vergrößerte Maß des Abstandes dieser Fluchtlinien; b) in der Bauklasse III das um 3 m vergrößerte Maß des Abstandes dieser Fluchtlinien; c) in der Bauklasse IV bei einem Abstand dieser Fluchtlinien bis 15 m das um 3 m vergrößerte Maß des Abstandes dieser Fluchtlinien, bei einem Abstand dieser Fluchtlinien von mehr als 15 m das um 4 m vergrößerte Maß des Abstandes dieser Fluchtlinien; d) in der Bauklasse V und VI das doppelte Maß des Abstandes dieser Fluchtlinien. Bei ungleichem Abstand dieser Fluchtlinien gilt für diese Berechnung das mittlere Maß. Sind für gegenüberliegende Grundflächen verschiedene Bauklassen festgesetzt, ist für die Bemessung der Gebäudehöhe die Regelung für die niedrigere Bauklasse anzuwenden. Ist für Grundflächen an einer Straßenseite keine Bauklasse festgesetzt, ist für die Bemessung der Gebäudehöhe die Regelung der an der anderen Straßenseite festgesetzten Bauklasse anzuwenden. Ist für Grundflächen an beiden Straßenseiten keine Bauklasse festgesetzt, gelten die Bestimmungen der lit. d.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauplatz_an_fluchtlinie",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist_eines_von",
+            "werte": [
+              "BK_I",
+              "BK_II"
+            ]
+          },
+          "headline": "BK I / II: Fluchtlinienabstand + 2 m",
+          "anforderung": {
+            "typ": "prosa",
+            "text": "Gebäudehöhe = Fluchtlinienabstand + 2 m"
+          }
+        },
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist",
+            "wert": "BK_III"
+          },
+          "headline": "BK III: Fluchtlinienabstand + 3 m",
+          "anforderung": {
+            "typ": "prosa",
+            "text": "Gebäudehöhe = Fluchtlinienabstand + 3 m"
+          }
+        },
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist",
+            "wert": "BK_IV"
+          },
+          "headline": "BK IV: Fluchtlinienabstand + 3 m (bis 15 m) bzw. + 4 m (ab 15 m)",
+          "anforderung": {
+            "typ": "prosa",
+            "text": "Fluchtlinienabstand bis 15 m: +3 m · ab 15 m: +4 m"
+          }
+        },
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist_eines_von",
+            "werte": [
+              "BK_V",
+              "BK_VI"
+            ]
+          },
+          "headline": "BK V / VI: Doppeltes Maß des Fluchtlinien-Abstandes",
+          "anforderung": {
+            "typ": "prosa",
+            "text": "Gebäudehöhe = 2 × Fluchtlinienabstand"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Spezialfälle für ungleichen Abstand und unterschiedliche Bauklassen auf gegenüberliegenden Seiten sind hier nicht als Varianten abgebildet — stehen nur im Originaltext."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-75-abs4a",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "75",
+      "absatz": "4a",
+      "ziffer": null,
+      "fundstelle": "§ 75 Abs. 4a",
+      "paragraph_ueberschrift": "Bauklasseneinteilung, zulässige Gebäudehöhe",
+      "headline": "Ausnahme von Abs. 4 bei fehlender Gegenüber-Bebauung oder städtebaulichen Schwerpunkten",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 608 Zeichen.",
+      "originaltext": "Beschränkungen, die sich aus Abs. 4 ergeben, gelten nicht, wenn auf der anderen Straßenseite im Bebauungsplan innerhalb der für eine Bemessung der zulässigen Gebäudehöhe nach Abs. 4 relevanten Entfernung keine Bebauungsmöglichkeit vorgesehen ist sowie bei Gebäuden auf Grundflächen, auf denen nach dem Bebauungsplan ein städtebaulicher Schwerpunkt gesetzt werden soll (§ 5 Abs. 4 lit. a) oder ein Strukturgebiet festgesetzt ist (§ 77 Abs. 1), wenn für Aufenthaltsräume, die nach den Bebauungsbestimmungen von Liegenschaften im Nahbereich zulässig sind, zumindest der seitliche Lichteinfall gewährleistet ist.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauplatz_an_fluchtlinie",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Komplexe Ausnahmeregel — sollte später fein-granular aufgeteilt werden."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-75-abs4b",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "75",
+      "absatz": "4b",
+      "ziffer": null,
+      "fundstelle": "§ 75 Abs. 4b",
+      "paragraph_ueberschrift": "Bauklasseneinteilung, zulässige Gebäudehöhe",
+      "headline": "Wenn Gebäude nicht an Fluchtlinie: Abstand zur gegenüberliegenden Fluchtlinie maßgeblich",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 349 Zeichen.",
+      "originaltext": "Wird ein Gebäude nicht an der Baulinie, Straßenfluchtlinie, Verkehrsfluchtlinie oder der diesen Fluchtlinien zunächst gelegenen Baufluchtlinie errichtet, ist die zulässige Gebäudehöhe nach Abs. 4 mit der Maßgabe zu ermitteln, dass der Abstand zwischen dem Gebäude und der auf der anderen Straßenseite festgelegten Fluchtlinie zu Grunde zu legen ist.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauplatz_an_fluchtlinie",
+          "operator": "ist_nicht",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-75-abs5",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "75",
+      "absatz": "5",
+      "ziffer": null,
+      "fundstelle": "§ 75 Abs. 5",
+      "paragraph_ueberschrift": "Bauklasseneinteilung, zulässige Gebäudehöhe",
+      "headline": "Eckbauplätze: Höhere Front darf auf bis zu 15 m auch an der anderen Hauptfront genutzt werden",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 208 Zeichen.",
+      "originaltext": "Ergibt sich bei Anwendung der Bestimmung des Abs. 4 für Eckbauplätze eine verschiedene Höhe der Hauptfronten, so ist die größere Höhe auf eine Länge von höchstens 15 m auch für die andere Hauptfront zulässig.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "abstand",
+        "max": 15,
+        "einheit": "m",
+        "bezug": "hauptfront_laenge"
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Dies ist nur anwendbar bei Eckbauplätzen — ggf. als eigener Wizard-Parameter ergänzen."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-75-abs6",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "75",
+      "absatz": "6",
+      "ziffer": null,
+      "fundstelle": "§ 75 Abs. 6",
+      "paragraph_ueberschrift": "Bauklasseneinteilung, zulässige Gebäudehöhe",
+      "headline": "Schutzzonen: Gebäudehöhe richtet sich nur nach Bebauungsplan bzw. Bauklasse",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 148 Zeichen.",
+      "originaltext": "In Schutzzonen gilt unabhängig vom Abstand der Fluchtlinien die im Bebauungsplan gemäß § 5 Abs. 4 oder durch die Bauklasse festgesetzte Gebäudehöhe.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "in_schutzzone",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-75-abs7",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "75",
+      "absatz": "7",
+      "ziffer": null,
+      "fundstelle": "§ 75 Abs. 7",
+      "paragraph_ueberschrift": "Bauklasseneinteilung, zulässige Gebäudehöhe",
+      "headline": "Gartensiedlungsgebiete: Gebäudehöhe maximal 5,5 m",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 124 Zeichen.",
+      "originaltext": "In Gartensiedlungsgebieten darf die Gebäudehöhe 5,50 m nicht überschreiten, sofern der Bebauungsplan nicht anderes bestimmt.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "widmung",
+          "operator": "ist",
+          "wert": "gartensiedlungsgebiet"
+        },
+        {
+          "parameter": "bebauungsplan_abweichend",
+          "operator": "ist_nicht",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "gebaeudehoehe",
+        "max": 5.5,
+        "einheit": "m"
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-75-abs8",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "75",
+      "absatz": "8",
+      "ziffer": null,
+      "fundstelle": "§ 75 Abs. 8",
+      "paragraph_ueberschrift": "Bauklasseneinteilung, zulässige Gebäudehöhe",
+      "headline": "Erholungsgebiet / Badehütten: Höchstens 4 m über anschließendem Gelände",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 208 Zeichen.",
+      "originaltext": "Im Erholungsgebiet - Grundflächen für Badehütten darf, wenn der Bebauungsplan nicht anderes bestimmt (§ 5 Abs. 4 lit. e), kein Bauteil den tiefsten Punkt des anschließenden Geländes um mehr als 4 m überragen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "widmung",
+          "operator": "ist",
+          "wert": "erholungsgebiet"
+        },
+        {
+          "parameter": "bebauungsplan_abweichend",
+          "operator": "ist_nicht",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "gebaeudehoehe",
+        "max": 4,
+        "einheit": "m",
+        "bezug": "tiefster_punkt_gelaende"
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Bezieht sich nur auf 'Grundflächen für Badehütten' — Unterkategorie der Erholungsgebiete."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-75-abs9",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "75",
+      "absatz": "9",
+      "ziffer": null,
+      "fundstelle": "§ 75 Abs. 9",
+      "paragraph_ueberschrift": "Bauklasseneinteilung, zulässige Gebäudehöhe",
+      "headline": "(Aufgehoben durch VfGH-Erkenntnis 2007)",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 176 Zeichen.",
+      "originaltext": "Aufhebung des § 75 Abs. 9 durch Erkenntnis des VfGH vom 9.3.2007, Zl. G 103/05-10 und G 1/07-9; kundgemacht im LGBl Nr. 19/2007 vom 15.5.2007 Bauweisen; bauliche Ausnützbarkeit",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [],
+      "varianten": [],
+      "anforderung": {
+        "typ": "prosa",
+        "text": "Durch VfGH-Erkenntnis vom 9.3.2007 aufgehoben."
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs1",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "1",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 1",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Zulässige Bauweisen im Bebauungsplan: offen / gekuppelt / Gruppe / geschlossen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 197 Zeichen.",
+      "originaltext": "In den Bebauungsplänen können folgende Bauweisen ausgewiesen werden: a) offene Bauweise, b) gekuppelte Bauweise, c) offene oder gekuppelte Bauweise, d) Gruppenbauweise und e) geschlossene Bauweise.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "prosa",
+        "text": "Bebauungsplan kann festlegen: offen, gekuppelt, offen oder gekuppelt, Gruppe, geschlossen."
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs2",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "2",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 2",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Offene Bauweise: Gebäude freistehend, Mindestabstand nach § 79 Abs. 3",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 149 Zeichen.",
+      "originaltext": "In der offenen Bauweise müssen die Gebäude freistehend in den im § 79 Abs. 3 festgesetzten Mindestabständen von den Bauplatzgrenzen errichtet werden.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauweise",
+          "operator": "ist",
+          "wert": "offen"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [
+        {
+          "ref_id": "bo-wien-para-79-abs3",
+          "ref_text": "§ 79 Abs. 3",
+          "beschreibung": "Mindestabstände zu Nachbargrenzen"
+        }
+      ],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs3",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "3",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 3",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Gekuppelte Bauweise: Anbauen an gemeinsame Bauplatzgrenze",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 301 Zeichen.",
+      "originaltext": "In der gekuppelten Bauweise müssen die Gebäude auf zwei benachbarten Bauplätzen an der gemeinsamen Bauplatzgrenze aneinandergebaut und nach allen anderen Seiten freistehend errichtet werden. Die Errichtung freistehender Gebäude ist dann zulässig, wenn das örtliche Stadtbild nicht weiter gestört wird.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauweise",
+          "operator": "ist",
+          "wert": "gekuppelt"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs4",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "4",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 4",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Wahl-Bauweise: Abweichen von offener/gekuppelter Bauweise erlaubt",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 251 Zeichen.",
+      "originaltext": "Sieht der Bebauungsplan die offene oder gekuppelte Bauweise vor, so darf das Gebäude an eine Bauplatzgrenze angebaut werden, wenn der Eigentümer des an diese Bauplatzgrenze anrainenden, bereits bestehenden oder noch zu schaffenden Bauplatzes zustimmt.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauweise",
+          "operator": "ist_eines_von",
+          "werte": [
+            "offen",
+            "gekuppelt",
+            "offen_oder_gekuppelt"
+          ]
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs5",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "5",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 5",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Gruppenbauweise: Anbauen an mehrere Nachbargrundstücke",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 441 Zeichen.",
+      "originaltext": "In der Gruppenbauweise müssen die Gebäude auf mehreren benachbarten Bauplätzen an den gemeinsamen Bauplatzgrenzen aneinandergebaut werden; die Mittelbauplätze sind von Bauplatzgrenze bis Bauplatzgrenze zu bebauen, an den Enden der Gruppe sind gegen Nachbarbauplätze mindestens die Abstände gemäß § 79 Abs. 3 einzuhalten. Die Errichtung freistehender oder gekuppelter Gebäude ist dann zulässig, wenn das örtliche Stadtbild nicht gestört wird.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauweise",
+          "operator": "ist",
+          "wert": "gruppe"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs6",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "6",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 6",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Gruppenbildung erfolgt durch Bebauungsplan",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 83 Zeichen.",
+      "originaltext": "Wie bei der Gruppenbauweise die Gruppen zu bilden sind, bestimmt der Bebauungsplan.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauweise",
+          "operator": "ist",
+          "wert": "gruppe"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs7",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "7",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 7",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Offene / offen oder gekuppelte Bauweise: Anbaupflicht an Nachbargrenze in bestimmten Fällen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 365 Zeichen.",
+      "originaltext": "In Gebieten der offenen bzw. offenen oder gekuppelten Bauweise muß an die Nachbargrenze angebaut werden, wenn der Nachbar an diese Bauplatzgrenze bereits angebaut hat oder wenn auf dem Nachbarbauplatz nach dem Bebauungsplan bis an diese Grundgrenze gebaut werden muss. Hievon ist über Antrag des Bauwerbers abzusehen, wenn das örtliche Stadtbild nicht gestört wird.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauweise",
+          "operator": "ist_eines_von",
+          "werte": [
+            "offen",
+            "offen_oder_gekuppelt"
+          ]
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Komplexe Zwangsregel zum Anbau — manuell validieren."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs8",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "8",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 8",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Geschlossene Bauweise: Gebäude stehen lückenlos an Baulinie",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 476 Zeichen.",
+      "originaltext": "In der geschlossenen Bauweise müssen die Gebäude an Baulinien oder Verkehrsfluchtlinien oder dort, wo gegen die Verkehrsflächen Baufluchtlinien festgesetzt sind, an diesen von der einen seitlichen Bauplatzgrenze zu der anderen durchgehend errichtet werden. Die Behörde hat ein freiwilliges Zurückrücken einzelner Gebäudeteile hinter die Baulinie, Verkehrsfluchtlinie oder Baufluchtlinie dann zuzulassen, wenn hiedurch keine Beeinträchtigung des örtlichen Stadtbildes eintritt.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauweise",
+          "operator": "ist",
+          "wert": "geschlossen"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs9",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "9",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 9",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Mehrere Gebäude auf einem Bauplatz: Abstände untereinander",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 504 Zeichen.",
+      "originaltext": "Wenn in der offenen, offenen oder gekuppelten, gekuppelten oder Gruppenbauweise auf einem Bauplatz zwei oder mehrere Gebäude errichtet werden, müssen diese voneinander in den Bauklassen I und II einen Abstand von mindestens 3 m, in allen anderen Bauklassen einen Abstand von mindestens 6 m haben; im Gartensiedlungsgebiet muss der Abstand mindestens 2 m betragen; in diese Abstände dürfen Erker, Balkone, Loggien, Treppenhaus und Türvorbauten, Freitreppen, Schutzdächer und dergleichen nicht hineinragen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauweise",
+          "operator": "ist_eines_von",
+          "werte": [
+            "offen",
+            "offen_oder_gekuppelt",
+            "gekuppelt",
+            "gruppe"
+          ]
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Hier stehen mehrere Regeln gebündelt — später eventuell aufteilen."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs10",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "10",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 10",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Wohn- und Mischgebiet: Bebaute Fläche max. ein Drittel (33,3 %) der Bauplatzfläche",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 1061 Zeichen.",
+      "originaltext": "Im Wohngebiet und im gemischten Baugebiet mit Ausnahme der Geschäftsviertel und Betriebsbaugebiete darf bei offener, bei offener oder gekuppelter, bei gekuppelter und bei der Gruppenbauweise das Ausmaß der bebauten Fläche nicht mehr als ein Drittel der Bauplatzfläche betragen. Außerdem darf die bebaute Fläche von Gebäuden in der Bauklasse I nicht mehr als 350 m2, in der Bauklasse II nicht mehr als 700 m2 betragen. Bei gekuppelter Bauweise ist diese Fläche, sofern die Bauplatzeigentümer nicht nachweislich ein anderes Aufteilungsverhältnis vereinbart haben, auf die beiden Bauplätze nach dem Verhältnis der Bauplatzflächen aufzuteilen, wobei aber auf den kleineren Bauplatz in der Bauklasse I eine bebaubare Fläche von mindestens 100 m2, in der Bauklasse II eine bebaubare Fläche von mindestens 150 m2 entfallen muss; in beiden Bauklassen darf die bebaubare Fläche jedoch nicht mehr als ein Drittel der Fläche des Bauplatzes betragen. Die Vereinbarung eines anderen Aufteilungsverhältnisses ist im Grundbuch auf den Einlagen der beiden Bauplätze anzumerken.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "widmung",
+          "operator": "ist_eines_von",
+          "werte": [
+            "wohngebiet",
+            "gemischtes_baugebiet"
+          ]
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "flaeche",
+        "max": 33.3,
+        "einheit": "%",
+        "bezug": "bauplatzflaeche"
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Geschäftsviertel und Betriebsbaugebiete sind ausgenommen.",
+        "PRÜFEN: 33,3 % = 'ein Drittel' — Rundungsfrage klären."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs10a",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "10a",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 10a",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Bauplatzflächen über 500 m²: Mindestens 15 % frei von oberirdischer Bebauung",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 667 Zeichen.",
+      "originaltext": "In jedem Fall müssen mindestens 15 vH der Fläche des Bauplatzes, die 500 m² übersteigt, von jeder ober- und unterirdischen Bebauung frei bleiben und dürfen darüber hinaus auch nicht versiegelt werden; dies gilt nicht, wenn die so frei zu haltende Fläche geringer als 5 m² wäre. Vom Freihalten einer solchen Fläche kann abgesehen werden, soweit dies für die zweckmäßige Nutzung der Liegenschaft unerlässlich ist. Diesfalls ist gleichzeitig im Ausmaß der Unterschreitung ein begrüntes Dach mit einer mindestens 30 cm hohen durchwurzelbaren Substratschicht auszuführen. Dabei ist die ordnungsgemäße Versickerung oder Speicherung der Niederschlagswässer zu gewährleisten.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "widmung",
+          "operator": "ist_eines_von",
+          "werte": [
+            "wohngebiet",
+            "gemischtes_baugebiet"
+          ]
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "flaeche",
+        "min": 15,
+        "einheit": "%",
+        "bezug": "bauplatzflaeche_ueber_500qm"
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs10b",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "10b",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 10b",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Wohn- / Mischgebiet: Mindestens 50 % der Bauplatzfläche begrünt oder begrünbar",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 341 Zeichen.",
+      "originaltext": "Im Wohngebiet und im gemischten Baugebiet mit Ausnahme der Geschäftsviertel und Betriebsbaugebiete müssen bei offener, bei offener oder gekuppelter, bei gekuppelter Bauweise und bei der Gruppenbauweise mindestens 40 vH der Fläche des Bauplatzes von jeder unterirdischen Bebauung frei bleiben, sofern der Bebauungsplan nicht anderes bestimmt.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "widmung",
+          "operator": "ist_eines_von",
+          "werte": [
+            "wohngebiet",
+            "gemischtes_baugebiet"
+          ]
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Genaue Prozentangaben und Ausnahmen im Originaltext verifizieren."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs11",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "11",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 11",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Gartensiedlungsgebiet: Bebaute Fläche max. 150 m²",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 400 Zeichen.",
+      "originaltext": "In Gartensiedlungsgebieten darf das Ausmaß der bebauten Fläche, wenn der Bebauungsplan nicht anderes bestimmt (§ 5 Abs. 4 lit. d), nicht mehr als 50 m2 betragen. Bestimmt der Bebauungsplan das Ausmaß der bebaubaren Fläche, darf dieses Ausmaß nur bebaut werden, wenn es nicht mehr als ein Drittel der Fläche des Bauloses beträgt, wobei die zulässig bebaute Grundfläche 150 m2 nicht überschreiten darf.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "widmung",
+          "operator": "ist",
+          "wert": "gartensiedlungsgebiet"
+        },
+        {
+          "parameter": "bebauungsplan_abweichend",
+          "operator": "ist_nicht",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "flaeche",
+        "max": 150,
+        "einheit": "m²",
+        "bezug": "bebaute_flaeche_absolut"
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs11a",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "11a",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 11a",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Fahnen-Bauplätze: Verbindungsstreifen wird nicht auf Ausnützbarkeit angerechnet",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 219 Zeichen.",
+      "originaltext": "Die zu einem Bauplatz oder Baulos gehörende Fläche des Verbindungsstreifens (Fahne) ist bis zu einer Breite von 3 m bei der Ermittlung der bebaubaren Fläche des Bauplatzes beziehungsweise des Bauloses nicht anzurechnen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs12",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "12",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 12",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Erholungsgebiet / Badehütten: Eigene Regeln zur Ausnützbarkeit",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 218 Zeichen.",
+      "originaltext": "Im Erholungsgebiet - Grundflächen für Badehütten dürfen, wenn der Bebauungsplan nicht anderes bestimmt (§ 5 Abs. 4 lit. e), nur ebenerdige Badehütten mit einer bebauten Fläche von nicht mehr als 35 m2 errichtet werden.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "widmung",
+          "operator": "ist",
+          "wert": "erholungsgebiet"
+        },
+        {
+          "parameter": "bebauungsplan_abweichend",
+          "operator": "ist_nicht",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-76-abs13",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "76",
+      "absatz": "13",
+      "ziffer": null,
+      "fundstelle": "§ 76 Abs. 13",
+      "paragraph_ueberschrift": "Bauweisen; bauliche Ausnützbarkeit",
+      "headline": "Überschreiten der baulichen Ausnützbarkeit nur mit ausdrücklicher Zulassung",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 379 Zeichen.",
+      "originaltext": "Das Überschreiten von gesetzlichen Beschränkungen der baulichen Ausnützbarkeit von Bauplätzen ist zur Errichtung von Bauwerken, die öffentlichen Zwecken dienen, auf Antrag durch die Behörde (§ 133) zuzulassen, wenn das örtliche Stadtbild nicht gestört wird und durch die Abweichung die Zielrichtung des Flächenwidmungsplanes und Bebauungsplanes nicht unterlaufen wird. Strukturen",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-77-abs1",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "77",
+      "absatz": "1",
+      "ziffer": null,
+      "fundstelle": "§ 77 Abs. 1",
+      "paragraph_ueberschrift": "Strukturen (§ 77 - städtebauliche Sonderregelungen)",
+      "headline": "Strukturen: Abweichende Festlegungen im Bebauungsplan möglich",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 176 Zeichen.",
+      "originaltext": "In dem Bebauungsplan können aus städtebaulichen, gesundheitlichen und Gründen der Stadtstruktur in sich geschlossene Teile des Baulandes als Strukturgebiete ausgewiesen werden.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bebauungsplan_abweichend",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-77-abs2",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "77",
+      "absatz": "2",
+      "ziffer": null,
+      "fundstelle": "§ 77 Abs. 2",
+      "paragraph_ueberschrift": "Strukturen (§ 77 - städtebauliche Sonderregelungen)",
+      "headline": "Strukturen: Details zu Festlegungsmöglichkeiten",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 481 Zeichen.",
+      "originaltext": "Zugleich ist im Bebauungsplan festzusetzen, ob ein Strukturgebiet in seiner Gesamtheit oder welche in sich geschlossene Teile eine Struktur bilden. Jede Struktureinheit hat aus einem Bauplatz zu bestehen. Von dieser Forderung kann abgegangen werden, wenn öffentliche Rücksichten nicht entgegenstehen oder zum Zeitpunkt der Erteilung der Bewilligung für das Abgehen von dieser Forderung sprechen und aus den restlichen Grundflächen ein selbständiger Bauplatz geschaffen werden kann.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bebauungsplan_abweichend",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-77-abs3",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "77",
+      "absatz": "3",
+      "ziffer": null,
+      "fundstelle": "§ 77 Abs. 3",
+      "paragraph_ueberschrift": "Strukturen (§ 77 - städtebauliche Sonderregelungen)",
+      "headline": "Strukturen: Weitere Regelungen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 308 Zeichen.",
+      "originaltext": "Über jede Struktureinheit hat der Bebauungsplan folgende Festsetzung zu enthalten: a) welche Teile des Bauplatzes unmittelbar bebaut werden dürfen; b) das höchste zulässige Ausmaß des umbaubaren Raumes der Bauwerke auf dem Bauplatz; c) die maximale Gebäudehöhe oder der maximale oberste Abschluss des Daches.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bebauungsplan_abweichend",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-77-abs4",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "77",
+      "absatz": "4",
+      "ziffer": null,
+      "fundstelle": "§ 77 Abs. 4",
+      "paragraph_ueberschrift": "Strukturen (§ 77 - städtebauliche Sonderregelungen)",
+      "headline": "Strukturen: Weitere Regelungen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 346 Zeichen.",
+      "originaltext": "Über die Festsetzung nach Abs. 2 und 3 hinaus können die Bebauungspläne für Strukturen zusätzlich enthalten: a) weitere Bestimmungen über die Gebäudehöhe und den obersten Abschluss des Daches; b) verschiedene Widmungen der Grundflächen auf dem Bauplatz; c) die Zweckbestimmungen innerhalb der Widmungskategorie, denen die Gebäude zuzuführen sind.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bebauungsplan_abweichend",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-77-abs5",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "77",
+      "absatz": "5",
+      "ziffer": null,
+      "fundstelle": "§ 77 Abs. 5",
+      "paragraph_ueberschrift": "Strukturen (§ 77 - städtebauliche Sonderregelungen)",
+      "headline": "Strukturen: Weitere Regelungen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 52 Zeichen.",
+      "originaltext": "entfällt; LGBl. für Wien Nr. 69/2018 vom 21.12.2018.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bebauungsplan_abweichend",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-77-abs6",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "77",
+      "absatz": "6",
+      "ziffer": null,
+      "fundstelle": "§ 77 Abs. 6",
+      "paragraph_ueberschrift": "Strukturen (§ 77 - städtebauliche Sonderregelungen)",
+      "headline": "Strukturen: Weitere Regelungen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 40 Zeichen.",
+      "originaltext": "entfällt; LGBl. Nr. 25/2009 vom 2.4.2009",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bebauungsplan_abweichend",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-77-abs7",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "77",
+      "absatz": "7",
+      "ziffer": null,
+      "fundstelle": "§ 77 Abs. 7",
+      "paragraph_ueberschrift": "Strukturen (§ 77 - städtebauliche Sonderregelungen)",
+      "headline": "Strukturen: Weitere Regelungen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 263 Zeichen.",
+      "originaltext": "Das zulässige Ausmaß des umbaubaren Raumes ist auf den gesamten Baukörper oberhalb der Erdoberfläche umzulegen. Raumbildende Vorbauten sind auch dann auf die höchste zulässige Kubatur anzurechnen, wenn sie vor Baulinien oder Baufluchtlinien vorragen. Lichteinfall",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bebauungsplan_abweichend",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: § 77 insgesamt nicht im Detail analysiert — betrifft städtebauliche Sonderfälle. Bei Bedarf manuell nachbearbeiten."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-78",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "78",
+      "absatz": null,
+      "ziffer": null,
+      "fundstelle": "§ 78",
+      "paragraph_ueberschrift": "(entfallen)",
+      "headline": "§ 78 — aufgehoben 2008",
+      "erklaerung": "Dieser Paragraph wurde aufgehoben.",
+      "originaltext": "entfällt; LGBl. Nr. 24/2008 vom 11.4.2008",
+      "hauptkategorie": null,
+      "unterkategorie": null,
+      "unterkategorie_label": null,
+      "planungsphase": null,
+      "bedingungen": [],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": true,
+      "status": "final"
+    },
+    {
+      "id": "bo-wien-para-79-abs1",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "79",
+      "absatz": "1",
+      "ziffer": null,
+      "fundstelle": "§ 79 Abs. 1",
+      "paragraph_ueberschrift": "Vorgärten, Abstandsflächen und gärtnerisch auszugestaltende Flächen",
+      "headline": "Vorgarten: Tiefe in der Regel 5 m",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 327 Zeichen.",
+      "originaltext": "Der Vorgarten ist der an der Baulinie, Straßenfluchtlinie oder Verkehrsfluchtlinie gelegene Grundstreifen, der frei bleibt, wenn durch den Bebauungsplan das Anbauen eines Gebäudes an diesen Fluchtlinien untersagt ist. Seine Tiefe beträgt 5 m, soweit im Bebauungsplan durch Fluchtlinien nicht eine andere Tiefe festgesetzt wird.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bebauungsplan_abweichend",
+          "operator": "ist_nicht",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "abstand",
+        "min": 5,
+        "einheit": "m",
+        "bezug": "vorgarten_tiefe"
+      },
+      "querverweise": [],
+      "hinweise": [
+        "Abweichende Tiefen können im Bebauungsplan festgesetzt werden."
+      ],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-79-abs2",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "79",
+      "absatz": "2",
+      "ziffer": null,
+      "fundstelle": "§ 79 Abs. 2",
+      "paragraph_ueberschrift": "Vorgärten, Abstandsflächen und gärtnerisch auszugestaltende Flächen",
+      "headline": "Vorgarten: Gärtnerische Ausgestaltung mit Bepflanzung",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 164 Zeichen.",
+      "originaltext": "Fenster, die gegen Nachbargrenzen gerichtet sind, müssen von diesen mindestens 2 m entfernt sein; ausgenommen davon sind Fenster gegen öffentliche Erholungsflächen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-79-abs3",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "79",
+      "absatz": "3",
+      "ziffer": null,
+      "fundstelle": "§ 79 Abs. 3",
+      "paragraph_ueberschrift": "Vorgärten, Abstandsflächen und gärtnerisch auszugestaltende Flächen",
+      "headline": "Offene Bauweise: Abstände zu Nachbargrenzen je Bauklasse",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 1366 Zeichen.",
+      "originaltext": "In der offenen Bauweise muss der Abstand der Gebäude von Nachbargrenzen in den Bauklassen I und II mindestens 6 m, in der Bauklasse III mindestens 12 m, in der Bauklasse IV mindestens 14 m, in der Bauklasse V mindestens 16 m und in der Bauklasse VI mindestens 20 m betragen. Die Fläche, die zwischen den Nachbargrenzen und den gedachten Abstandslinien liegt, wird als Abstandsfläche bezeichnet. In die Abstandsflächen darf mit Gebäuden der Bauklasse I in der offenen Bauweise auf höchstens die halbe Gebäudehöhe der der Nachbargrenze zugewandten Gebäudefront mit einer Frontlänge von maximal 15 m an die jeweilige Nachbargrenze herangerückt werden, wobei der Abstand mindestens 3 m betragen muss. In den anderen Bauklassen darf in die Abstandsflächen mit Gebäuden auf höchstens die Hälfte des Abstandes an die Nachbargrenzen herangerückt werden. Die über die gedachte Abstandslinie hinausragende bebaute Fläche darf je Front in den Bauklassen I und II 45 m², in der Bauklasse III 90 m², in der Bauklasse IV 105 m², in der Bauklasse V 120 m² und in der Bauklasse VI 150 m² nicht überschreiten; insgesamt darf diese über die gedachte Abstandslinie hinausragende bebaute Fläche auf demselben Bauplatz in den Bauklassen I und II 90 m², in der Bauklasse III 180 m², in der Bauklasse IV 210 m², in der Bauklasse V 240 m² und in der Bauklasse VI 300 m² nicht überschreiten.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauweise",
+          "operator": "ist",
+          "wert": "offen"
+        }
+      ],
+      "varianten": [
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist_eines_von",
+            "werte": [
+              "BK_I",
+              "BK_II"
+            ]
+          },
+          "headline": "BK I / II: Mindestabstand 6 m zur Nachbargrenze",
+          "anforderung": {
+            "typ": "abstand",
+            "min": 6,
+            "einheit": "m",
+            "bezug": "nachbargrenze"
+          }
+        },
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist",
+            "wert": "BK_III"
+          },
+          "headline": "BK III: Mindestabstand 12 m",
+          "anforderung": {
+            "typ": "abstand",
+            "min": 12,
+            "einheit": "m",
+            "bezug": "nachbargrenze"
+          }
+        },
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist",
+            "wert": "BK_IV"
+          },
+          "headline": "BK IV: Mindestabstand 14 m",
+          "anforderung": {
+            "typ": "abstand",
+            "min": 14,
+            "einheit": "m",
+            "bezug": "nachbargrenze"
+          }
+        },
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist",
+            "wert": "BK_V"
+          },
+          "headline": "BK V: Mindestabstand 16 m",
+          "anforderung": {
+            "typ": "abstand",
+            "min": 16,
+            "einheit": "m",
+            "bezug": "nachbargrenze"
+          }
+        },
+        {
+          "wenn": {
+            "parameter": "bauklasse",
+            "operator": "ist",
+            "wert": "BK_VI"
+          },
+          "headline": "BK VI: Mindestabstand 20 m",
+          "anforderung": {
+            "typ": "abstand",
+            "min": 20,
+            "einheit": "m",
+            "bezug": "nachbargrenze"
+          }
+        }
+      ],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Im Originaltext stehen zusätzlich komplexe Regeln zum 'Heranrücken' und zu den 'Abstandsflächen' mit Maximalwerten in m² — diese sind hier nicht als separate Varianten erfasst."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-79-abs4",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "79",
+      "absatz": "4",
+      "ziffer": null,
+      "fundstelle": "§ 79 Abs. 4",
+      "paragraph_ueberschrift": "Vorgärten, Abstandsflächen und gärtnerisch auszugestaltende Flächen",
+      "headline": "Gartensiedlung / Kleingarten: Abstände nach gesonderten Regeln",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 189 Zeichen.",
+      "originaltext": "In der gekuppelten, in der offenen oder gekuppelten und in der Gruppenbauweise gelten die Bestimmungen des Abs. 3 für alle jene Gebäudefronten, die nicht an die Grundgrenze angebaut werden.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "widmung",
+          "operator": "ist",
+          "wert": "gartensiedlungsgebiet"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-79-abs5",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "79",
+      "absatz": "5",
+      "ziffer": null,
+      "fundstelle": "§ 79 Abs. 5",
+      "paragraph_ueberschrift": "Vorgärten, Abstandsflächen und gärtnerisch auszugestaltende Flächen",
+      "headline": "Gruppenbauweise: Abstände zu seitlichen Bauplatzgrenzen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 498 Zeichen.",
+      "originaltext": "In Gartensiedlungsgebieten müssen die Gebäude auf den Baulosen von der Achse der Aufschließungswege einen Mindestabstand von 4 m aufweisen. Wird das Gebäude nicht unmittelbar an Grundgrenzen errichtet, muss es von diesen einen Abstand von mindestens 2 m einhalten. Dieser Abstand ist mit Ausnahme von Nebengebäuden von jeder Bebauung freizuhalten. Für das Anbauen an Grundgrenzen bedarf es nicht der Zustimmung des Eigentümers der Nachbarliegenschaft. Baulose dürfen auch geschlossen bebaut werden.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauweise",
+          "operator": "ist",
+          "wert": "gruppe"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-79-abs6",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "79",
+      "absatz": "6",
+      "ziffer": null,
+      "fundstelle": "§ 79 Abs. 6",
+      "paragraph_ueberschrift": "Vorgärten, Abstandsflächen und gärtnerisch auszugestaltende Flächen",
+      "headline": "Mehrere Gebäude auf einem Bauplatz: Abstände",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 1850 Zeichen.",
+      "originaltext": "Vorgärten, Abstandsflächen und sonstige gärtnerisch auszugestaltende Flächen sowie jene Flächen von Baulosen, die innerhalb der in Abs. 5 genannten Abstände liegen, sind derart gärtnerisch auszugestalten, als zwei Drittel dieser Flächen unversiegelt bleiben und eine bodengebundene Begrünung und Bepflanzung aufweisen müssen, sofern der Bebauungsplan nicht anderes bestimmt. Auf einem Drittel dieser Flächen darf eine Versiegelung mit den auf gärtnerisch auszugestaltenden Flächen zulässigen Bauwerken oder Bauwerksteilen erfolgen. Jene Flächen, die nicht mit solchen Bauwerken oder Bauwerksteilen bebaut sind, sind ebenfalls durch bodengebundene Begrünung und Bepflanzung gärtnerisch auszugestalten und in gutem Zustand zu erhalten. Auf gärtnerisch auszugestaltenden Flächen unter Einhaltung der sonstigen Bauvorschriften und Bebauungsvorschriften zulässig aber in das Ausmaß der versiegelten Flächen einzurechnen sind jedenfalls folgende Bauwerke oder Bauwerksteile: 1. befestigte Wege, 2. Zufahrten und Rampen zu Anlagen zum Einstellen von Kraftfahrzeugen, 3. Anlagen zum Einstellen von Kraftfahrzeugen gemäß § 4 Abs. 3 WGarG 2008, sofern sie nicht gemäß § 4 Abs. 5 WGarG 2008 auf die bebaubare Fläche anzurechnen sind, 4. Schwimmbecken gemäß Abs. 6a, 5. Flächen, die mit Rasengittersteinen befestigt sind, zur Hälfte, 6. Gartenterrassen, 7. Zu- und Abluftanlagen für Tiefgaragen, 8. Stützmauern, die nicht § 62a Abs. 1 Z 23 unterliegen, 9. Rampenanlagen, sofern sie nicht der barrierefreien Erschließung dienen, 10. Antennen-, Funk-, Parabol- und Solaranlagen, 11. Unterirdische Bauwerke, sofern sie nicht eine Überdeckung mit durchwurzelbarem Substrat von mindestens 80 cm aufweisen, 12. Nebengebäude, sofern sie nicht auf die bebaubare Fläche anzurechnen sind, 13. Technische Infrastruktur für hocheffiziente alternative Systeme (§ 118 Abs. 3).",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Anwendbarkeit auf bestimmte Konstellationen im Originaltext prüfen."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-79-abs6a",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "79",
+      "absatz": "6a",
+      "ziffer": null,
+      "fundstelle": "§ 79 Abs. 6a",
+      "paragraph_ueberschrift": "Vorgärten, Abstandsflächen und gärtnerisch auszugestaltende Flächen",
+      "headline": "Schwimmbecken in gärtnerisch ausgestalteten Flächen: max. 60 m³",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 245 Zeichen.",
+      "originaltext": "Schwimmbecken sind in gärtnerisch auszugestaltenden Flächen bis zu einem Gesamtausmaß von 60 m³ Rauminhalt zulässig und müssen von Nachbargrenzen einen Abstand von mindestens 3 m haben, sofern der Nachbar nicht einem geringeren Abstand zustimmt.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "prosa",
+        "text": "Schwimmbecken bis 60 m³ Rauminhalt in gärtnerischen Flächen zulässig."
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Mindestabstand zu Nachbargrenzen im Originaltext verifizieren."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-79-abs7",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "79",
+      "absatz": "7",
+      "ziffer": null,
+      "fundstelle": "§ 79 Abs. 7",
+      "paragraph_ueberschrift": "Vorgärten, Abstandsflächen und gärtnerisch auszugestaltende Flächen",
+      "headline": "Gärtnerische Ausgestaltung von Abstandsflächen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 212 Zeichen.",
+      "originaltext": "Kommt im Bauland entsprechend den Bestimmungen des Bebauungsplanes die gärtnerische Ausgestaltung zur Ausführung, ist im Neubaufall je angefangene 200 m² Gartenfläche ein Baum in verschulter Qualität zu pflanzen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-79-abs8",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "79",
+      "absatz": "8",
+      "ziffer": null,
+      "fundstelle": "§ 79 Abs. 8",
+      "paragraph_ueberschrift": "Vorgärten, Abstandsflächen und gärtnerisch auszugestaltende Flächen",
+      "headline": "Garten-/Hofflächen als Versickerungsflächen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 270 Zeichen.",
+      "originaltext": "Bei Zu- und Umbauten sowie bei Änderungen und Instandsetzungen von mindestens 25 vH der Oberfläche der Gebäudehülle müssen die im Bebauungsplan festgelegten Bestimmungen über die gärtnerische Ausgestaltung der nicht bebauten Grundflächen umgesetzt werden. Bebaute Fläche",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "vorentwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-80-abs1",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "80",
+      "absatz": "1",
+      "ziffer": null,
+      "fundstelle": "§ 80 Abs. 1",
+      "paragraph_ueberschrift": "Bebaute Fläche",
+      "headline": "Definition: Bebaute Fläche als senkrechte Projektion des Gebäudes",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 256 Zeichen.",
+      "originaltext": "Als bebaute Fläche gilt die senkrechte Projektion des Gebäudes einschließlich aller vor die Gebäudefront ragenden Gebäudeteile auf eine waagrechte Ebene. Unterirdische Gebäude oder Gebäudeteile bleiben bei der Ermittlung der bebauten Fläche außer Betracht.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "prosa",
+        "text": "Bebaute Fläche = senkrechte Projektion inkl. Vorbauten."
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-80-abs2",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "80",
+      "absatz": "2",
+      "ziffer": null,
+      "fundstelle": "§ 80 Abs. 2",
+      "paragraph_ueberschrift": "Bebaute Fläche",
+      "headline": "Bebaute Fläche: Ausnahmen für bestimmte Bauteile",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 522 Zeichen.",
+      "originaltext": "Vor die Gebäudefront ragende Gebäudeteile der in § 84 Abs. 1 und 2 genannten Art und in dem dort bezeichneten Ausmaß bleiben bei der Ermittlung der bebauten Fläche außer Betracht, gleichgültig, ob sie über Baufluchtlinien ragen oder nicht. Überschreiten solche Gebäudeteile das genannte Ausmaß, sind sie der bebauten Fläche voll zuzurechnen. Gleiches gilt für Erker, Balkone und Loggien, unter denen nicht überall eine freie Durchgangshöhe von mindestens 2,10 m gewährleistet ist. Gebäudehöhe und Gebäudeumrisse; Bemessung",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-81-abs1",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "81",
+      "absatz": "1",
+      "ziffer": null,
+      "fundstelle": "§ 81 Abs. 1",
+      "paragraph_ueberschrift": "Gebäudehöhe und Gebäudeumrisse; Bemessung",
+      "headline": "Gebäudehöhe wird an Hauptfronten gemessen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 1653 Zeichen.",
+      "originaltext": "Bei Gebäuden an der Baulinie, Straßenfluchtlinie oder Verkehrsfluchtlinie gilt bis zu einer Gebäudetiefe von 15 m als Gebäudehöhe der lotrechte Abstand von der festgesetzten Höhenlage der Verkehrsfläche bis zur obersten Schnittlinie der zulässigen Außenwandfläche der Straßenfront ohne Berücksichtigung vorspringender Gebäudeteile wie Gesimse, Erker und dergleichen mit der Oberfläche des Daches; nichtraumbildende Gebäudeteile und raumbildende Dachaufbauten gemäß Abs. 6 bleiben dabei außer Betracht. Giebelflächen zählen bei dieser Ermittlung mit; sind sie nicht zur Straßenfront gerichtet, bleiben jedoch je einzelner Giebelfläche in der Bauklasse I in der offenen, offenen oder gekuppelten sowie in der gekuppelten Bauweise und im Gartensiedlungsgebiet höchstens 25 m², je Gebäude höchstens 50 m², ansonsten je einzelner Giebelfläche höchstens 50 m², je Gebäude höchstens 100 m² außer Betracht. In diesen Fällen ist auch innerhalb einer Gebäudetiefe von 15 m für die Ermittlung der Gebäudehöhe die Giebelfläche gemäß Abs. 2 zu berücksichtigen. Weiters darf die zulässige Gebäudehöhe um höchstens 1,50 m überschritten werden, wenn diese Überschreitung innerhalb derselben Front flächenmäßig ausgeglichen wird; § 75 Abs. 4 ist einzuhalten. Dasselbe gilt für Gebäude an Verkehrsflächen, deren festgesetzte Höhenlage an der Gebäudefront nicht einheitlich ist. Der oberste Abschluss des Daches darf, sofern der Bebauungsplan nicht anderes bestimmt, in Wohngebieten der Bauklasse I in der offenen, offenen oder gekuppelten bzw. gekuppelten Bauweise keinesfalls höher als 4,5 m, ansonsten keinesfalls höher als 7,5 m über der zulässigen Gebäudehöhe liegen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [
+        {
+          "ref_id": "bo-wien-para-75-abs2",
+          "ref_text": "§ 75 Abs. 2",
+          "beschreibung": "Zulässige Höhen je Bauklasse"
+        }
+      ],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-81-abs2",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "81",
+      "absatz": "2",
+      "ziffer": null,
+      "fundstelle": "§ 81 Abs. 2",
+      "paragraph_ueberschrift": "Gebäudehöhe und Gebäudeumrisse; Bemessung",
+      "headline": "Mittlere Gebäudehöhe: Berechnungsmethode",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 1553 Zeichen.",
+      "originaltext": "Bei den über eine Gebäudetiefe von 15 m hinausragenden Teilen von Gebäuden an der Baulinie, Straßenfluchtlinie oder Verkehrsfluchtlinie sowie bei allen nicht an diesen Fluchtlinien gelegenen Gebäuden darf die Summe der Flächeninhalte aller Gebäudefronten nicht größer als das Produkt aus der Summe der Längen aller Gebäudefronten und der höchsten zulässigen Gebäudehöhe sein. Hierbei darf die höchste zulässige Gebäudehöhe an nicht an Verkehrsflächen liegenden Grundgrenzen und bis zu einem Abstand von 3 m von diesen Grundgrenzen überhaupt nicht und an den übrigen Fronten an keiner Stelle um mehr als 3 m überschritten werden; im Gartensiedlungsgebiet tritt an die Stelle dieser Maße jeweils ein Maß von 2 m. Bei dieser Ermittlung sind die Wände an der Bauplatz- oder Baulosgrenze (Feuermauern) ab 15 m hinter der Baulinie, Straßenfluchtlinie oder Verkehrsfluchtlinie wie Fronten in Rechnung zu stellen. Giebelflächen zählen bei dieser Ermittlung mit; jedoch bleiben je einzelner Giebelfläche in der Bauklasse I in der offenen, offenen oder gekuppelten sowie in der gekuppelten Bauweise und im Gartensiedlungsgebiet höchstens 25 m², je Gebäude höchstens 50 m², ansonsten je einzelner Giebelfläche höchstens 50 m², je Gebäude höchstens 100 m² außer Betracht. Der oberste Abschluss des Daches darf, sofern der Bebauungsplan nicht anderes bestimmt, in Wohngebieten der Bauklasse I in der offenen, offenen oder gekuppelten bzw. gekuppelten Bauweise keinesfalls höher als 4,5 m, ansonsten keinesfalls höher als 7,5 m über der zulässigen Gebäudehöhe liegen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Berechnungsmethode im Originaltext verifizieren."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-81-abs3",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "81",
+      "absatz": "3",
+      "ziffer": null,
+      "fundstelle": "§ 81 Abs. 3",
+      "paragraph_ueberschrift": "Gebäudehöhe und Gebäudeumrisse; Bemessung",
+      "headline": "Dachgeschoße und Dachausbauten: Anrechnung auf Gebäudehöhe",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 851 Zeichen.",
+      "originaltext": "Ist im Bebauungsplan die Gebäudehöhe als absolute Höhe über Wiener Null festgesetzt, darf keine oberste Schnittlinie einer Außenwandfläche mit der Oberfläche des Daches über dieser absoluten Höhe liegen. Giebelflächen zählen bei dieser Ermittlung mit; jedoch bleiben je einzelner Giebelfläche in der Bauklasse I in der offenen, offenen oder gekuppelten sowie in der gekuppelten Bauweise und im Gartensiedlungsgebiet höchstens 25 m², je Gebäude höchstens 50 m², ansonsten je einzelner Giebelfläche höchstens 50 m², je Gebäude höchstens 100 m² außer Betracht. Der oberste Abschluss des Daches darf, sofern der Bebauungsplan nicht anderes bestimmt, in Wohngebieten der Bauklasse I in der offenen, offenen oder gekuppelten bzw. gekuppelten Bauweise keinesfalls höher als 4,5 m, ansonsten keinesfalls höher als 7,5 m über der zulässigen Gebäudehöhe liegen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-81-abs4",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "81",
+      "absatz": "4",
+      "ziffer": null,
+      "fundstelle": "§ 81 Abs. 4",
+      "paragraph_ueberschrift": "Gebäudehöhe und Gebäudeumrisse; Bemessung",
+      "headline": "Gebäudeumriss: Maximale Neigung / Abweichung von zulässiger Höhe",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 626 Zeichen.",
+      "originaltext": "Durch das Gebäude darf jener Umriss nicht überschritten werden, der sich daraus ergibt, dass in dem nach Abs. 1 bis 3 für die Bemessung der Gebäudehöhe maßgeblichen oberen Abschluss der Gebäudefront ein Winkel von 45°, im Gartensiedlungsgebiet von 25°, von der Waagrechten gegen das Gebäudeinnere ansteigend, angesetzt wird. Dies gilt auch für den Fall, dass im Bebauungsplan eine besondere Bestimmung über die Höhe der Dächer festgesetzt ist. Ist im Bebauungsplan eine besondere Bestimmung über die Neigung der Dächer festgesetzt, ist der dieser Festsetzung entsprechende Winkel für die Bildung des Gebäudeumrisses maßgebend.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Detaillierte Regel zum Gebäudeumriss."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-81-abs5",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "81",
+      "absatz": "5",
+      "ziffer": null,
+      "fundstelle": "§ 81 Abs. 5",
+      "paragraph_ueberschrift": "Gebäudehöhe und Gebäudeumrisse; Bemessung",
+      "headline": "Dachneigung und Gebäudeumriss: Sonderregelungen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 593 Zeichen.",
+      "originaltext": "In den Fällen des § 75 Abs. 4 und 5 ist zum Erreichen des nach der Bauklasse zulässigen Gebäudeumrisses das Staffeln der Baumasse hinter der Baulinie, Straßenfluchtlinie, Verkehrsfluchtlinie oder Baufluchtlinie oder das Zurückrücken der Hauptfront zulässig; beim Zurückrücken der Hauptfront müssen Feuermauern, die sonst sichtbar würden, gedeckt und die zwischen der Fluchtlinie und der Vorderfront des Gebäudes gelegenen Flächen gärtnerisch ausgestaltet oder mit einer Oberflächenbefestigung versehen werden. Die Befestigung der Oberfläche ist nur im unbedingt erforderlichen Ausmaß zulässig.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-81-abs6",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "81",
+      "absatz": "6",
+      "ziffer": null,
+      "fundstelle": "§ 81 Abs. 6",
+      "paragraph_ueberschrift": "Gebäudehöhe und Gebäudeumrisse; Bemessung",
+      "headline": "Gebäudehöhe bei Hanglage",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 589 Zeichen.",
+      "originaltext": "Der nach den Abs. 1 bis 5 zulässige Gebäudeumriss darf durch einzelne, nicht raumbildende Gebäudeteile untergeordneten Ausmaßes sowie durch Aufzugsschächte samt deren Haltestellenanbindungen und durch Treppenhäuser im unbedingt notwendigen Ausmaß überschritten werden; mit weiteren raumbildenden Aufbauten darf der Gebäudeumriss bis zum obersten Abschluss des Daches nur überschritten werden, wenn diese den Proportionen der Fenster der Hauptgeschoße sowie dem Maßstab des Gebäudes entsprechen und insgesamt höchstens ein Drittel der Länge der betreffenden Gebäudefront in Anspruch nehmen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Hanglage ist derzeit kein Wizard-Parameter — ggf. ergänzen."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-81-abs6a",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "81",
+      "absatz": "6a",
+      "ziffer": null,
+      "fundstelle": "§ 81 Abs. 6a",
+      "paragraph_ueberschrift": "Gebäudehöhe und Gebäudeumrisse; Bemessung",
+      "headline": "Gebäudeumriss darf für Technik hocheffizienter Systeme überschritten werden",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 369 Zeichen.",
+      "originaltext": "Der nach den Abs. 1 bis 5 zulässige Gebäudeumriss darf weiters durch technische Infrastruktur von hocheffizienten alternativen Systemen im unbedingt erforderlichen Ausmaß überschritten werden, wenn ihre Unterbringung im Gebäude aus rechtlichen, technischen oder wirtschaftlichen Gründen nicht zumutbar ist und durch sie das örtliche Stadtbild nicht beeinträchtigt wird.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "prosa",
+        "text": "Überschreitung im unbedingt erforderlichen Ausmaß zulässig."
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-81-abs7",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "81",
+      "absatz": "7",
+      "ziffer": null,
+      "fundstelle": "§ 81 Abs. 7",
+      "paragraph_ueberschrift": "Gebäudehöhe und Gebäudeumrisse; Bemessung",
+      "headline": "Gartensiedlungsgebiete: Sondervorschriften zur Gebäudehöhe",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 115 Zeichen.",
+      "originaltext": "Der zulässige Gebäudeumriß darf auch durch Verglasungen untergeordneten Ausmaßes überschritten werden. Nebengebäude",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "parameter": "widmung",
+          "operator": "ist",
+          "wert": "gartensiedlungsgebiet"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-82-abs1",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "82",
+      "absatz": "1",
+      "ziffer": null,
+      "fundstelle": "§ 82 Abs. 1",
+      "paragraph_ueberschrift": "Nebengebäude",
+      "headline": "Nebengebäude: Definition und Grundregeln",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 294 Zeichen.",
+      "originaltext": "Nebengebäude sind Gebäude oder gesondert in Erscheinung tretende Teile eines Gebäudes, wenn sie nicht mehr als ein oberirdisches Geschoß aufweisen, keine Aufenthaltsräume enthalten und eine bebaute Grundfläche von nicht mehr als 100 m2, in Gartensiedlungsgebieten von nicht mehr als 5 m2 haben.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "prosa",
+        "text": "Nebengebäude: keine Hauptnutzung, gesondert in Erscheinung."
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-82-abs2",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "82",
+      "absatz": "2",
+      "ziffer": null,
+      "fundstelle": "§ 82 Abs. 2",
+      "paragraph_ueberschrift": "Nebengebäude",
+      "headline": "Nebengebäude: zulässige Höhe und Ausmaße",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 228 Zeichen.",
+      "originaltext": "Die Errichtung eines Nebengebäudes setzt das Vorhandensein oder das gleichzeitige Errichten eines Hauptgebäudes voraus. Die Fläche aller Nebengebäude auf demselben Bauplatz darf nicht mehr als ein Zehntel seiner Fläche betragen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Spezifische Maße im Originaltext verifizieren."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-82-abs3",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "82",
+      "absatz": "3",
+      "ziffer": null,
+      "fundstelle": "§ 82 Abs. 3",
+      "paragraph_ueberschrift": "Nebengebäude",
+      "headline": "Nebengebäude: Flächenbegrenzung",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 363 Zeichen.",
+      "originaltext": "Nebengebäude dürfen auf allen kraft des Bebauungsplanes unbebaut zu belassenden Flächen des Bauplatzes errichtet werden, wenn für diese Flächen nicht die gärtnerische Ausgestaltung gemäß § 5 Abs. 4 lit. p angeordnet ist. In Vorgärten und auf Abstandsflächen sind Nebengebäude unbeschadet des Abs. 4 und der Bestimmungen über die Errichtung von Garagen unzulässig.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-82-abs4",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "82",
+      "absatz": "4",
+      "ziffer": null,
+      "fundstelle": "§ 82 Abs. 4",
+      "paragraph_ueberschrift": "Nebengebäude",
+      "headline": "Nebengebäude: Abstände zu Nachbargrenzen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 437 Zeichen.",
+      "originaltext": "Beträgt die Gebäudehöhe von Nebengebäuden nicht mehr als 2,50 m und die Firsthöhe nicht mehr als 3,50 m und werden sie in einer Tiefe von mindestens 10 m ab der Vorgartentiefe errichtet, dürfen sie auch auf den kraft Gesetzes oder des Bebauungsplanes ansonsten unbebaut zu belassenden Flächen des Bauplatzes errichtet werden; die Anordnung der gärtnerischen Ausgestaltung von Grundflächen nach § 5 Abs. 4 lit. p steht dem nicht entgegen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-82-abs5",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "82",
+      "absatz": "5",
+      "ziffer": null,
+      "fundstelle": "§ 82 Abs. 5",
+      "paragraph_ueberschrift": "Nebengebäude",
+      "headline": "Nebengebäude im Gartensiedlungsgebiet",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 478 Zeichen.",
+      "originaltext": "Die durch Nebengebäude in Anspruch genommene Grundfläche ist auf die nach den gesetzlichen Ausnutzbarkeitsbestimmungen bebaubare Fläche und die die nach § 5 Abs. 4 lit. d durch den Bebauungsplan beschränkte bebaubare Fläche des Bauplatzes anzurechnen. Im Gartensiedlungsgebiet ist die mit einem Nebengebäude bebaute Grundfläche auf die Ausnutzbarkeitsbestimmungen eines Bauloses dann anzurechnen, wenn die bebaubare Fläche im Bebauungsplan mit mindestens 100 m2 festgesetzt ist.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "parameter": "widmung",
+          "operator": "ist",
+          "wert": "gartensiedlungsgebiet"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-82-abs6",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "82",
+      "absatz": "6",
+      "ziffer": null,
+      "fundstelle": "§ 82 Abs. 6",
+      "paragraph_ueberschrift": "Nebengebäude",
+      "headline": "Nebengebäude: Weitere Sonderregelungen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 274 Zeichen.",
+      "originaltext": "Den Bestimmungen der Abs. 2 bis 5 unterliegen auch Flugdächer jeder Größe, ausgenommen Flugdächer mit Fotovoltaikanlagen über Stellplätzen gemäß § 4 Abs. 9 WGarG 2008. Nebengebäude für die Unterbringung der technischen Infrastruktur von hocheffizienten alternativen Systemen",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-82a",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "82a",
+      "absatz": null,
+      "ziffer": null,
+      "fundstelle": "§ 82a",
+      "paragraph_ueberschrift": "Nebengebäude für technische Infrastruktur",
+      "headline": "Technikgebäude (z.B. Wärmepumpen): Erleichterungen für Nebengebäude",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 1061 Zeichen.",
+      "originaltext": "Nebengebäude, die ausschließlich der Unterbringung der technischen Infrastruktur von hocheffizienten alternativen Systemen dienen, unterliegen nicht den Bestimmungen des § 82, wenn a) sie nicht mehr als ein oberirdisches Geschoß aufweisen und keine Aufenthaltsräume enthalten, b) auf dem Bauplatz ein Hauptgebäude besteht oder gleichzeitig errichtet wird, c) sie ein begrüntes Dach mit einer mindestens 30 cm hohen durchwurzelbaren Substratschicht aufweisen, d) sie die unbedingt erforderliche Größe zur Unterbringung der technischen Infrastruktur für die Hauptgebäude auf dem Bauplatz nicht überschreiten und e) nachgewiesen wird, dass eine Unterbringung der technischen Infrastruktur im oder auf dem Hauptgebäude aus rechtlichen, technischen oder wirtschaftlichen Gründen nicht zumutbar ist. Sie dürfen auf allen kraft des Bebauungsplanes unbebaut zu belassenden Flächen des Bauplatzes sowie auf gärtnerisch auszugestaltenden Flächen errichtet werden. In Vorgärten und auf Abstandsflächen sind sie unzulässig. Bauteile vor der Baulinie oder Straßenfluchtlinie",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.02",
+      "unterkategorie_label": "Gebäudehöhe & Geschoßanzahl",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "prosa",
+        "text": "Nur für technische Infrastruktur hocheffizienter Systeme."
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Mehrere Bedingungen (max. 1 Geschoß, keine Aufenthaltsräume, etc.) sind hier als Prosa zusammengefasst."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-83-abs1",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "83",
+      "absatz": "1",
+      "ziffer": null,
+      "fundstelle": "§ 83 Abs. 1",
+      "paragraph_ueberschrift": "Bauteile vor der Baulinie oder Straßenfluchtlinie",
+      "headline": "Zulässige Bauteil-Vorsprünge über Baulinie: Gesimse, Erker",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 705 Zeichen.",
+      "originaltext": "Über die Baulinie oder Straßenfluchtlinie dürfen folgende Gebäudeteile vorragen: a) Keller- und Grundmauern bis zu 20 cm; b) Gebäudesockel bis 20 cm, jedoch nur bis zu einer Höhe von 2 m; c) Schauseitenverkleidungen bis 7 cm; d) Vorlegestufen innerhalb des Sockelvorsprunges; e) vorstehende Bauelemente, die der Gliederung oder der architektonischen Ausgestaltung der Schauseiten dienen bis 15 cm; f) vorstehende Teile von Konvektoranlagen, Heizanlagen, Klimaanlagen und ähnlichen Anlagen bis 15 cm; g) Hauptgesimse und Dachvorsprünge bis 1 m; h) die dem Gebäude dienenden Zu- und Ableitungen; i) vorstehende Bauelemente, die als Rankhilfen für Kletterpflanzen zur Begrünung der Fassaden dienen bis 20 cm.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauplatz_an_fluchtlinie",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-83-abs2",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "83",
+      "absatz": "2",
+      "ziffer": null,
+      "fundstelle": "§ 83 Abs. 2",
+      "paragraph_ueberschrift": "Bauteile vor der Baulinie oder Straßenfluchtlinie",
+      "headline": "Weitere zulässige Vorsprünge: Details",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 1645 Zeichen.",
+      "originaltext": "Mit Zustimmung des Eigentümers der Verkehrsfläche dürfen folgende Gebäudeteile über die Baulinie oder Straßenfluchtlinie vorragen: a) die unter Abs. 1 lit. a bis g und i genannten Vorbauten in einem größeren als dort festgesetzten Ausmaß; b) Stützmauern und Pfeiler; c) Licht-, Luft-, Transport- und Einsteigschächte; d) Vordächer, Windfänge und Abschattungsvorrichtungen; e) Werbezeichen, Schaukästen und Geschäftsportale; f) Treppenhausvorbauten, Aufzugsschächte und Erker, sofern diese Bauteile eine Ausladung von höchstens 1,50 m aufweisen, insgesamt höchstens ein Drittel von der Gebäudelänge einnehmen und einen Abstand von mindestens 3 m, im Gartensiedlungsgebiet von mindestens 2 m, von der Nachbargrenze einhalten. Die sich daraus für die Erker ergebende Kubatur an einer Gebäudefront kann unter Einhaltung dieser Ausladung und des Abstandes von Nachbargrenzen an dieser Front frei angeordnet werden. Ein Erker liegt auch vor, wenn durch ihn die dahinter liegenden Räume in ihrer gesamten Breite erweitert werden. An Gebäuden, deren Gebäudehöhe nach den Bestimmungen des § 75 Abs. 4 und 5 zu bemessen ist, dürfen solche Vorbauten an den Straßenfronten nur eine Ausladung von höchstens 1 m aufweisen; g) bis zur Hälfte der Gebäudelänge Balkone, sofern am Fuß der Geländer Schutzvorrichtungen (z. B. Fußleisten) gegen das Herabfallen von Gegenständen angebracht sind und die Balkonunterkante mindestens 5 m über der angrenzenden Verkehrsfläche liegt; die Ausladung dieser Balkone darf höchstens 2,50 m betragen und sie müssen von den Nachbargrenzen einen Abstand von mindestens 3 m, im Gartensiedlungsgebiet von mindestens 2 m, einhalten.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauplatz_an_fluchtlinie",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-83-abs3",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "83",
+      "absatz": "3",
+      "ziffer": null,
+      "fundstelle": "§ 83 Abs. 3",
+      "paragraph_ueberschrift": "Bauteile vor der Baulinie oder Straßenfluchtlinie",
+      "headline": "Einschränkungen für Vorsprünge",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 105 Zeichen.",
+      "originaltext": "Die im Abs. 2 unter lit. c, d, e, g und i genannten Vorbauten dürfen nur gegen Widerruf errichtet werden.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauplatz_an_fluchtlinie",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-83-abs4",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "83",
+      "absatz": "4",
+      "ziffer": null,
+      "fundstelle": "§ 83 Abs. 4",
+      "paragraph_ueberschrift": "Bauteile vor der Baulinie oder Straßenfluchtlinie",
+      "headline": "Vorsprünge in Schutzzonen: Verschärfte Anforderungen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 236 Zeichen.",
+      "originaltext": "Vorbauten, Türen und Fensterabschlüsse dürfen bis zu einer Höhe von 2,50 m nicht in den Gehsteig ragen. Bis zu einer Höhe von 6 m dürfen sie weiters eine 60 cm innerhalb der fahrbahnseitigen Gehsteigkante gedachte Linie nicht überragen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauplatz_an_fluchtlinie",
+          "operator": "ist",
+          "wert": "ja"
+        },
+        {
+          "parameter": "in_schutzzone",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-83-abs5",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "83",
+      "absatz": "5",
+      "ziffer": null,
+      "fundstelle": "§ 83 Abs. 5",
+      "paragraph_ueberschrift": "Bauteile vor der Baulinie oder Straßenfluchtlinie",
+      "headline": "Vorsprünge: Maßnahmen für Verkehrssicherheit",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 746 Zeichen.",
+      "originaltext": "Die im Abs. 1 unter lit. c, e, f, g, h und i und die in Abs. 2 genannten Vorbauten müssen bis zu einer Höhe von 20 m einen Abstand von 4,5 m zur vertikalen Projektion der jeweiligen Stammaußenkante sowie von 1,5 m zur jeweiligen Kronentraufe von auf öffentlichen Verkehrsflächen befindlichen Bäumen einhalten. Dies gilt nicht, wenn 1. die Entfernung der Bäume nach dem Wiener Baumschutzgesetz bewilligt wurde oder 2. eine Bestätigung des Magistrats vorliegt, dass die Einhaltung eines geringeren Abstands aufgrund der Baumart oder einer geringeren Wuchshöhe zu keinen Beeinträchtigungen dieser Bäume führt; diesfalls ist der in der Bestätigung festgelegte Abstand einzuhalten. Bauteile vor den Baufluchtlinien und in Abstandsflächen und Vorgärten",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "parameter": "bauplatz_an_fluchtlinie",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-84-abs1",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "84",
+      "absatz": "1",
+      "ziffer": null,
+      "fundstelle": "§ 84 Abs. 1",
+      "paragraph_ueberschrift": "Bauteile in Abstandsflächen, Vorgärten, Abständen",
+      "headline": "Zulässige Bauteile in Abstandsflächen, Vorgärten, Abständen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 263 Zeichen.",
+      "originaltext": "Über Baufluchtlinien, in die Abstandsflächen, in Vorgärten und in Abstände gemäß § 79 Abs. 5 erster Satz dürfen die im § 83 Abs. 1 genannten Vorbauten sowie Transport- und Einsteigschächte vorragen; diese Schächte dürfen das anschließende Gelände nicht überragen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-84-abs2",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "84",
+      "absatz": "2",
+      "ziffer": null,
+      "fundstelle": "§ 84 Abs. 2",
+      "paragraph_ueberschrift": "Bauteile in Abstandsflächen, Vorgärten, Abständen",
+      "headline": "Einschränkungen in Abstandsflächen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 1733 Zeichen.",
+      "originaltext": "Über Baufluchtlinien, in die Abstandsflächen, in Vorgärten und in Abstände gemäß § 79 Abs. 5 erster Satz dürfen außerdem folgende Gebäudeteile vorragen: a) auf eine Breite von höchstens einem Drittel der betreffenden Gebäudefront Erker, Treppenhausvorbauten und Aufzugsschächte sowie auf eine Breite von höchstens der Hälfte der betreffenden Gebäudefront Balkone, sofern die Ausladung der Balkone höchstens 2,50 m und der anderen Bauteile höchstens 1,50 m beträgt und sie von den Nachbargrenzen einen Abstand von wenigstens 3 m, im Gartensiedlungsgebiet von mindestens 2 m, einhalten; die sich daraus für Erker ergebende Kubatur an einer Gebäudefront kann unter Einhaltung dieser Ausladung und des Abstandes von Nachbargrenzen an dieser Front frei angeordnet werden. Ein Erker liegt auch vor, wenn durch ihn die dahinter liegenden Räume in ihrer gesamten Breite erweitert werden. An Gebäuden, deren Gebäudehöhe nach den Bestimmungen des § 75 Abs. 4 und 5 zu bemessen ist, dürfen solche Vorbauten, mit Ausnahme von Balkonen, an den Straßenfronten nur eine Ausladung von höchstens 1 m aufweisen. Darüber hinaus sind Abschattungsvorrichtungen sowie bis zu insgesamt zwei Drittel der Gebäudefront Balkone im Sinne des ersten Halbsatzes über gärtnerisch auszugestaltenden Flächen, ausgenommen Abstandsflächen, zulässig; b) auf einer Breite von höchstens einem Drittel der betreffenden Gebäudefront Türvorbauten, Freitreppen und Schutzdächer über Eingängen, sofern diese Bauteile höchstens 3 m, im Gartensiedlungsgebiet höchstens 2 m, in die vor den Baufluchtlinien gelegenen Flächen oder Abstandsflächen, aber keinesfalls mehr als auf halbe Vorgartentiefe vorragen und von den Nachbargrenzen einen Abstand von mindestens 1,50 m einhalten.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-84-abs3",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "84",
+      "absatz": "3",
+      "ziffer": null,
+      "fundstelle": "§ 84 Abs. 3",
+      "paragraph_ueberschrift": "Bauteile in Abstandsflächen, Vorgärten, Abständen",
+      "headline": "Vorsprünge im Nachbarschutz",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 484 Zeichen.",
+      "originaltext": "Über Baufluchtlinien, in die Abstandsflächen und in die Vorgärten dürfen ferner unterirdische Gebäude und Gebäudeteile vorragen, doch darf die allenfalls festgesetzte gärtnerische Ausgestaltung der Grundflächen nicht behindert werden. Der Beurteilung eines Bauwerkes als unterirdisches Gebäude oder unterirdischer Gebäudeteil steht nicht entgegen, wenn den oberen Abschluss ein anderes nach den Bestimmungen dieses Gesetzes zulässiges Bauwerk (Terrasse, Stützmauer, Weg u. a.) bildet.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-84-abs4",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "84",
+      "absatz": "4",
+      "ziffer": null,
+      "fundstelle": "§ 84 Abs. 4",
+      "paragraph_ueberschrift": "Bauteile in Abstandsflächen, Vorgärten, Abständen",
+      "headline": "Mindestabstände bei Nebenanlagen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 417 Zeichen.",
+      "originaltext": "Gänge vor Außenwänden (Außengänge) dürfen über Baufluchtlinien, in die Abstandsflächen und die Vorgärten vorragen, wenn sie die gemäß Abs. 2 für Balkone geltenden Vorschriften einhalten; Außengänge und Balkone dürfen insgesamt eine Breite von höchstens der Hälfte, über gärtnerisch auszugestaltenden Flächen von höchstens zwei Dritteln der betreffenden Gebäudefront in Anspruch nehmen. Äußere Gestaltung von Bauwerken",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.03",
+      "unterkategorie_label": "Abstände & Abstandsflächen",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "abstand",
+        "min": 1.5,
+        "einheit": "m",
+        "bezug": "nachbargrenze"
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: 1,5 m Mindestabstand ist Auszug, Originaltext hat weitere Details."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-85-abs1",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "85",
+      "absatz": "1",
+      "ziffer": null,
+      "fundstelle": "§ 85 Abs. 1",
+      "paragraph_ueberschrift": "Äußere Gestaltung von Bauwerken",
+      "headline": "Äußeres der Bauwerke: Einfügung in Bauform, Maßstab, Werkstoff, Farbe",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 294 Zeichen.",
+      "originaltext": "Das Äußere der Bauwerke einschließlich technischer Aufbauten muss nach Bauform, Maßstäblichkeit, Baustoff und Farbe so beschaffen sein, dass es die einheitliche Gestaltung des örtlichen Stadtbildes nicht stört. Dauernd sichtbar bleibende Feuermauern sind dem Ortsbild entsprechend zu gestalten.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": {
+        "typ": "prosa",
+        "text": "Gestaltung darf nicht störend wirken."
+      },
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-85-abs2",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "85",
+      "absatz": "2",
+      "ziffer": null,
+      "fundstelle": "§ 85 Abs. 2",
+      "paragraph_ueberschrift": "Äußere Gestaltung von Bauwerken",
+      "headline": "Bauwerke in Schutzzonen / an Welterbe-Umgebung: Verschärfte Gestaltungsanforderungen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 740 Zeichen.",
+      "originaltext": "Die Errichtung von Bauwerken sowie deren Änderung ist nur zulässig, wenn das mit dem Bebauungsplan beabsichtigte örtliche Stadtbild weder gestört noch beeinträchtigt wird. Überschreiten bauliche Anlagen die für Gebäude zulässige Höhe, ist unter Berücksichtigung der Art, der Gestaltung und des Zweckes der jeweiligen baulichen Anlage auf ihre Einfügung in das vom Bebauungsplan beabsichtigte örtliche Stadtbild besonders Bedacht zu nehmen. Darüber hinaus darf das gegebene örtliche Stadtbild weder gestört noch beeinträchtigt werden, sofern es mit dem vom Bebauungsplan beabsichtigten örtlichen Stadtbild vereinbar ist. Im Nahebereich von Schutzzonen und UNESCO-Welterbestätten ist bei der Beurteilung auf diese besonders Bedacht zu nehmen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "parameter": "in_schutzzone",
+          "operator": "ist",
+          "wert": "ja"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-85-abs3",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "85",
+      "absatz": "3",
+      "ziffer": null,
+      "fundstelle": "§ 85 Abs. 3",
+      "paragraph_ueberschrift": "Äußere Gestaltung von Bauwerken",
+      "headline": "Gestaltung bei bestehenden Bauwerken",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 626 Zeichen.",
+      "originaltext": "Baumaßnahmen an einzelnen Bauwerken von geschichtlicher, kultureller oder künstlerischer Bedeutung sowie die Errichtung von Bauwerken und Baumaßnahmen in der Umgebung solcher Bauwerke sind unzulässig, wenn deren Eigenart oder künstlerische Wirkung oder das örtliche Stadtbild beeinträchtigt würde. Gleiches gilt in Bezug auf Bauwerke, die Bestandteil einer UNESCO- Welterbestätte sind, wobei insbesondere auf die Merkmale, die den außergewöhnlichen universellen Wert dieser Bauwerke zum Ausdruck bringen, Bedacht zu nehmen ist. Hiebei bleiben die besonderen, den Denkmalschutz betreffenden gesetzlichen Bestimmungen unberührt.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "parameter": "neubau_oder_bestand",
+          "operator": "ist",
+          "wert": "bestand"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-85-abs4",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "85",
+      "absatz": "4",
+      "ziffer": null,
+      "fundstelle": "§ 85 Abs. 4",
+      "paragraph_ueberschrift": "Äußere Gestaltung von Bauwerken",
+      "headline": "Farbgebung und Oberflächen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 335 Zeichen.",
+      "originaltext": "Portale, Geschäfts- und Firmenschilder, Werbezeichen und Lichtreklamen müssen so beschaffen sein, dass durch sie das örtliche Stadtbild nicht beeinträchtigt wird. Durch Lichtreklamen darf keine das ortsübliche Ausmaß übersteigende Belästigung der Benützer desselben Gebäudes oder der Benützer benachbarter Gebäude herbeigeführt werden.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-85-abs5",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "85",
+      "absatz": "5",
+      "ziffer": null,
+      "fundstelle": "§ 85 Abs. 5",
+      "paragraph_ueberschrift": "Äußere Gestaltung von Bauwerken",
+      "headline": "Technische Aufbauten auf Dächern: Gestaltung",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 1050 Zeichen.",
+      "originaltext": "Bei Errichtung eines neuen Gebäudes in einer Schutzzone und im Bereich der UNESCO- Welterbestätten ist das Gebäude unbeschadet der Abs. 1 bis 4 und der Bebauungsbestimmungen gemäß § 5 Abs. 4 und § 7 Abs. 3 und 4 auf zeitgemäße Weise in das Stadtbild einzuordnen, oder es sind hinsichtlich des Baustils, der Bauform, der Gebäudehöhe, der Dachform, des Maßstabes, des Rhythmus, der Proportion, der technologischen Gestaltung beziehungsweise der Farbgebung die benachbarten Gebäude in derselben oder gegenüberliegenden Häuserzeile zu berücksichtigen. Dies gilt sinngemäß bei Änderungen bestehender Gebäude in Schutzzonen, im Bereich der UNESCO-Welterbestätten sowie für alle Gebäude, die vor dem 1.1.1945 errichtet wurden und an deren Erhaltung infolge ihrer Wirkung auf das örtliche Stadtbild ein öffentliches Interesse besteht, wobei der Bewahrung der äußeren Gestaltung, des Charakters und des Stils des Gebäudes, insbesondere des Maßstabes, des Rhythmus, der Proportion, der technologischen Gestaltung und der Farbgebung, besonderes Gewicht zukommt.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-85-abs6",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "85",
+      "absatz": "6",
+      "ziffer": null,
+      "fundstelle": "§ 85 Abs. 6",
+      "paragraph_ueberschrift": "Äußere Gestaltung von Bauwerken",
+      "headline": "Werbeeinrichtungen: Gestaltungsvorschriften",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 477 Zeichen.",
+      "originaltext": "Durch die Errichtung, Veränderung oder Beseitigung baulicher Ziergegenstände in Schutzzonen oder an Gebäuden, die vor dem 1.1.1945 errichtet wurden und an deren Erhaltung infolge ihrer Wirkung auf das örtliche Stadtbild ein öffentliches Interesse besteht darf die äußere Gestaltung, der Charakter und Stil des betroffenen Gebäudes beziehungsweise des dem baulichen Ziergegenstand benachbarten örtlichen Bereiches in seiner Wirkung im örtlichen Stadtbild nicht verändert werden.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-85-abs7",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "85",
+      "absatz": "7",
+      "ziffer": null,
+      "fundstelle": "§ 85 Abs. 7",
+      "paragraph_ueberschrift": "Äußere Gestaltung von Bauwerken",
+      "headline": "Denkmalschutz: unberührt von Gestaltungsvorschriften der BO",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 267 Zeichen.",
+      "originaltext": "Fenster und Fenstertüren eines Gebäudes haben hinsichtlich Konstruktion, Teilung, Profilstärke, Farbe und dergleichen ein einheitliches Erscheinungsbild aufzuweisen, es sei denn, die Unterschiede sind in der besonderen Gestaltung des Gebäudes begründet. Einfriedungen",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-86-abs1",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "86",
+      "absatz": "1",
+      "ziffer": null,
+      "fundstelle": "§ 86 Abs. 1",
+      "paragraph_ueberschrift": "Einfriedungen",
+      "headline": "Einfriedungspflicht gegenüber Verkehrsflächen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 230 Zeichen.",
+      "originaltext": "Wo dies aus Gesundheitsrücksichten, aus Sicherheitsgründen oder zum Schutze des örtlichen Stadtbildes notwendig ist, ist dem Eigentümer des anliegenden Grundes aufzutragen, seine Liegenschaft gegen die Verkehrsfläche einzufrieden.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-86-abs2",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "86",
+      "absatz": "2",
+      "ziffer": null,
+      "fundstelle": "§ 86 Abs. 2",
+      "paragraph_ueberschrift": "Einfriedungen",
+      "headline": "Zulässige Materialien und Gestaltung von Einfriedungen",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 253 Zeichen.",
+      "originaltext": "Einfriedungen müssen so ausgestaltet werden, daß sie das örtliche Stadtbild nicht beeinträchtigen. Sie dürfen, sofern der Bebauungsplan nicht anderes bestimmt, den Boden der höher gelegenen, anschließenden Grundfläche um nicht mehr als 2,50 m überragen.",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    },
+    {
+      "id": "bo-wien-para-86-abs3",
+      "quelle": "Bauordnung für Wien",
+      "quelle_kurz": "BO Wien",
+      "quelle_fassung": "11.03.2026",
+      "paragraph": "86",
+      "absatz": "3",
+      "ziffer": null,
+      "fundstelle": "§ 86 Abs. 3",
+      "paragraph_ueberschrift": "Einfriedungen",
+      "headline": "Einfriedungen im Vorgartenbereich: Durchblick erforderlich",
+      "erklaerung": "[PLATZHALTER-ERKLÄRUNG für Architekten] Diese Erklärung wird später durch eine LLM-generierte, architektengerechte Umformulierung der Vorschrift ersetzt. Der Originaltext umfasst 431 Zeichen.",
+      "originaltext": "Einfriedungen von Vorgärten gegen die Verkehrsfläche und an den seitlichen Grundgrenzen auf die Tiefe des Vorgartens dürfen, sofern der Bebauungsplan nicht anderes zuläßt, den freien Durchblick nicht hindern. Abweichungen hievon sind zulässig, wenn dadurch das örtliche Stadtbild nicht beeinträchtigt wird. Sonstige Grundgrenzen dürfen, wenn der Bebauungsplan nicht anderes bestimmt, durch volle Wände abgeschlossen werden. 9. Teil",
+      "hauptkategorie": "H",
+      "unterkategorie": "H.01",
+      "unterkategorie_label": "Bebauungsbestimmungen & Widmung",
+      "planungsphase": "entwurf",
+      "bedingungen": [
+        {
+          "typ": "immer"
+        }
+      ],
+      "varianten": [],
+      "anforderung": null,
+      "querverweise": [],
+      "hinweise": [],
+      "pruefhinweise": [
+        "PRÜFEN: Konkrete Maximalhöhe für Einfriedungen im Vorgarten im Originaltext."
+      ],
+      "is_entfallen": false,
+      "status": "inhalte_pruefen"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+// Alle Fragen des Wizards.
+// Die Reihenfolge hier = die Reihenfolge im Wizard.
+// Logik: Nutzung → Standort/Widmung → Baurecht → Gebäude → Kontext → bedingte Folgefragen.
+
+import type { WizardFrage } from '@/lib/types'
+
+export const wizardFragen: WizardFrage[] = [
+  {
+    id: 'hauptnutzung',
+    text: 'Was ist die Hauptnutzung des Gebäudes?',
+    hint: 'Die überwiegende Nutzung bestimmt, welche OIB-Richtlinien greifen.',
+    type: 'card-grid',
+    optionen: [
+      { value: 'wohnen', label: 'Wohnen' },
+      { value: 'buero', label: 'Büro / Verwaltung' },
+      { value: 'beherbergung', label: 'Beherbergung' },
+      { value: 'altersheim', label: 'Altersheim / Pflegeheim' },
+      { value: 'verkauf', label: 'Verkaufsstätte' },
+      { value: 'versammlung', label: 'Versammlungsstätte' },
+      { value: 'bildung', label: 'Bildung' },
+      { value: 'gesundheit', label: 'Gesundheitswesen' },
+      { value: 'betriebsbau', label: 'Betriebsbau' },
+      { value: 'garage', label: 'Garage' },
+      { value: 'gewerbe', label: 'Gewerbe' },
+      { value: 'kultur', label: 'Kultur' },
+      { value: 'sport', label: 'Sport' },
+      { value: 'sonstige', label: 'Sonstige' },
+    ],
+  },
+  {
+    id: 'widmung',
+    text: 'Welche Widmung hat dein Bauplatz?',
+    hint: 'Steht im Flächenwidmungs- und Bebauungsplan der Stadt Wien.',
+    type: 'card-grid',
+    optionen: [
+      { value: 'wohngebiet', label: 'Wohngebiet' },
+      { value: 'gemischtes_baugebiet', label: 'Gemischtes Baugebiet' },
+      { value: 'geschaeftsviertel', label: 'Geschäftsviertel' },
+      { value: 'betriebsbaugebiet', label: 'Betriebsbaugebiet' },
+      { value: 'industriegebiet', label: 'Industriegebiet' },
+      { value: 'gartensiedlungsgebiet', label: 'Gartensiedlungsgebiet' },
+      { value: 'erholungsgebiet', label: 'Erholungsgebiet' },
+      { value: 'laendliches_gebiet', label: 'Ländliches Gebiet' },
+      { value: 'sondergebiet', label: 'Sondergebiet' },
+    ],
+  },
+  {
+    id: 'bauklasse',
+    text: 'Welche Bauklasse gilt für den Bauplatz?',
+    hint: 'Die Bauklasse (I–VI) steuert zulässige Gebäudehöhe und Abstände nach BO Wien.',
+    type: 'card-grid',
+    optionen: [
+      { value: 'BK_I', label: 'BK I', description: '2,5 – 9 m' },
+      { value: 'BK_II', label: 'BK II', description: '2,5 – 12 m' },
+      { value: 'BK_III', label: 'BK III', description: '9 – 16 m' },
+      { value: 'BK_IV', label: 'BK IV', description: '12 – 21 m' },
+      { value: 'BK_V', label: 'BK V', description: '16 – 26 m' },
+      { value: 'BK_VI', label: 'BK VI', description: 'Laut Bebauungsplan' },
+      { value: 'keine', label: 'Keine Bauklasse', description: 'z.B. Gartensiedlung' },
+    ],
+  },
+  {
+    id: 'gebaeudeklasse',
+    text: 'Welche Gebäudeklasse hat dein Projekt?',
+    hint: 'GK nach OIB — abhängig von Geschossen, Höhe und Nutzfläche je Einheit.',
+    type: 'card-grid',
+    optionen: [
+      {
+        value: 'GK1',
+        label: 'GK 1',
+        description: 'Max. 3 oberirdische Geschosse · Freistehend · Bis 400 m² Gesamtnutzfläche',
+      },
+      {
+        value: 'GK2',
+        label: 'GK 2',
+        description: 'Max. 3 oberirdische Geschosse · Reihenhaus · Bis 400 m² je Einheit',
+      },
+      {
+        value: 'GK3',
+        label: 'GK 3',
+        description: 'Max. 3 oberirdische Geschosse · Nutzfläche gesamt > 400 m²',
+      },
+      {
+        value: 'GK4',
+        label: 'GK 4',
+        description: 'Max. 4 oberirdische Geschosse · Fluchtniveau ≤ 11 m',
+      },
+      {
+        value: 'GK5',
+        label: 'GK 5',
+        description: 'Alle übrigen Gebäude · Fluchtniveau > 11 m',
+      },
+    ],
+  },
+  {
+    id: 'bauweise',
+    text: 'Welche Bauweise sieht der Bebauungsplan vor?',
+    hint: 'Offen, gekuppelt, Gruppe oder geschlossen — bestimmt Abstände und Brandwand-Regeln.',
+    type: 'card-grid',
+    optionen: [
+      { value: 'offen', label: 'Offen', description: 'Allseitig freistehend' },
+      { value: 'gekuppelt', label: 'Gekuppelt', description: 'Paarweise aneinander' },
+      { value: 'offen_oder_gekuppelt', label: 'Offen oder gekuppelt' },
+      { value: 'gruppe', label: 'Gruppe', description: 'Mehrere zusammengebaut' },
+      { value: 'geschlossen', label: 'Geschlossen', description: 'Blockbebauung' },
+      { value: 'nicht_festgesetzt', label: 'Nicht festgesetzt' },
+    ],
+  },
+  {
+    id: 'oberirdischeGeschosse',
+    text: 'Wie viele oberirdische Geschosse hat das Gebäude?',
+    hint: 'Inkl. Erdgeschoss. Zwischengeschosse zählen mit.',
+    type: 'stepper',
+  },
+  {
+    id: 'unterirdischeGeschosse',
+    text: 'Gibt es unterirdische Geschosse?',
+    type: 'card-grid',
+    optionen: [
+      { value: 'nein', label: 'Nein' },
+      { value: '1', label: '1 Untergeschoss' },
+      { value: '2', label: '2 Untergeschosse' },
+      { value: 'o2', label: 'Mehr als 2' },
+    ],
+  },
+  {
+    id: 'fluchtniveau',
+    text: 'Wie hoch liegt das höchste Fluchtniveau?',
+    hint: 'Fußboden-Oberkante des höchsten Aufenthaltsgeschosses über Gelände.',
+    type: 'card-grid',
+    optionen: [
+      { value: 'u22', label: '≤ 22 m', description: 'Kein Hochhaus' },
+      { value: 'u32', label: '> 22 m bis ≤ 32 m', description: 'Hochhaus, OIB 2.3 greift' },
+      { value: 'u90', label: '> 32 m bis ≤ 90 m', description: 'Hochhaus, volle Anforderungen' },
+      { value: 'o90', label: '> 90 m', description: 'Sondergebäude, Einzelprüfung' },
+    ],
+  },
+  {
+    id: 'grenzabstand',
+    text: 'Wie nah steht das Gebäude zur Grundstücksgrenze?',
+    hint: 'Kleinster Abstand zu Nachbargrenzen an einer Stelle.',
+    type: 'card-grid',
+    optionen: [
+      { value: 'u2', label: '< 2 m', description: 'Brandwand meist erforderlich' },
+      { value: 'u4', label: '2 – 4 m', description: 'Maßnahmen nötig' },
+      { value: 'o4', label: '≥ 4 m', description: 'Keine Grenz-bedingten Maßnahmen' },
+    ],
+  },
+  {
+    id: 'bauplatz_an_fluchtlinie',
+    text: 'Liegt der Bauplatz an einer Fluchtlinie?',
+    hint: 'Fluchtlinie = straßenseitige Begrenzung laut Bebauungsplan.',
+    type: 'card-grid',
+    optionen: [
+      { value: 'ja', label: 'Ja', description: 'An Straße oder öffentlichem Platz' },
+      { value: 'teilweise', label: 'Teilweise' },
+      { value: 'nein', label: 'Nein' },
+    ],
+  },
+  {
+    id: 'in_schutzzone',
+    text: 'Liegt der Bauplatz in einer Schutzzone?',
+    hint: 'Erhaltenswerte Stadtstruktur, historische Viertel — Sonderregeln greifen.',
+    type: 'binary',
+    optionen: [
+      { value: 'ja', label: 'Ja' },
+      { value: 'nein', label: 'Nein' },
+    ],
+  },
+  {
+    id: 'bebauungsplan_abweichend',
+    text: 'Sieht der Bebauungsplan abweichende Bestimmungen vor?',
+    hint: 'Viele Paragraphen gelten nur, "sofern der Bebauungsplan nichts anderes bestimmt".',
+    type: 'card-grid',
+    optionen: [
+      { value: 'nein', label: 'Nein', description: 'Standard-Regeln greifen' },
+      { value: 'ja', label: 'Ja', description: 'Abweichungen im Plan festgelegt' },
+      { value: 'unbekannt', label: 'Unbekannt', description: 'Noch nicht geprüft' },
+    ],
+  },
+  {
+    id: 'bauart',
+    text: 'Handelt es sich um einen Neubau oder Bestand?',
+    type: 'binary',
+    optionen: [
+      { value: 'neubau', label: 'Neubau' },
+      { value: 'bestand', label: 'Bestand / Umbau' },
+    ],
+  },
+  {
+    id: 'anzahlBetten',
+    text: 'Wie viele Gästebetten hat das Beherbergungsgebäude?',
+    type: 'card-grid',
+    condition: (p) => p.hauptnutzung === 'beherbergung',
+    optionen: [
+      { value: 'u30', label: 'Bis 30 Betten' },
+      { value: '31-100', label: '31 – 100 Betten' },
+      { value: 'o100', label: 'Über 100 Betten' },
+    ],
+  },
+  {
+    id: 'anzahlBewohner',
+    text: 'Wie viele Bewohner hat das Heim?',
+    type: 'card-grid',
+    condition: (p) => p.hauptnutzung === 'altersheim',
+    optionen: [
+      { value: 'u30', label: 'Bis 30 Bewohner' },
+      { value: '31-60', label: '31 – 60 Bewohner' },
+      { value: 'o60', label: 'Über 60 Bewohner' },
+    ],
+  },
+  {
+    id: 'verkaufsflaeche',
+    text: 'Wie groß ist die Verkaufsfläche?',
+    type: 'card-grid',
+    condition: (p) => p.hauptnutzung === 'verkauf',
+    optionen: [
+      { value: 'u600', label: 'Bis 600 m²' },
+      { value: '601-3000', label: '601 – 3.000 m²' },
+      { value: 'o3000', label: 'Über 3.000 m²' },
+    ],
+  },
+  {
+    id: 'versammlungsflaeche',
+    text: 'Wie groß ist die Netto-Grundfläche?',
+    type: 'card-grid',
+    condition: (p) => p.hauptnutzung === 'versammlung',
+    optionen: [
+      { value: 'u600', label: 'Bis 600 m²' },
+      { value: '601-1600', label: '601 – 1.600 m²' },
+      { value: 'o1600', label: 'Über 1.600 m²' },
+    ],
+  },
+  {
+    id: 'sicherheitskategorie',
+    text: 'Welche Sicherheitskategorie hat der Betriebsbau?',
+    type: 'card-grid',
+    condition: (p) => p.hauptnutzung === 'betriebsbau',
+    optionen: [
+      { value: 'K1', label: 'K 1', description: 'Geringe Brandlast' },
+      { value: 'K2', label: 'K 2' },
+      { value: 'K3', label: 'K 3' },
+      { value: 'K4.1', label: 'K 4.1' },
+      { value: 'K4.2', label: 'K 4.2', description: 'Höchste Stufe' },
+    ],
+  },
+]

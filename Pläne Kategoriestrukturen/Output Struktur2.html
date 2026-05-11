@@ -1,0 +1,346 @@
+<h2 class="sr-only">Vorentwurf-Dashboard v3 mit Massstabs-Zoom von Staedtebau bis Raum</h2>
+<style>
+.v3-proj { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 20px; }
+.v3-pp { padding: 4px 10px; background: var(--color-background-secondary); color: var(--color-text-secondary); font-size: 12px; border-radius: var(--border-radius-md); }
+.v3-cat { margin: 0 0 32px; }
+.v3-ch { display: flex; align-items: baseline; gap: 10px; margin: 0 0 10px; }
+.v3-cn { font-size: 11px; font-weight: 500; color: var(--color-text-tertiary); font-family: var(--font-mono); }
+.v3-ct { font-size: 16px; font-weight: 500; color: var(--color-text-primary); }
+.v3-cs { font-size: 12px; color: var(--color-text-tertiary); }
+.v3-line { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 0 0 12px; }
+.v3-sub { margin: 0 0 14px; }
+.v3-sh { font-size: 12px; font-weight: 500; color: var(--color-text-secondary); margin: 0 0 8px; padding-left: 2px; }
+.v3-mg { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 6px; margin: 0 0 10px; }
+.v3-m { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 10px 12px; }
+.v3-ml { font-size: 11px; color: var(--color-text-secondary); margin: 0; }
+.v3-mv { font-size: 18px; font-weight: 500; color: var(--color-text-primary); margin: 0; }
+.v3-mn { font-size: 11px; color: var(--color-text-tertiary); margin: 2px 0 0; }
+.v3-ig { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 6px; }
+.v3-i { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 10px 14px; cursor: pointer; transition: border-color 0.15s; }
+.v3-i:hover { border-color: var(--color-border-secondary); }
+.v3-it { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin: 0 0 3px; }
+.v3-in { font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+.v3-b { display: inline-block; padding: 2px 8px; border-radius: 100px; font-size: 11px; font-weight: 500; white-space: nowrap; }
+.b-r { background: var(--color-background-danger); color: var(--color-text-danger); }
+.b-e { background: var(--color-background-warning); color: var(--color-text-warning); }
+.b-j { background: var(--color-background-info); color: var(--color-text-info); }
+.b-w { background: var(--color-background-success); color: var(--color-text-success); }
+.b-n { background: var(--color-background-secondary); color: var(--color-text-secondary); }
+.v3-id { font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; margin: 0; }
+.v3-ci { font-size: 11px; color: var(--color-text-tertiary); margin: 6px 0 0; padding: 8px 10px; background: var(--color-background-secondary); border-radius: var(--border-radius-md); display: none; line-height: 1.5; }
+.v3-ci.s { display: block; }
+.v3-off { opacity: 0.45; }
+.v3-nope { margin: 0 0 14px; }
+.v3-nope-title { font-size: 12px; font-weight: 500; color: var(--color-text-tertiary); margin: 0 0 6px; }
+.v3-ng { display: flex; flex-wrap: wrap; gap: 4px; }
+.v3-np { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: var(--color-background-secondary); border-radius: var(--border-radius-md); font-size: 11px; color: var(--color-text-tertiary); cursor: pointer; }
+.v3-np:hover { color: var(--color-text-secondary); }
+.v3-npci { font-size: 11px; color: var(--color-text-tertiary); margin: 4px 0 8px; padding: 6px 10px; background: var(--color-background-secondary); border-radius: var(--border-radius-md); display: none; line-height: 1.5; }
+.v3-npci.s { display: block; }
+</style>
+
+<div style="padding: 0.5rem 0;">
+
+<div class="v3-proj">
+  <span class="v3-pp">Wohnbau</span>
+  <span class="v3-pp">GK 4</span>
+  <span class="v3-pp">5 Geschosse</span>
+  <span class="v3-pp">1 UG</span>
+  <span class="v3-pp">Fluchtniveau 15 m</span>
+  <span class="v3-pp">Grenzabstand 3 m</span>
+  <span class="v3-pp">Neubau</span>
+</div>
+
+<!-- ═══════ 1 · STÄDTEBAU & GRUNDSTÜCK ═══════ -->
+<div class="v3-cat">
+  <div class="v3-ch">
+    <span class="v3-cn">01</span>
+    <span class="v3-ct">Staedtebau und Grundstueck</span>
+    <span class="v3-cs">Lage, Grenzen, Zufahrt</span>
+  </div>
+  <hr class="v3-line">
+  <div class="v3-sub">
+    <div class="v3-sh">Kennzahlen</div>
+    <div class="v3-mg">
+      <div class="v3-m"><p class="v3-ml">Grenzabstand</p><p class="v3-mv">3 m</p><p class="v3-mn">< 4 m: Massnahmen noetig</p></div>
+      <div class="v3-m"><p class="v3-ml">Feuerwehr Zugang</p><p class="v3-mv">80 m</p><p class="v3-mn">max. Gehweg zur Aufstellfl.</p></div>
+    </div>
+  </div>
+  <div class="v3-sub">
+    <div class="v3-ig">
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Brandwand zur Grenze</span><span class="v3-b b-r">erforderlich</span></div>
+        <p class="v3-id">REI 90 und A2 zur Grundstuecksgrenze. WDVS und Belaege an dieser Wand: A2. Dachvorspruenge nur mit Zusatzmassnahmen.</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 4.1 + Tab 1b Pkt 3.1 GK 4 + Pkt 4.4.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Oeffnungen nahe Grenze</span><span class="v3-b b-r">eingeschraenkt</span></div>
+        <p class="v3-id">Fenster mind. 50 cm von Brandwand-Mitte. Winkel < 135 Grad: mind. 3 m. Dachoeffnungen: mind. 1 m.</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 3.1.8 und 3.1.9.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Feuerwehrzufahrt</span><span class="v3-b b-j">pruefen</span></div>
+        <p class="v3-id">Zufahrten, Aufstell- und Bewegungsflaechen ausreichend befestigt und tragfaehig. Bei GK 4: Einsatzmoeglichkeiten beruecksichtigen.</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 6.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ 2 · BAUKÖRPER & VOLUMEN ═══════ -->
+<div class="v3-cat">
+  <div class="v3-ch">
+    <span class="v3-cn">02</span>
+    <span class="v3-ct">Baukoerper und Volumen</span>
+    <span class="v3-cs">Brandabschnitte, Gebaeudegliederung</span>
+  </div>
+  <hr class="v3-line">
+  <div class="v3-sub">
+    <div class="v3-sh">Kennzahlen</div>
+    <div class="v3-mg">
+      <div class="v3-m"><p class="v3-ml">Brandabschnitt OG</p><p class="v3-mv">max. 60 m</p><p class="v3-mn">Laengsausdehnung, keine Flaechenbegrenzung</p></div>
+      <div class="v3-m"><p class="v3-ml">Brandabschnitt UG</p><p class="v3-mv">800 m2</p><p class="v3-mn">max. Netto-Grundflaeche</p></div>
+      <div class="v3-m"><p class="v3-ml">Kleingebaeude befreit</p><p class="v3-mv">15 m2</p><p class="v3-mn">eingeschossig, keine BS-Anf.</p></div>
+    </div>
+  </div>
+  <div class="v3-sub">
+    <div class="v3-ig">
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Wohn- vs. andere Nutzung trennen</span><span class="v3-b b-e">abhaengig von Flaeche</span></div>
+        <p class="v3-id">Brandabschnittstrennung wenn Gesamtflaeche > 1.200 m2 oder andere Nutzung > 400 m2.</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 3.1.1.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Rauchableitung UG</span><span class="v3-b b-j">erforderlich</span></div>
+        <p class="v3-id">Oeffnungen ins Freie: mind. 0,50 m2 (bis 400 m2) bzw. 1,00 m2 (darueber). Von Feuerwehr oeffenbar.</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 3.12.</div>
+      </div>
+    </div>
+  </div>
+  <div class="v3-nope">
+    <div class="v3-nope-title">Nicht erforderlich</div>
+    <div class="v3-ng">
+      <span class="v3-np" onclick="tn(this)">Deckenuebergreifender Aussenwandstreifen — erst ab GK 5 > 6 OG</span>
+      <span class="v3-np" onclick="tn(this)">Brandschutzkonzept — kein Sondergebaeude</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ 3 · ERSCHLIESSUNG & VERTIKALE STRUKTUR ═══════ -->
+<div class="v3-cat">
+  <div class="v3-ch">
+    <span class="v3-cn">03</span>
+    <span class="v3-ct">Erschliessung und vertikale Struktur</span>
+    <span class="v3-cs">Treppenhaeuser, Aufzuege, Fluchtwege</span>
+  </div>
+  <hr class="v3-line">
+  <div class="v3-sub">
+    <div class="v3-sh">Kennzahlen</div>
+    <div class="v3-mg">
+      <div class="v3-m"><p class="v3-ml">Fluchtweg</p><p class="v3-mv">40 m</p><p class="v3-mn">ab Wohnungstuer</p></div>
+      <div class="v3-m"><p class="v3-ml">Stichgang max.</p><p class="v3-mv">15 m</p><p class="v3-mn">ab Wohnungstuer</p></div>
+      <div class="v3-m"><p class="v3-ml">Gaenge unterteilen</p><p class="v3-mv">alle 40 m</p><p class="v3-mn">Tueren E 30-C</p></div>
+    </div>
+  </div>
+  <div class="v3-sub">
+    <div class="v3-sh">Entscheidungen</div>
+    <div class="v3-ig">
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Treppenhaus-Konzept</span><span class="v3-b b-e">Entscheidung</span></div>
+        <p class="v3-id">Option A: ein Treppenhaus (Tab. 2a, einziger Fluchtweg, strengere Anf.). Option B: zwei Treppenhaeuser (Tab. 3, je geringer, zweiter Fluchtweg integriert).</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 5.1.1 b) und c).</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Zweiter Fluchtweg (bei Tab. 3)</span><span class="v3-b b-e">Entscheidung</span></div>
+        <p class="v3-id">Rettungsweg Feuerwehr (Anfahrt max. 10 km) ODER zweites Treppenhaus ODER Nachbar-Brandabschnitt. Gemeinsame Weglaenge max. 15 m ab Wohnungstuer.</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 5.1.4 und 5.1.5.</div>
+      </div>
+    </div>
+  </div>
+  <div class="v3-sub">
+    <div class="v3-sh">Anforderungen</div>
+    <div class="v3-ig">
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Aufzug</span><span class="v3-b b-r">verpflichtend</span></div>
+        <p class="v3-id">Personenaufzug alle Geschosse inkl. UG. Rollstuhlfahrer erreichbar. Brandfallsteuerung. Schacht-Innenseite A2.</p>
+        <div class="v3-ci">BO Wien &sect; 111 Abs. 1. OIB-RL 2 Pkt 3.6.2 + 3.6.3.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Barrierefreiheit</span><span class="v3-b b-r">verpflichtend</span></div>
+        <p class="v3-id">Stufenloser Haupteingang. Barrierefreie Verbindungswege. Mindestbreiten Tueren und Gaenge.</p>
+        <div class="v3-ci">BO Wien &sect; 115 Abs. 1 und 2. OIB-RL 4 Pkt 7.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Sicherheitsbeleuchtung</span><span class="v3-b b-j">auf Fluchtwegen</span></div>
+        <p class="v3-id">Eingeschraenkt auf Fluchtwege und festverlegtes Rettungswegesystem.</p>
+        <div class="v3-ci">OIB-RL 2 Tab 6 Pkt 1.2.</div>
+      </div>
+    </div>
+  </div>
+  <div class="v3-nope">
+    <div class="v3-nope-title">Nicht erforderlich</div>
+    <div class="v3-ng">
+      <span class="v3-np" onclick="tn(this)">Feuerwehraufzug — erst ab Fluchtniveau > 22 m</span>
+      <span class="v3-np" onclick="tn(this)">Sicherheitsbeleuchtung uneingeschraenkt — nur bei Sondernutzung</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ 4 · GESCHOSS & GRUNDRISS ═══════ -->
+<div class="v3-cat">
+  <div class="v3-ch">
+    <span class="v3-cn">04</span>
+    <span class="v3-ct">Geschoss und Grundriss</span>
+    <span class="v3-cs">Trennbauteile, Wohnungslayout</span>
+  </div>
+  <hr class="v3-line">
+  <div class="v3-sub">
+    <div class="v3-sh">Kennzahlen</div>
+    <div class="v3-mg">
+      <div class="v3-m"><p class="v3-ml">Wohnungsgroesse</p><p class="v3-mv">min. 30 m2</p><p class="v3-mn">mit WC, Bad, Kueche</p></div>
+      <div class="v3-m"><p class="v3-ml">Wohnung max. Geschosse</p><p class="v3-mv">2</p><p class="v3-mn">Maisonette-Grenze</p></div>
+      <div class="v3-m"><p class="v3-ml">Raumhoehe</p><p class="v3-mv">gem. BO/RL 3</p><p class="v3-mn">verwendungszweckabhaengig</p></div>
+    </div>
+  </div>
+  <div class="v3-sub">
+    <div class="v3-ig">
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Trennwaende zwischen Wohnungen</span><span class="v3-b b-w">REI 60 / EI 60</span></div>
+        <p class="v3-id">Wohnungstrennwaende in oberirdischen Geschossen. Im UG: REI 90 und A2.</p>
+        <div class="v3-ci">OIB-RL 2 Tab 1b Pkt 2.2 und 2.3 GK 4.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Tueren Treppenhaus zu Gang</span><span class="v3-b b-w">E 30-C</span></div>
+        <p class="v3-id">Bei Tab. 2a GK 4. Glasflaechen bis 3x Tuerblatflaeche: E 30 genuegt.</p>
+        <div class="v3-ci">OIB-RL 2 Tab 2a Pkt 3.2 GK 4.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Tueren Treppenhaus zu Wohnung</span><span class="v3-b b-w">EI2 30-C-S200</span></div>
+        <p class="v3-id">Bei Tab. 2a GK 4. Inkl. Rauchschutz S200.</p>
+        <div class="v3-ci">OIB-RL 2 Tab 2a Pkt 3.1 GK 4.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Rauchwarnmelder</span><span class="v3-b b-j">in jeder Wohnung</span></div>
+        <p class="v3-id">Alle Aufenthaltsraeume (ausser Kueche) + Gaenge im Fluchtweg. Je min. 1 unvernetzter Melder.</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 3.11.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ 5 · TECHNIK & SONDERRÄUME ═══════ -->
+<div class="v3-cat">
+  <div class="v3-ch">
+    <span class="v3-cn">05</span>
+    <span class="v3-ct">Technik und Sonderraeume</span>
+    <span class="v3-cs">Heizung, Lager, Abfall, Batterie</span>
+  </div>
+  <hr class="v3-line">
+  <div class="v3-sub">
+    <div class="v3-ig">
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Heizraum</span><span class="v3-b b-e">abhaengig von Anlage</span></div>
+        <p class="v3-id">Erforderlich bei > 50 kW oder Festbrennstoff mit auto. Beschickung. Waende/Decken REI 90 / EI 90, raumseitig A2, Boden A2fl, Tuer EI2 30-C.</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 3.9.2 und 3.9.4.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Abfallsammelraum</span><span class="v3-b b-j">eigener Brandabschnitt</span></div>
+        <p class="v3-id">Waende/Decken REI 90 / EI 90, raumseitig A2, Boden Bfl, Tuer EI2 30-C. Barrierefrei erreichbar.</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 3.9.1 + 3.9.2. BO Wien &sect; 119a Abs. 2.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Batterieraum (stationaer)</span><span class="v3-b b-e">ab 3 kWh / 20 kWh</span></div>
+        <p class="v3-id">Bis 3 kWh: kein Batterieraum. Bis 20 kWh: nur bei GK 1/RH GK 2 befreit (mit Rauchwarnmelder). Darueber: Batterieraum erforderlich.</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 3.9.12.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Erste Loeschhilfe</span><span class="v3-b b-j">tragbare Feuerloescher</span></div>
+        <p class="v3-id">Ausreichende und geeignete Mittel bereitzuhalten.</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 3.10.1.</div>
+      </div>
+    </div>
+  </div>
+  <div class="v3-nope">
+    <div class="v3-nope-title">Nicht erforderlich</div>
+    <div class="v3-ng">
+      <span class="v3-np" onclick="tn(this)">Wandhydranten / Steigleitung — erst ab GK 5 > 6 OG</span>
+      <span class="v3-np" onclick="tn(this)">Sprinkleranlage — kein Hochhaus, keine Sondernutzung</span>
+      <span class="v3-np" onclick="tn(this)">Brandmeldeanlage — Rauchwarnmelder genuegen</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ 6 · AUSSENANLAGEN & INFRASTRUKTUR ═══════ -->
+<div class="v3-cat">
+  <div class="v3-ch">
+    <span class="v3-cn">06</span>
+    <span class="v3-ct">Aussenanlagen und Infrastruktur</span>
+    <span class="v3-cs">Stellplaetze, Fahrrad, Spielplatz, Gemeinschaft</span>
+  </div>
+  <hr class="v3-line">
+  <div class="v3-sub">
+    <div class="v3-ig">
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Fahrradabstellplaetze</span><span class="v3-b b-w">1 je 30 m2 Wfl.</span></div>
+        <p class="v3-id">Jeder 10. Platz fuer Lastenraeder. E-Bike-Ladeplaetze. Witterungsgeschuetzt, barrierefrei.</p>
+        <div class="v3-ci">BO Wien &sect; 119a Abs. 3.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Kinderwagenraum</span><span class="v3-b b-r">verpflichtend</span></div>
+        <p class="v3-id">Vom Gebaeudeinneren zugaenglich, barrierefrei erreichbar. Auch Waschkuechen und Gemeinschaftsraeume barrierefrei.</p>
+        <div class="v3-ci">BO Wien &sect; 119a Abs. 2.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Spielplatz</span><span class="v3-b b-e">abhaengig von Wohnungszahl</span></div>
+        <p class="v3-id">Kleinkinderspielplatz ab bestimmter Groesse. Details per VO der Landesregierung.</p>
+        <div class="v3-ci">BO Wien &sect; 119a Abs. 4.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ 7 · HÜLLE & ENERGIE ═══════ -->
+<div class="v3-cat">
+  <div class="v3-ch">
+    <span class="v3-cn">07</span>
+    <span class="v3-ct">Gebaeudehuelle und Energie</span>
+    <span class="v3-cs">Fassade, Dach, Waermeschutz, Energieausweis</span>
+  </div>
+  <hr class="v3-line">
+  <div class="v3-sub">
+    <div class="v3-ig">
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Fassade Brandschutz</span><span class="v3-b b-j">GK 4: Massnahmen noetig</span></div>
+        <p class="v3-id">WDVS und hinterlueftete Fassaden: Brandweiterleitung und Herabfallen grosser Teile wirksam einschraenken (bez. auf 2. Geschoss ueber Brandherd).</p>
+        <div class="v3-ci">OIB-RL 2 Pkt 3.5.1 und 3.5.6.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Energiestandard</span><span class="v3-b b-j">OIB-RL 6</span></div>
+        <p class="v3-id">Neubau: Anforderungen an Gesamtenergieeffizienz. Hocheffiziente alternative Systeme pruefen. Energieausweis erforderlich.</p>
+        <div class="v3-ci">BO Wien &sect; 118. OIB-RL 6 Pkt 4 und 5.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Fossile Heizung</span><span class="v3-b b-r">nicht zulaessig</span></div>
+        <p class="v3-id">Neubau: Errichtung von Waermebereitstellungsanlagen fuer feste und fluessige fossile Brennstoffe nicht zulaessig.</p>
+        <div class="v3-ci">BO Wien &sect; 118 Abs. 3f.</div>
+      </div>
+      <div class="v3-i" onclick="tc(this)">
+        <div class="v3-it"><span class="v3-in">Schallschutz</span><span class="v3-b b-j">OIB-RL 5</span></div>
+        <p class="v3-id">Luft- und Trittschall-Daemmung zwischen Nutzungseinheiten. Aussenlaerm beruecksichtigen. Haustechnische Anlagen entkoppeln.</p>
+        <div class="v3-ci">BO Wien &sect;&sect; 116-117. OIB-RL 5 Pkt 2-5.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="border-top: 0.5px solid var(--color-border-tertiary); padding-top: 12px; margin-top: 8px; display: flex; justify-content: space-between; align-items: center;">
+  <span style="font-size: 12px; color: var(--color-text-tertiary);">Vorentwurf: 25 Punkte aus OIB-RL 1–6, BO Wien</span>
+  <button onclick="sendPrompt('Zeig mir die Entwurfsphase mit Bauteilfilter')">Weiter zum Entwurf &#8594;</button>
+</div>
+
+</div>
+
+<script>
+function tc(el) { var c = el.querySelector('.v3-ci'); if(c) c.classList.toggle('s'); }
+function tn(el) { var n = el.nextElementSibling; if(!n || !n.classList.contains('v3-npci')) { var d = document.createElement('div'); d.className='v3-npci s'; d.textContent='Quelle wird in Entwurfsphase mit Details angezeigt.'; el.parentNode.insertBefore(d, el.nextSibling); } else { n.classList.toggle('s'); } }
+</script>
