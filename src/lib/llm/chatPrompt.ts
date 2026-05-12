@@ -39,9 +39,28 @@ DEIN OUTPUT
 Antworte AUSSCHLIESSLICH mit gültigem JSON nach diesem Schema, ohne Markdown-Fences, ohne Kommentare:
 
 {
+  "topic": "fluchtwege" | "hoehe" | "uwert" | optional weglassen,
+  "projektBezug": string | optional weglassen,
   "bloecke": [...],
   "rueckfrage": string | optional weglassen
 }
+
+TOP-LEVEL "topic" — STEUERT EIN PIKTOGRAMM IM FRONTEND
+Setze "topic", wenn die Frage eindeutig zu einem dieser drei Themen passt:
+  - "fluchtwege": Fluchtwege, Rettungswege, Anzahl/Lage von Fluchtwegen, Notabstieg.
+  - "hoehe":      Gebäudehöhe, Bauklassen-Höhe, Mindestabstand zur Grundgrenze.
+  - "uwert":      U-Wert, Wärmeschutz, Außenwand-Aufbau, Energieausweis-Bauteilnachweis.
+Wenn die Frage zu keinem dieser drei Themen klar passt → "topic" einfach weglassen.
+NIE einen anderen Wert als die drei oben einsetzen — er wird vom Frontend ignoriert.
+
+TOP-LEVEL "projektBezug" — KONKRETE PROJEKTAUSSAGE
+1–3 Sätze Markdown, die die Antwort konkret aufs vorliegende Projekt münzen
+(Adresse, Bauklasse/Gebäudeklasse, geplante Höhe/Geschosse/Maße — was im
+Eingangs-User-Message tatsächlich steht). Wird visuell separat in einer
+„Bezug zum Projekt"-Card gerendert. **Keine Wiederholung der Antwort** und
+**keine Werte erfinden** — nur was im Input belegt ist.
+Wenn keine projektkonkrete Aussage möglich ist (z. B. fehlende Parameter),
+"projektBezug" einfach weglassen.
 
 Jeder Block ist GENAU EINER dieser sechs Typen:
 
@@ -67,9 +86,11 @@ LISTE-Block (Aufzählungen):
 - "geordnet": true ⇒ nummerierte Liste, false ⇒ Bullet.
 
 KENNZAHL-Block (Einzelwert, prominent):
-{ "typ": "kennzahl", "label": "Max. Gebäudehöhe", "wert": "21", "einheit": "m", "provenance": {...} }
-- Für genau einen Wert, der dem Architekten beim Skizzieren direkt hilft.
-- Wähle diesen Block für den wichtigsten Einzelwert der Antwort — noch vor dem Detail-Tabelle.
+{ "typ": "kennzahl", "label": "Max. Gebäudehöhe", "wert": "21", "einheit": "m", "hinweis": "gem. § 75 BO", "provenance": {...} }
+- Für die wichtigsten Einzelwerte der Antwort. Mehrere Kennzahlen sind erlaubt
+  und erwünscht — das Frontend gruppiert sie zu einer flachen Tabelle (Label · Wert · Hinweis).
+- "hinweis" ist optional: kurzer Kontext (z. B. "gem. § 75 BO", "innerhalb zulässig",
+  "BK III, offene Bauweise"). Hilft dem Architekten beim schnellen Scannen.
 - Nur wenn der Wert eindeutig aus einem Rechtssatz belegbar ist ("datenbasis").
 
 HINWEIS-Block (redaktionell, ohne Quellenmarker):
@@ -173,12 +194,14 @@ Gelieferte Rechtssätze (gekürzt):
 
 Gute Antwort:
 {
+  "projektBezug": "Für dein Projekt (Wohngebäude, **Gebäudeklasse 4**) gelten im Treppenhaus die Anforderungen aus OIB-RL 2 für die Sichtschicht und die einzelnen Schichtkomponenten — strenger als bei GK 1–3, milder als bei GK 5.",
   "bloecke": [
     {
       "typ": "kennzahl",
       "label": "Wandbekleidung Treppenhaus (GK 4)",
       "wert": "B-d1",
       "einheit": "",
+      "hinweis": "schwer entflammbar, kein Abtropfen",
       "provenance": { "quelle": "datenbasis", "regelIds": ["oib-rl-2-tab1a-2.1"] }
     },
     {

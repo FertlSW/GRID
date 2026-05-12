@@ -24,7 +24,7 @@ import {
 import { useProjekte } from '@/state/ProjekteContext'
 import { filterAlleRegeln } from '@/lib/rules'
 import { streameChatAntwort } from '@/lib/llm/chatService'
-import type { ChatBlock, ChatNachricht } from '@/lib/llm/chatTypes'
+import type { ChatBlock, ChatNachricht, ChatTopic } from '@/lib/llm/chatTypes'
 import {
   cleanup,
   lade,
@@ -257,6 +257,12 @@ export function ChatThreadsProvider({ children }: { children: ReactNode }) {
             updateAssistant((n) =>
               setRueckfrage(n, event.rueckfrage as string),
             )
+          } else if (event.typ === 'topic' && event.topic) {
+            updateAssistant((n) => setTopic(n, event.topic as ChatTopic))
+          } else if (event.typ === 'projektBezug' && event.projektBezug) {
+            updateAssistant((n) =>
+              setProjektBezug(n, event.projektBezug as string),
+            )
           }
         }
       } catch (err) {
@@ -345,5 +351,21 @@ function setRueckfrage(n: ChatNachricht, rueckfrage: string): ChatNachricht {
   return {
     ...n,
     antwort: { ...aktuell, rueckfrage },
+  }
+}
+
+function setTopic(n: ChatNachricht, topic: ChatTopic): ChatNachricht {
+  const aktuell = n.antwort ?? { bloecke: [] }
+  return {
+    ...n,
+    antwort: { ...aktuell, topic },
+  }
+}
+
+function setProjektBezug(n: ChatNachricht, projektBezug: string): ChatNachricht {
+  const aktuell = n.antwort ?? { bloecke: [] }
+  return {
+    ...n,
+    antwort: { ...aktuell, projektBezug },
   }
 }

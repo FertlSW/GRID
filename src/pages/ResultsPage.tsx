@@ -1,118 +1,119 @@
-// Ergebnis-Seite: oben View-Toggle, darunter wechselnd View A / B / C.
+// Ergebnis-Seite: oben View-Toggle, darunter wechselnd „Nachschlagen" oder „Dashboard".
 // App-Layout: keine Page-Scroll, der Inhaltsbereich scrollt intern.
-// View C bekommt den vollen Bereich ohne Padding (Sidebar + Chat füllen ihn);
-// View A und B scrollen in einem padded Container.
+// Nachschlagen ist die kombinierte Lookup+Chat-Ansicht (ehemals View A + View C);
+// Chat-Verlauf erscheint dort, sobald eine Frage gestellt wurde.
+//
+// Wechsel-Verhalten:
+//   • NachschlagenView ist IMMER gemountet (nur via CSS ein-/ausgeblendet),
+//     damit Scroll-Position, Filter-Pills, Such-State und Hero-Collapse
+//     den Tab-Wechsel überleben.
+//   • ViewB (Dashboard) wird bewusst nur dann gemountet, wenn aktiv — die
+//     9 Layout-Animationen und LLM-Hooks sind teuer; jeder Re-Mount holt
+//     sich aus dem persistenten Cache, blockiert aber den Render-Pfad mit
+//     vielen Frames. Vorigerer `AnimatePresence mode="wait"` blockierte
+//     gelegentlich den Tab-Wechsel, deshalb jetzt entfernt.
 
 import { useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
-import { useNavigate } from 'react-router-dom'
-import { ArrowLeft } from 'lucide-react'
+import { useLocation } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 import { Shell } from '@/components/Shell'
 import { ProjektMenu } from '@/components/ProjektMenu'
 import { ViewToggle, type ViewMode } from '@/components/shared/ViewToggle'
-import { ViewA } from '@/components/viewA/ViewA'
 import { ViewB } from '@/components/viewB/ViewB'
-import { ViewC } from '@/components/viewC/ViewC'
+import { NachschlagenView } from '@/components/lookup/NachschlagenView'
 import { ChatHeaderActions } from '@/components/viewC/ChatHeaderActions'
+import { ViewC } from '@/components/viewC/ViewC'
 import { MotionReveal } from '@/components/shared/MotionReveal'
+import { useChat } from '@/hooks/useChat'
 import { cn } from '@/lib/cn'
 
 export function ResultsPage() {
-  const navigate = useNavigate()
-  const [view, setView] = useState<ViewMode>('A')
-
-  const istChat = view === 'C'
+  const location = useLocation()
+  const initialView: ViewMode =
+    (location.state as { initialView?: ViewMode } | null)?.initialView ===
+    'dashboard'
+      ? 'dashboard'
+      : 'lookup'
+  const [view, setView] = useState<ViewMode>(initialView)
 
   return (
     <Shell
       appLayout
       headerProject={<ProjektMenu />}
-      headerRight={
-        <div className="flex items-center gap-3">
-          {istChat && (
-            <>
-              <ChatHeaderActions />
-              <span className="h-3 w-px bg-line-soft" aria-hidden />
-            </>
-          )}
-          <button
-            onClick={() => navigate('/wizard')}
-            className="group inline-flex items-center gap-1 text-xxs text-muted hover:text-ink transition-colors"
-          >
-            <ArrowLeft size={12} />
-            Parameter ändern
-          </button>
-        </div>
-      }
+      headerRight={view === 'lookup' ? <ChatHeaderActions /> : null}
     >
       <div className="h-full flex flex-col">
         {/* View-Toggle-Bar — fest unter dem Header */}
         <div className="shrink-0 bg-paper border-b border-line-soft">
           <div className="mx-auto max-w-[1400px] px-6 md:px-10 py-3 flex justify-center">
-            <ViewToggle value={view} onChange={setView} />
+            <ViewToggle
+              value={view}
+              onChange={(next) => {
+                setView(next)
+              }}
+            />
           </div>
         </div>
 
-        {/* Content-Bereich. Bei View A/B scrollt er intern und hat Padding,
-            bei View C füllt er ohne Padding und ohne eigenen Scroll. */}
-        <div
-          className={cn(
-            'flex-1 min-h-0',
-            istChat ? 'overflow-hidden' : 'overflow-y-auto',
-          )}
-        >
-          {istChat ? (
-            <ViewC />
-          ) : (
-            <div className="mx-auto max-w-[1400px] px-6 md:px-10 py-10">
-              <AnimatePresence mode="wait">
-                {view === 'A' && (
-                  <motion.div
-                    key="view-a"
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
-                    transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                  >
-                    <MotionReveal>
-                      <div className="mb-8">
-                        <h1 className="text-2xl font-medium tracking-tight">
-                          Nachschlage-Ansicht
-                        </h1>
-                        <p className="text-sm text-muted mt-1">
-                          Alle geltenden Vorschriften, sortiert nach juristischer Struktur.
-                          Regel anklicken → Erklärung → Originalzitat.
-                        </p>
-                      </div>
-                    </MotionReveal>
-                    <ViewA />
-                  </motion.div>
-                )}
-                {view === 'B' && (
-                  <motion.div
-                    key="view-b"
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
-                    transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                  >
-                    <MotionReveal>
-                      <div className="mb-8">
-                        <h1 className="text-2xl font-medium tracking-tight">
-                          Architekten-Dashboard
-                        </h1>
-                        <p className="text-sm text-muted mt-1">
-                          Nach räumlichem Maßstab und Planungsphase — zeigt in jeder
-                          Phase nur das, was du gerade brauchst.
-                        </p>
-                      </div>
-                    </MotionReveal>
-                    <ViewB />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
+        {/* Content-Bereich. Beide Views liegen im Layer übereinander; der
+            inaktive ist via `hidden` deaktiviert (kein Render-Cycle, kein
+            Tab-Stop, kein Scroll-Reset). NachschlagenView bleibt dadurch im
+            Hintergrund alive — Scroll- und Filter-State überleben Wechsel. */}
+        <div className="flex-1 min-h-0 overflow-hidden relative">
+          <motion.div
+            key="view-lookup"
+            initial={false}
+            animate={{ opacity: view === 'lookup' ? 1 : 0 }}
+            transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className={cn(
+              'absolute inset-0 h-full',
+              view === 'lookup' ? '' : 'pointer-events-none',
+            )}
+            aria-hidden={view !== 'lookup'}
+            style={{ visibility: view === 'lookup' ? 'visible' : 'hidden' }}
+          >
+            <NachschlagenView onOpenChat={() => setView('chat')} />
+          </motion.div>
+
+          <motion.div
+            key="view-chat"
+            initial={false}
+            animate={{ opacity: view === 'chat' ? 1 : 0 }}
+            transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className={cn(
+              'absolute inset-0 h-full',
+              view === 'chat' ? '' : 'pointer-events-none',
+            )}
+            aria-hidden={view !== 'chat'}
+            style={{ visibility: view === 'chat' ? 'visible' : 'hidden' }}
+          >
+            <ViewC withSidebar />
+          </motion.div>
+
+          {view === 'dashboard' && (
+            <motion.div
+              key="view-dashboard"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+              className="absolute inset-0 h-full overflow-y-auto"
+            >
+              <div className="mx-auto max-w-[1400px] px-6 md:px-10 py-10">
+                <MotionReveal>
+                  <div className="mb-8">
+                    <h1 className="text-2xl font-medium tracking-tight">
+                      Architekten-Dashboard
+                    </h1>
+                    <p className="text-sm text-muted mt-1">
+                      Nach räumlichem Maßstab und Planungsphase — zeigt in jeder
+                      Phase nur das, was du gerade brauchst.
+                    </p>
+                  </div>
+                </MotionReveal>
+                <ViewB />
+              </div>
+            </motion.div>
           )}
         </div>
       </div>

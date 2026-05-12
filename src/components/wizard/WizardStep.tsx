@@ -62,10 +62,10 @@ function CardGrid({ frage, value, onChange }: WizardStepProps) {
             )}
           >
             <div className="flex items-start justify-between gap-2">
-              <div>
+              <div className="min-w-0 flex-1">
                 <div
                   className={cn(
-                    'text-sm font-medium transition-colors',
+                    'text-sm font-medium transition-colors hyphens-auto break-words',
                     selected ? 'text-ink' : 'text-ink'
                   )}
                 >

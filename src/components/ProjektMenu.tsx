@@ -6,7 +6,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
-import { Check, ChevronDown, Pencil, Plus, Trash2 } from 'lucide-react'
+import { Check, ChevronDown, Pencil, Plus, SlidersHorizontal, Trash2 } from 'lucide-react'
 import { cn } from '@/lib/cn'
 import { useProjekte } from '@/state/ProjekteContext'
 import { projektUntertitel, type Projekt } from '@/lib/projekt/projekteStorage'
@@ -53,12 +53,18 @@ export function ProjektMenu() {
     navigate('/wizard')
   }
 
+  const handleParameterAendern = (p: Projekt) => {
+    if (p.id !== aktivesProjekt?.id) wechselZuProjekt(p.id)
+    setOffen(false)
+    navigate('/wizard')
+  }
+
   return (
     <div ref={wrapRef} className="relative flex items-center gap-2">
       <span className="text-muted-soft">·</span>
       <button
         onClick={() => setOffen((o) => !o)}
-        className="inline-flex items-center gap-1.5 text-[15px] tracking-tight text-ink hover:opacity-70 transition-opacity"
+        className="inline-flex items-center gap-1 text-[13px] tracking-[-0.005em] text-ink hover:opacity-70 transition-opacity"
         aria-expanded={offen}
         aria-haspopup="menu"
       >
@@ -66,7 +72,7 @@ export function ProjektMenu() {
           {aktivesProjekt?.name ?? 'Kein Projekt'}
         </span>
         <ChevronDown
-          size={13}
+          size={11}
           className={cn(
             'text-muted-soft transition-transform',
             offen && 'rotate-180',
@@ -96,6 +102,7 @@ export function ProjektMenu() {
                   aktiv={p.id === aktivesProjekt?.id}
                   imBearbeitenModus={editId === p.id}
                   onWechsel={() => handleWechsel(p)}
+                  onParameterAendern={() => handleParameterAendern(p)}
                   onUmbenennenStart={() => setEditId(p.id)}
                   onUmbenennenSpeichern={(name) => {
                     benenneProjektUm(p.id, name)
@@ -134,6 +141,7 @@ interface EintragProps {
   aktiv: boolean
   imBearbeitenModus: boolean
   onWechsel: () => void
+  onParameterAendern: () => void
   onUmbenennenStart: () => void
   onUmbenennenSpeichern: (name: string) => void
   onUmbenennenAbbrechen: () => void
@@ -145,6 +153,7 @@ function Eintrag({
   aktiv,
   imBearbeitenModus,
   onWechsel,
+  onParameterAendern,
   onUmbenennenStart,
   onUmbenennenSpeichern,
   onUmbenennenAbbrechen,
@@ -194,6 +203,16 @@ function Eintrag({
       </div>
       {!imBearbeitenModus && (
         <div className="shrink-0 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+          <button
+            onClick={(e) => {
+              e.stopPropagation()
+              onParameterAendern()
+            }}
+            aria-label="Parameter ändern"
+            className="p-1 rounded text-muted-soft hover:text-ink hover:bg-paper transition-colors"
+          >
+            <SlidersHorizontal size={12} />
+          </button>
           <button
             onClick={(e) => {
               e.stopPropagation()

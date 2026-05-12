@@ -53,6 +53,9 @@ export interface ChatBlockKennzahl {
   label: string
   wert: string
   einheit?: string
+  // Kurzer Kontexthinweis für die dritte Spalte in der Kennwerte-Tabelle —
+  // z.B. „gem. § 75 BO", „innerhalb zulässig". Optional.
+  hinweis?: string
   provenance: Provenance
 }
 
@@ -73,11 +76,20 @@ export type ChatBlock =
 
 // ──────────────────────────── Antwort + Nachricht ────────────────────────────
 
+/** Topics, für die das Frontend ein Piktogramm rendert. Andere Werte
+ *  werden ignoriert (kein Piktogramm gezeigt). */
+export type ChatTopic = 'fluchtwege' | 'hoehe' | 'uwert'
+
 export interface ChatAntwort {
   bloecke: ChatBlock[]
   // Wenn gesetzt: Modell will erst eine Klärung, bevor es antwortet.
   // In dem Fall sind `bloecke` typischerweise leer oder sehr kurz.
   rueckfrage?: string
+  // Optional: Topic-Hinweis fürs Frontend, um ein passendes Piktogramm zu rendern.
+  topic?: ChatTopic
+  // Optional: 1–3 Sätze Markdown, die die Antwort konkret aufs Projekt münzen
+  // (Adresse, Bauklasse, geplante Maße). Wird in einer eigenen accent-Card gerendert.
+  projektBezug?: string
 }
 
 export interface ChatNachricht {

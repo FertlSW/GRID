@@ -16,7 +16,19 @@ const config: Config = {
           'Arial',
           'sans-serif',
         ],
-        mono: ['JetBrains Mono', 'SFMono-Regular', 'Menlo', 'monospace'],
+        // `mono` ist bewusst auf die gleiche Stack wie `sans` gemappt — der
+        // User wollte alle Monospace-Akzente (Labels, Counts, Letter A-I)
+        // durch die normale Sans ersetzen. So wirkt jede vorhandene
+        // `font-mono`-Klasse als No-op und benutzt Inter.
+        mono: [
+          'Inter',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Helvetica',
+          'Arial',
+          'sans-serif',
+        ],
       },
       colors: {
         ink: {

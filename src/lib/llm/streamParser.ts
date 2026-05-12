@@ -1,29 +1,43 @@
 // Inkrementeller JSON-Parser für den Streaming-Chat.
 //
 // Das Modell streamt JSON in der Form
-//   { "bloecke": [ { ... }, { ... } ], "rueckfrage": "..." }
+//   { "topic": "...", "projektBezug": "...", "bloecke": [ {...}, {...} ], "rueckfrage": "..." }
 // Diese Klasse akkumuliert die Chunks und erkennt, sobald
-//   - ein neues Block-Objekt komplett zu Ende geschrieben wurde, oder
-//   - der `rueckfrage`-String komplett vorliegt.
-// Beides wird sofort gemeldet — die UI kann fertige Blöcke rendern, während
-// der Stream weiterläuft.
+//   - ein neues Block-Objekt komplett zu Ende geschrieben wurde,
+//   - der `rueckfrage`-String komplett vorliegt,
+//   - der `topic`-String komplett vorliegt,
+//   - der `projektBezug`-String komplett vorliegt.
+// Alle erkannten Felder werden sofort gemeldet — die UI kann fertige Teile
+// rendern, während der Stream weiterläuft.
 //
 // Der Parser ist stringbewusst: `{`/`}`/`[`/`]` innerhalb von JSON-Strings
 // werden ignoriert, ebenso ein per Backslash escapetes Anführungszeichen.
 
-import type { ChatBlock } from '@/lib/llm/chatTypes'
+import type { ChatBlock, ChatTopic } from '@/lib/llm/chatTypes'
 
 export interface StreamParserOutput {
   /** Neu fertig gewordene Blöcke seit dem letzten `feed()`. */
   neueBloecke: ChatBlock[]
   /** Wenn `rueckfrage` jetzt erstmals komplett vorliegt. */
   rueckfrage?: string
+  /** Wenn `topic` jetzt erstmals komplett vorliegt. */
+  topic?: ChatTopic
+  /** Wenn `projektBezug` jetzt erstmals komplett vorliegt. */
+  projektBezug?: string
 }
+
+const ERLAUBTE_TOPICS: ReadonlySet<string> = new Set([
+  'fluchtwege',
+  'hoehe',
+  'uwert',
+])
 
 export class ChatStreamParser {
   private buffer = ''
   private emittedBlockCount = 0
   private rueckfrageEmitted = false
+  private topicEmitted = false
+  private projektBezugEmitted = false
 
   feed(chunk: string): StreamParserOutput {
     this.buffer += chunk
@@ -36,10 +50,30 @@ export class ChatStreamParser {
     }
 
     if (!this.rueckfrageEmitted) {
-      const rf = this.extractRueckfrage()
+      const rf = this.extractStringField('rueckfrage')
       if (rf !== null) {
         out.rueckfrage = rf
         this.rueckfrageEmitted = true
+      }
+    }
+
+    if (!this.topicEmitted) {
+      const t = this.extractStringField('topic')
+      if (t !== null && ERLAUBTE_TOPICS.has(t)) {
+        out.topic = t as ChatTopic
+        this.topicEmitted = true
+      } else if (t !== null) {
+        // Unzulässiger Wert → einmal als „verarbeitet" markieren, damit wir
+        // nicht in jeder feed()-Runde den gleichen ungültigen String prüfen.
+        this.topicEmitted = true
+      }
+    }
+
+    if (!this.projektBezugEmitted) {
+      const pb = this.extractStringField('projektBezug')
+      if (pb !== null) {
+        out.projektBezug = pb
+        this.projektBezugEmitted = true
       }
     }
 
@@ -86,14 +120,14 @@ export class ChatStreamParser {
     return result
   }
 
-  /** Liest den vollständigen `rueckfrage`-String, falls schon vorhanden. */
-  private extractRueckfrage(): string | null {
-    const key = '"rueckfrage"'
-    const k = this.buffer.indexOf(key)
+  /** Liest einen Top-Level-String-Wert (z.B. `"rueckfrage"`, `"topic"`). */
+  private extractStringField(key: string): string | null {
+    const needle = `"${key}"`
+    const k = this.buffer.indexOf(needle)
     if (k < 0) return null
 
     // Nach dem Key kommt `:` und dann ein String.
-    let i = k + key.length
+    let i = k + needle.length
     while (i < this.buffer.length && this.buffer[i] !== ':') i++
     if (i >= this.buffer.length) return null
     i++ // hinter ':'

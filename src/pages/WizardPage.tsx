@@ -18,9 +18,16 @@ import { prefetcheAlleKategorien } from '@/lib/llm/prefetch'
 
 export function WizardPage() {
   const navigate = useNavigate()
-  const { params, setParam, aktivesProjekt, legeNeuesProjektAn, markiereAlsKomplett } =
-    useProjekte()
+  const {
+    params,
+    setParam,
+    aktivesProjekt,
+    legeNeuesProjektAn,
+    markiereAlsKomplett,
+    benenneProjektUm,
+  } = useProjekte()
   const [idx, setIdx] = useState(0)
+  const [namensEntwurf, setNamensEntwurf] = useState('')
 
   // Wenn der Wizard ohne aktives Projekt aufgerufen wird (z.B. nach Reload
   // mit leerem localStorage), legen wir eines an — sonst hätten setParam-
@@ -29,20 +36,34 @@ export function WizardPage() {
     if (!aktivesProjekt) legeNeuesProjektAn()
   }, [aktivesProjekt, legeNeuesProjektAn])
 
+  // Beim Wechsel des aktiven Projekts den Namens-Entwurf vorbefüllen.
+  useEffect(() => {
+    if (aktivesProjekt) setNamensEntwurf(aktivesProjekt.name)
+  }, [aktivesProjekt?.id])
+
   // Filtere die aktiven Fragen (bedingte Fragen nur, wenn condition erfüllt).
   const aktiveFragen = useMemo(
     () => wizardFragen.filter((f) => !f.condition || f.condition(params)),
     [params]
   )
 
-  const total = aktiveFragen.length
-  const frage = aktiveFragen[idx]
+  // Schritt 0 = Namensvergabe, danach kommen die Wizard-Fragen.
+  const total = aktiveFragen.length + 1
+  const istNameSchritt = idx === 0
+  const frage = istNameSchritt ? null : aktiveFragen[idx - 1]
   const isLast = idx === total - 1
   const value = frage ? (params as any)[frage.id] : undefined
-  const canContinue =
-    value !== undefined && value !== null && value !== ''
+  const canContinue = istNameSchritt
+    ? namensEntwurf.trim().length > 0
+    : value !== undefined && value !== null && value !== ''
 
   const next = () => {
+    if (istNameSchritt) {
+      if (aktivesProjekt)
+        benenneProjektUm(aktivesProjekt.id, namensEntwurf.trim())
+      setIdx(1)
+      return
+    }
     if (isLast) {
       markiereAlsKomplett()
       // Inhalte fürs Dashboard im Hintergrund laden — sobald der User auf
@@ -92,7 +113,7 @@ export function WizardPage() {
         {/* Bereits gegebene Antworten */}
         <div className="mt-6 flex flex-wrap gap-2 min-h-[28px]">
           <AnimatePresence>
-            {aktiveFragen.slice(0, idx).map((f, i) => {
+            {aktiveFragen.slice(0, Math.max(0, idx - 1)).map((f, i) => {
               const val = (params as any)[f.id]
               if (val === undefined) return null
               return (
@@ -106,7 +127,7 @@ export function WizardPage() {
                   <ParameterPill
                     label={shortLabel(f.id)}
                     value={lesbarerWert(f.id, val)}
-                    onClick={() => jumpToIdx(i)}
+                    onClick={() => jumpToIdx(i + 1)}
                   />
                 </motion.div>
               )
@@ -116,7 +137,19 @@ export function WizardPage() {
 
         <div className="mt-16 min-h-[420px]">
           <AnimatePresence mode="wait">
-            {frage && <WizardStep frage={frage} value={value} onChange={handleChange} />}
+            {istNameSchritt ? (
+              <NameSchritt
+                key="name"
+                value={namensEntwurf}
+                onChange={setNamensEntwurf}
+                onSubmit={next}
+                canContinue={canContinue}
+              />
+            ) : (
+              frage && (
+                <WizardStep frage={frage} value={value} onChange={handleChange} />
+              )
+            )}
           </AnimatePresence>
         </div>
 
@@ -144,6 +177,51 @@ export function WizardPage() {
         </div>
       </div>
     </Shell>
+  )
+}
+
+// Erster Schritt: Name des Projekts. Eigenes UI, weil Name kein Wizard-Param
+// ist, sondern Metadaten — wird über `benenneProjektUm` gespeichert.
+function NameSchritt({
+  value,
+  onChange,
+  onSubmit,
+  canContinue,
+}: {
+  value: string
+  onChange: (v: string) => void
+  onSubmit: () => void
+  canContinue: boolean
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -20 }}
+      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+      className="max-w-3xl mx-auto w-full"
+    >
+      <h2 className="text-2xl md:text-3xl font-medium tracking-tight text-ink leading-tight">
+        Wie soll dein Projekt heißen?
+      </h2>
+      <p className="mt-3 text-sm text-muted leading-relaxed">
+        Ein Name hilft dir, das Projekt später wiederzufinden. Du kannst ihn
+        jederzeit ändern.
+      </p>
+      <div className="mt-10">
+        <input
+          autoFocus
+          type="text"
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && canContinue) onSubmit()
+          }}
+          placeholder="z.B. Wohnhaus Mariahilfer Straße"
+          className="w-full bg-paper border-[0.5px] border-line rounded-chip px-5 py-3 text-base text-ink placeholder:text-muted-soft outline-none focus-visible:outline-none focus:border-line-strong transition-colors"
+        />
+      </div>
+    </motion.div>
   )
 }
 

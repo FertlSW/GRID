@@ -10,6 +10,7 @@ import { ChatStreamParser } from '@/lib/llm/streamParser'
 import type {
   ChatBlock,
   ChatNachricht,
+  ChatTopic,
 } from '@/lib/llm/chatTypes'
 
 const OPENAI_URL = 'https://api.openai.com/v1/chat/completions'
@@ -18,9 +19,11 @@ const OPENAI_URL = 'https://api.openai.com/v1/chat/completions'
 const MODEL = 'gpt-4.1-mini'
 
 export interface ChatStreamEvent {
-  typ: 'block' | 'rueckfrage' | 'fertig'
+  typ: 'block' | 'rueckfrage' | 'topic' | 'projektBezug' | 'fertig'
   block?: ChatBlock
   rueckfrage?: string
+  topic?: ChatTopic
+  projektBezug?: string
 }
 
 export interface ChatStreamOptions {
@@ -113,6 +116,12 @@ export async function* streameChatAntwort(
         if (out.rueckfrage) {
           yield { typ: 'rueckfrage', rueckfrage: out.rueckfrage }
         }
+        if (out.topic) {
+          yield { typ: 'topic', topic: out.topic }
+        }
+        if (out.projektBezug) {
+          yield { typ: 'projektBezug', projektBezug: out.projektBezug }
+        }
       }
     }
   } finally {
@@ -127,6 +136,12 @@ export async function* streameChatAntwort(
   }
   if (finalOut.rueckfrage) {
     yield { typ: 'rueckfrage', rueckfrage: finalOut.rueckfrage }
+  }
+  if (finalOut.topic) {
+    yield { typ: 'topic', topic: finalOut.topic }
+  }
+  if (finalOut.projektBezug) {
+    yield { typ: 'projektBezug', projektBezug: finalOut.projektBezug }
   }
   yield { typ: 'fertig' }
 }

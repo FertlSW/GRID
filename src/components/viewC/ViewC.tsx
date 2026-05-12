@@ -1,15 +1,19 @@
-// Chat-Ansicht (View C) — App-Layout, volle Breite.
-// Verlauf und „Neuer Chat" liegen im Header (siehe ChatHeaderActions).
+// Chat-Ansicht (View C).
 // Hauptbereich: Messages scrollen intern, Composer fix am unteren Rand.
 // Empty-State: zentriertes Eingabefeld in der Mitte.
 
 import { useEffect, useRef } from 'react'
 import { ChatMessage } from '@/components/viewC/ChatMessage'
 import { ChatInput } from '@/components/viewC/ChatInput'
+import { ChatSidebar } from '@/components/viewC/ChatSidebar'
 import { MotionReveal } from '@/components/shared/MotionReveal'
 import { useChat } from '@/hooks/useChat'
 
-export function ViewC() {
+interface ViewCProps {
+  withSidebar?: boolean
+}
+
+export function ViewC({ withSidebar = false }: ViewCProps) {
   const { nachrichten, sende, abbrechen, loading } = useChat()
 
   const leer = nachrichten.length === 0
@@ -20,7 +24,7 @@ export function ViewC() {
     endeRef.current?.scrollIntoView({ block: 'end', behavior: 'smooth' })
   }, [nachrichten])
 
-  return (
+  const main = (
     <section className="h-full flex flex-col min-h-0">
       {leer ? (
         <div className="flex-1 flex flex-col items-center justify-center px-6">
@@ -48,5 +52,14 @@ export function ViewC() {
         </>
       )}
     </section>
+  )
+
+  if (!withSidebar) return main
+
+  return (
+    <div className="h-full min-h-0 flex">
+      <ChatSidebar className="hidden md:flex" />
+      <div className="flex-1 min-w-0">{main}</div>
+    </div>
   )
 }

@@ -14,18 +14,21 @@ import {
 } from '@/lib/chat/threadStorage'
 
 export function ChatHeaderActions() {
-  const { neuesGespraech } = useChat()
+  const { nachrichten, neuesGespraech } = useChat()
   const { threads } = useChatHistory()
+  const istInChat = nachrichten.length > 0
 
   return (
-    <div className="flex items-center gap-3">
-      <button
-        onClick={neuesGespraech}
-        className="inline-flex items-center gap-1 text-xxs text-muted hover:text-ink transition-colors"
-      >
-        <Plus size={12} />
-        Neuer Chat
-      </button>
+    <div className="flex items-center gap-2">
+      {istInChat && (
+        <button
+          onClick={neuesGespraech}
+          className="inline-flex h-7 items-center gap-1.5 rounded-chip border-[0.5px] border-line bg-paper px-3 text-xs font-medium text-ink transition-all duration-150 ease-gentle hover:border-line-strong hover:bg-paper-muted"
+        >
+          <Plus size={12} />
+          Neuer Chat
+        </button>
+      )}
       {threads.length > 0 && <VerlaufDropdown />}
     </div>
   )
@@ -51,14 +54,14 @@ function VerlaufDropdown() {
     <div ref={wrapRef} className="relative">
       <button
         onClick={() => setOffen((o) => !o)}
-        className="inline-flex items-center gap-1 text-xxs text-muted hover:text-ink transition-colors"
+        className="inline-flex h-7 items-center gap-1 rounded-chip border-[0.5px] border-transparent px-3 text-xs font-medium text-ink transition-colors hover:bg-paper-soft"
         aria-expanded={offen}
         aria-haspopup="menu"
       >
         Verlauf
         <ChevronDown
           size={11}
-          className={cn('transition-transform', offen && 'rotate-180')}
+          className={cn('text-muted transition-transform', offen && 'rotate-180')}
         />
       </button>
 
